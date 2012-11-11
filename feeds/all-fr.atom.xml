@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>fdovero.net</title><link href="http://fdovero.net/" rel="alternate"></link><link href="http://fdovero.net/feeds/all-fr.atom.xml" rel="self"></link><id>http://fdovero.net/</id><updated>2012-11-10T00:00:00+01:00</updated><entry><title>Hello World</title><link href="http://fdovero.net/hello-world.html" rel="alternate"></link><updated>2012-11-10T00:00:00+01:00</updated><author><name>fdovero</name></author><id>tag:fdovero.net,2012-11-10:hello-world.html</id><summary type="html">&lt;p&gt;Tout blog commence par son «Hello World» et celui-ci ne fait pas exception.
+J'ouvre cet espace pour me servir de bloc note. Je traiterai de sujets techniques principalement.&lt;/p&gt;
+&lt;p&gt;Ce blog est :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Généré par &lt;a class="reference external" href="http://blog.getpelican.com"&gt;Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hébergé sur github::pages (les sources sont disponibles sur &lt;a class="reference external" href="https://github.com/fdovero/fdovero.net"&gt;mon dépot&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Étant développeur j'utilise énormément d'outils pour accélérer mon cycle de travail et comme je l'ai dis au début, je vais exposé ici mes astuces ou les quelques découvertes qui me paraissent utiles pour la suite de mon travail.&lt;/p&gt;
+&lt;p&gt;Je suis également un partisan de la culture &lt;cite&gt;Open Source&lt;/cite&gt; (j'aime le libre mais je reste pragmatique) et en tant que tel j'essai dans la mesure du possible d'utiliser des outils (logiciels ou bibliothèques) sous licences libre ou open source (les licences approuvés par l'&lt;a class="reference external" href="http://opensource.org"&gt;OSI&lt;/a&gt;), il se peut donc que je parle de ce thème également.&lt;/p&gt;
+&lt;p&gt;Il n'y a pas de systèmes de commentaires. C'est une volonté de ma part. Pour me contacter utilisez Twitter ou mon adress mail.&lt;/p&gt;
+&lt;p&gt;Je vais donc conclure ce «Hello World».&lt;/p&gt;
+&lt;p&gt;À bientôt.&lt;/p&gt;
+</summary><category term="blog"></category><category term="hello"></category></entry></feed>
