@@ -13,7 +13,7 @@ DEFAULT_LANG = 'fr'
 #LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),)
 
 # Social widget$
-SOCIAL = (('Twitter', 'http://twitter.com/azhagg'),
-          ('Github', 'http://github.com/fdovero'),)
+SOCIAL = (('twitter', 'http://twitter.com/azhagg'),
+          ('github', 'http://github.com/fdovero'),)
 
 DEFAULT_PAGINATION = False
