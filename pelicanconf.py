@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = u"fdovero"
-SITENAME = u"fdovero.net"
+AUTHOR = u"Fabien Dovero"
+SITENAME = u"/dev/log"
 SITEURL = ''
 
 TIMEZONE = 'Europe/Paris'
