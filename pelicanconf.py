@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u"Fabien Dovero"
-SITENAME = u"/dev/log"
+SITENAME = u"Journal d'un dev"
 SITEURL = ''
 
 TIMEZONE = 'Europe/Paris'
