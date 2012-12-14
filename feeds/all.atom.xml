@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Journal d'un dev</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2012-11-10T00:00:00+01:00</updated><entry><title>Hello World</title><link href="http://blog.dovero.org/hello-world.html" rel="alternate"></link><updated>2012-11-10T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2012-11-10:hello-world.html</id><summary type="html">&lt;p&gt;Tout blog commence par son «Hello World» et celui-ci ne fait pas exception.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Journal d'un dev</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2012-12-14T00:00:00+01:00</updated><entry><title>Installer des paquets Node.js dans virtualenv</title><link href="http://blog.dovero.org/installer-des-paquets-nodejs-dans-virtualenv.html" rel="alternate"></link><updated>2012-12-14T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2012-12-14:installer-des-paquets-nodejs-dans-virtualenv.html</id><summary type="html">&lt;p&gt;Virtualenv est un outil formidable. Si vous ne l'utilisez pas encore il faut vous y mettre absoluement !
+Pour résumer rapidement c'est un outil qui sert à créer des environnements de développements python isolés les uns des autres.&lt;/p&gt;
+&lt;p&gt;Il m'arrive d'avoir besoin de modules d'autres languages que python notemment pour le développement web.&lt;/p&gt;
+&lt;p&gt;Ce qui m'interresse aujourd'hui, c'est d'obtenir un environnement virtualisé avec virtualenv et des modules node.js (stylus jade et coffee-script)&lt;/p&gt;
+&lt;div class="section" id="mise-en-place-de-l-environnement"&gt;
+&lt;h2&gt;Mise en place de l'environnement&lt;/h2&gt;
+&lt;p&gt;Tout d'abord, il faut mettre en place un environnement virtuel avec virtualenv (j'utilise personnellement &lt;a class="reference external" href="'http://www.doughellmann.com/projects/virtualenvwrapper/'"&gt;virtualenvwrapper&lt;/a&gt;)&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir devnode
+&lt;span class="nv"&gt;$ &lt;/span&gt;mkvirtualenv devnode
+&lt;/pre&gt;
+&lt;p&gt;Et c'est tout !
+Enfin... pour l'environnement de developpement seulement. Mais la suite est tout aussi triviale.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="configuration-des-hooks"&gt;
+&lt;h2&gt;Configuration des «&amp;nbsp;hooks&amp;nbsp;»&lt;/h2&gt;
+&lt;p&gt;virtualenvwrapper propose des fichiers qui seront lus apres l'installation de l'environnement (postinstall) et surtout celui qui nous intéresse après l'activation de l'environnement (postactivate).
+Il nous suffit alors de le modifier afin d'y inclure certaines directives :&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;workon devnode
+&lt;span class="nv"&gt;$ &lt;/span&gt;cdvirtualenv bin
+&lt;/pre&gt;
+&lt;p&gt;Editez ensuite le fichier postactivate et y ajouter les lignes suivantes :&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="c"&gt;# node.js packages
+&lt;/span&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;npm_config_prefix&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$VIRTUAL_ENV&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;et dans le fichier predeactivate :&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="c"&gt;# remove node.js config
+&lt;/span&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;npm_config_prefix&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;Si virtualenv est configuré correctement il vous suffit de lancer les commandes d'installation des paquets habituelles :&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;npm install -g stylus jade coffee-script
+&lt;/pre&gt;
+&lt;p&gt;Notez l'utilisation de l'option -g (installation globale).&lt;/p&gt;
+&lt;p&gt;Et voilà. Rien de plus compliqué que ça ! Et ça fonctionne également avec les gem ruby etc...&lt;/p&gt;
+&lt;p&gt;Comme ce billet le laisse entrevoir, je parlerai bientôt des préprocesseurs css (stylus) html (jade) et javascript (coffee-script).&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="virtualenv"></category><category term="node.js"></category></entry><entry><title>Hello World</title><link href="http://blog.dovero.org/hello-world.html" rel="alternate"></link><updated>2012-11-10T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2012-11-10:hello-world.html</id><summary type="html">&lt;p&gt;Tout blog commence par son «Hello World» et celui-ci ne fait pas exception.
 J'ouvre cet espace pour me servir de bloc note. Je traiterai de sujets techniques principalement.&lt;/p&gt;
 &lt;p&gt;Ce blog est :&lt;/p&gt;
 &lt;blockquote&gt;
