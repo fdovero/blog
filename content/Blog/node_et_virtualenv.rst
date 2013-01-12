@@ -19,8 +19,8 @@ Mise en place de l'environnement
 
 Tout d'abord, il faut mettre en place un environnement virtuel avec virtualenv (j'utilise personnellement virtualenvwrapper_)
 
-.. code:: bash
-
+.. code:: console
+    
     $ mkdir devnode
     $ mkvirtualenv devnode
 
@@ -33,7 +33,7 @@ Configuration des « hooks »
 virtualenvwrapper propose des fichiers qui seront lus apres l'installation de l'environnement (postinstall) et surtout celui qui nous intéresse après l'activation de l'environnement (postactivate).
 Il nous suffit alors de le modifier afin d'y inclure certaines directives :
 
-.. code:: bash
+.. code:: console
 
     $ workon devnode
     $ cdvirtualenv bin
@@ -54,7 +54,7 @@ et dans le fichier predeactivate :
 
 Si virtualenv est configuré correctement il vous suffit de lancer les commandes d'installation des paquets habituelles :
 
-.. code:: bash
+.. code:: console
 
     $ npm install -g stylus jade coffee-script
 
@@ -64,4 +64,4 @@ Et voilà. Rien de plus compliqué que ça ! Et ça fonctionne également avec l
 
 Comme ce billet le laisse entrevoir, je parlerai bientôt des préprocesseurs css (stylus) html (jade) et javascript (coffee-script).
 
-.. _virtualenvwrapper: 'http://www.doughellmann.com/projects/virtualenvwrapper/'
+.. _virtualenvwrapper: //www.doughellmann.com/projects/virtualenvwrapper/

@@ -25,7 +25,7 @@ Je vais donc conclure ce «Hello World».
 
 À bientôt.
 
-.. _`Open Source`: http://fr.wikipedia.org/wiki/Open_source
-.. _OSI: http://opensource.org
-.. _Pelican: http://blog.getpelican.com
-.. _`mon dépot`: https://github.com/fdovero/fdovero.net
+.. _`Open Source`: //fr.wikipedia.org/wiki/Open_source
+.. _OSI: //opensource.org
+.. _Pelican: //blog.getpelican.com
+.. _`mon dépot`: //github.com/fdovero/blog
