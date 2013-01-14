@@ -22,9 +22,9 @@
         <header id="banner" class="body">
                 <h1><a href="./">Journal d'un dev </a></h1>
                 <nav><ul>
-                                    <li><a href="/pages/a-propos.html">À propos</a></li>
-                                    <li><a href="/">Accueil</a></li>
-                                    <li><a href="/pages/projets.html">Projets</a></li>
+                                    <li><a href="http://blog.dovero.org/pages/a-propos.html">À propos</a></li>
+                                    <li><a href="http://blog.dovero.org/">Accueil</a></li>
+                                    <li><a href="http://blog.dovero.org/pages/projets.html">Projets</a></li>
                                                                     <li ><a href="./category/blog.html">Blog</a></li>
                                 </ul></nav>
         </header><!-- /#banner -->
@@ -73,6 +73,12 @@ Pour l'installer :</p>
 <pre class="code console literal-block">
 <span class="generic prompt">$</span> stylus --css app.css &amp; stylus --compress app.styl
 </pre>
+<p>Si vous préférez les solutions simples il existe <a class="reference external" href="//github.com/css/csso">csso</a> qui rempli cette tâche à merveille :</p>
+<pre class="code console literal-block">
+<span class="generic prompt">$</span> npm install -g csso
+<span class="generic prompt">$</span> csso app.css app.min.css
+</pre>
+<p>Et voilà !</p>
 </div>
 <div class="section" id="reduire-les-images">
 <h2>Réduire les images</h2>

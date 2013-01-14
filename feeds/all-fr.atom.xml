@@ -28,6 +28,12 @@ Pour l'installer :&lt;/p&gt;
 &lt;pre class="code console literal-block"&gt;
 &lt;span class="generic prompt"&gt;$&lt;/span&gt; stylus --css app.css &amp;amp; stylus --compress app.styl
 &lt;/pre&gt;
+&lt;p&gt;Si vous préférez les solutions simples il existe &lt;a class="reference external" href="//github.com/css/csso"&gt;csso&lt;/a&gt; qui rempli cette tâche à merveille :&lt;/p&gt;
+&lt;pre class="code console literal-block"&gt;
+&lt;span class="generic prompt"&gt;$&lt;/span&gt; npm install -g csso
+&lt;span class="generic prompt"&gt;$&lt;/span&gt; csso app.css app.min.css
+&lt;/pre&gt;
+&lt;p&gt;Et voilà !&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="reduire-les-images"&gt;
 &lt;h2&gt;Réduire les images&lt;/h2&gt;
