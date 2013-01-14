@@ -22,9 +22,9 @@
         <header id="banner" class="body">
                 <h1><a href="../">Journal d'un dev </a></h1>
                 <nav><ul>
-                                    <li><a href="http://blog.dovero.org/pages/a-propos.html">À propos</a></li>
-                                    <li><a href="http://blog.dovero.org/">Accueil</a></li>
-                                    <li><a href="http://blog.dovero.org/pages/projets.html">Projets</a></li>
+                                    <li><a href="//blog.dovero.org/pages/a-propos.html">À propos</a></li>
+                                    <li><a href="//blog.dovero.org/">Accueil</a></li>
+                                    <li><a href="//blog.dovero.org/pages/projets.html">Projets</a></li>
                                                                     <li class="active"><a href="../category/blog.html">Blog</a></li>
                                 </ul></nav>
         </header><!-- /#banner -->
@@ -54,39 +54,33 @@ Cette série est amenée à évoluer.</p>
 <h2>Réduire le Javascript</h2>
 <p>Il existe plusieurs réducteur de javascript. J'aime la simplicité et la puissance de <a class="reference external" href="//lisperator.net/uglifyjs/">uglifyjs</a>.
 Pour l'installer :</p>
-<pre class="code console literal-block">
-<span class="generic prompt">$</span> npm install -g uglify-js
-</pre>
+<div class="highlight"><pre><span class="gp">$</span> npm install -g uglify-js
+</pre></div>
 <p>Ensuite pour compresser le javascript :</p>
-<pre class="code console literal-block">
-<span class="generic prompt">$</span> uglifyjs -c app.js -o app.min.js
-</pre>
+<div class="highlight"><pre><span class="gp">$</span> uglifyjs -c app.js -o app.min.js
+</pre></div>
 </div>
 <div class="section" id="reduire-les-css">
 <h2>Réduire les CSS</h2>
 <p>J'utilise <a class="reference external" href="//learnboost.github.com/stylus/">stylus</a> comme préprocesseur CSS. La commande stylus propose un paramètre pour compresser la sortie</p>
-<pre class="code console literal-block">
-<span class="generic prompt">$</span> npm install -g stylus
-<span class="generic prompt">$</span> stylus --compress app.styl
-</pre>
+<div class="highlight"><pre><span class="gp">$</span> npm install -g stylus
+<span class="gp">$</span> stylus --compress app.styl
+</pre></div>
 <p>Et comme j'aime les solutions tordues, on peut également passer un css pour le transformer en fichier stylus et compresser le css en sortie !</p>
-<pre class="code console literal-block">
-<span class="generic prompt">$</span> stylus --css app.css &amp; stylus --compress app.styl
-</pre>
+<div class="highlight"><pre><span class="gp">$</span> stylus --css app.css &amp; stylus --compress app.styl
+</pre></div>
 <p>Si vous préférez les solutions simples il existe <a class="reference external" href="//github.com/css/csso">csso</a> qui rempli cette tâche à merveille :</p>
-<pre class="code console literal-block">
-<span class="generic prompt">$</span> npm install -g csso
-<span class="generic prompt">$</span> csso app.css app.min.css
-</pre>
+<div class="highlight"><pre><span class="gp">$</span> npm install -g csso
+<span class="gp">$</span> csso app.css app.min.css
+</pre></div>
 <p>Et voilà !</p>
 </div>
 <div class="section" id="reduire-les-images">
 <h2>Réduire les images</h2>
 <p>Les images sont les ressources le plus lourdes à transférer. Pourtant il y a un moyen simple et sans perte de réduire leur taille de 50% en moyenne. En effet les images embarquent toutes sortes de tags qui prennent une place non négligable.</p>
 <p>Pour optimiser des PNG il existe <a class="reference external" href="//optipng.sourceforge.net/">optipng</a> et <a class="reference external" href="//www.kokkonen.net/tjko/projects.htm">jpegoptim</a> pour les JPEG !</p>
-<pre class="code console literal-block">
-<span class="generic prompt">$</span> optipng -o 7 ./images
-</pre>
+<div class="highlight"><pre><span class="gp">$</span> optipng -o 7 ./images
+</pre></div>
 </div>
 <div class="section" id="cas-des-icon-fonts">
 <h2>Cas des « icon fonts »</h2>
