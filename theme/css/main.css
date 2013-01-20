@@ -118,6 +118,7 @@ body{margin:0;padding:0;background:url("/theme/images/grid.png")}
 #content .post-info a,#content .entry-content a{color:#df013a;padding-left:1px;padding-right:1px;}
 #content .post-info a:hover,#content .entry-content a:hover{color:#fff;background:#df013a;text-decoration:none;text-shadow:0 0 3px #fff;border-radius:3px;transition-property:text-shadow,background,color;transition-duration:.2s;transition-timing-function:ease-in-out}
 #content .highlight{background:#1a1a1a;color:#fff;padding:10px;margin:0;border-radius:3px;border:1px solid #27221f}
+#content .hentry{border-bottom:2px solid #27221f}
 #contentinfo{font-family:Jura;background:#463d39;color:#a0928b;border-top:3px solid #27221f;margin-top:40px;padding-top:10px;padding-bottom:10px;text-align:center;}
 #contentinfo a{color:#df013a;padding-left:1px;padding-right:1px;}
 #contentinfo a:hover{color:#fff;background:#df013a;text-decoration:none;text-shadow:0 0 3px #fff;border-radius:3px;transition-property:text-shadow,background,color;transition-duration:.2s;transition-timing-function:ease-in-out}
