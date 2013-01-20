@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-01-12T00:00:00+01:00</updated><entry><title>Optimiser un site web : réduire la taille des ressources statiques</title><link href="http://blog.dovero.org/optimiser-un-site-web-reduire-la-taille-des-ressources-statiques.html" rel="alternate"></link><updated>2013-01-12T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-12:optimiser-un-site-web-reduire-la-taille-des-ressources-statiques.html</id><summary type="html">&lt;p&gt;La rapidité du web est le maitre mot depuis que les accès haut débit se sont démocratisés.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-01-20T00:00:00+01:00</updated><entry><title>Vautour: thème pour pelican</title><link href="http://blog.dovero.org/vautour-theme-pour-pelican.html" rel="alternate"></link><updated>2013-01-20T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-20:vautour-theme-pour-pelican.html</id><summary type="html">&lt;p&gt;Ce blog est construit grâce à &lt;a class="reference external" href="//blog.getpelican.com"&gt;Pelican&lt;/a&gt;. Le thème par défaut ( qui s'appelle notmyidea ) ne me convenait pas. J'ai donc commencer par modifier ce thème pour finalement repartir de zéro ou presque.&lt;/p&gt;
+&lt;div class="section" id="point-de-depart"&gt;
+&lt;h2&gt;Point de départ&lt;/h2&gt;
+&lt;p&gt;Je suis parti du template « simple » sans CSS et me suis imposé certaines contraintes :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Ressources compréssées et compatibles avec des licences libres&lt;/li&gt;
+&lt;li&gt;Servir en un minimum de fichiers&lt;/li&gt;
+&lt;li&gt;Ne pas me servir des extensions propriétaires des navigateurs ( les -webkit- -moz- -o- )&lt;/li&gt;
+&lt;li&gt;Ne pas imposer google aux visiteurs ( aucune ressource servie par google )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Le but étant de fournir un site le plus réactif et léger possible.&lt;/p&gt;
+&lt;p&gt;J'ai utilisé &lt;a class="reference external" href="//learnboost.github.com/stylus"&gt;Stylus&lt;/a&gt; pour générer le CSS. En effet il me permet de construire mes CSS en plusieurs fichiers distincts mais de générer une sortie dans un unique fichier CSS compréssé. De plus l'utilitaire fourni une fonction de surveillance de fichier : quand le fichier surveillé est modifié il est compilé instantanément ( ce qui est un énorme avantage quand on développe pour le web ).&lt;/p&gt;
+&lt;p&gt;Pour la police de caractères, il s'agit de &lt;a class="reference external" href="//openfontlibrary.org/en/font/jura"&gt;Jura&lt;/a&gt; sous licence OFL servit par &lt;a class="reference external" href="//openfontlibrary.org"&gt;openfontlibrary&lt;/a&gt; ( pour éviter google web font ), la texture de fond de la page est &lt;a class="reference external" href="//subtlepatterns.com/grid"&gt;grid&lt;/a&gt; trouvée sur &lt;a class="reference external" href="//subtlepatterns.com"&gt;subtlepatterns&lt;/a&gt; et l'echantillon d'icones est issu d' &lt;a class="reference external" href="//entypo.com"&gt;entypo&lt;/a&gt; sous licence CC-BY-SA.
+Pour les icones j'ai généré un subset avec les seules icones qui m'interessent grace à l'application d'&lt;a class="reference external" href="//icomoon.io/app"&gt;icomoon&lt;/a&gt; pour réduire la taille du fichier servi.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="la-suite"&gt;
+&lt;h2&gt;La suite&lt;/h2&gt;
+&lt;p&gt;J'ai construis ce thème pour mes besoins personnels et il est donc très loin de couvrir tous les usages de Pelican. De plus, je ne l'ai testé que sur Firefox et Opera.&lt;/p&gt;
+&lt;p&gt;Mon objectif pour la suite est de le rendre pleinements compatible sans utiliser des tricks ( commes les commentaires conditionnels ou des attributs non standardisés ) et d'englober le maximum d'usages.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="choix-de-licence"&gt;
+&lt;h2&gt;Choix de licence&lt;/h2&gt;
+&lt;p&gt;J'ai choisi de placer le code de &lt;a class="reference external" href="//github.com/fdovero/vautour"&gt;vautour&lt;/a&gt; sous licence MIT donc amusez-vous !&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="pelican"></category><category term="blog"></category><category term="vautour"></category></entry><entry><title>Optimiser un site web : réduire la taille des ressources statiques</title><link href="http://blog.dovero.org/optimiser-un-site-web-reduire-la-taille-des-ressources-statiques.html" rel="alternate"></link><updated>2013-01-12T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-12:optimiser-un-site-web-reduire-la-taille-des-ressources-statiques.html</id><summary type="html">&lt;p&gt;La rapidité du web est le maitre mot depuis que les accès haut débit se sont démocratisés.
 Aujourd'hui plus que jamais, la réactivité d'un site web est un objectif à atteindre surtout que ces mêmes sites ont tendance à enfler.
 Google en fait même un critère de qualité pour son algorithme d'indexation.
 J'ai été confronté a cette problématique et je vais présenté dans une série de billets différentes techniques d'optimisation, de la plus évidente à la plus tordue !
