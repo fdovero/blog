@@ -20,13 +20,13 @@ Réduire le Javascript
 Il existe plusieurs réducteur de javascript. J'aime la simplicité et la puissance de uglifyjs_.
 Pour l'installer :
 
-.. code:: console
+.. code-block:: console
 
     $ npm install -g uglify-js
 
 Ensuite pour compresser le javascript :
 
-.. code:: console
+.. code-block:: console
 
     $ uglifyjs -c app.js -o app.min.js
 
@@ -35,16 +35,25 @@ Réduire les CSS
 
 J'utilise stylus_ comme préprocesseur CSS. La commande stylus propose un paramètre pour compresser la sortie
 
-.. code:: console
+.. code-block:: console
 
     $ npm install -g stylus
     $ stylus --compress app.styl
 
 Et comme j'aime les solutions tordues, on peut également passer un css pour le transformer en fichier stylus et compresser le css en sortie !
 
-.. code:: console
+.. code-block:: console
 
     $ stylus --css app.css & stylus --compress app.styl
+
+Si vous préférez les solutions simples il existe csso_ qui rempli cette tâche à merveille :
+
+.. code-block:: console
+
+    $ npm install -g csso
+    $ csso app.css app.min.css
+
+Et voilà ! 
 
 Réduire les images
 ==================
@@ -53,7 +62,7 @@ Les images sont les ressources le plus lourdes à transférer. Pourtant il y a u
 
 Pour optimiser des PNG il existe optipng_ et jpegoptim_ pour les JPEG !
 
-.. code:: console
+.. code-block:: console
 
    $ optipng -o 7 ./images
 
@@ -65,6 +74,7 @@ Pour `font awesome`_ il existe icnfnt_ qui justement permet de se constituer son
 
 .. _uglifyjs: //lisperator.net/uglifyjs/ 
 .. _stylus: //learnboost.github.com/stylus/
+.. _csso: //github.com/css/csso
 .. _optipng: //optipng.sourceforge.net/
 .. _jpegoptim: //www.kokkonen.net/tjko/projects.htm
 .. _`font awesome`: //fortawesome.github.com/Font-Awesome/ 

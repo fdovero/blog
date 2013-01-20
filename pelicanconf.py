@@ -2,8 +2,12 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u"Fabien Dovero"
-SITENAME = u"Journal d'un dev"
+SITENAME = u"/dev/log"
+SITESUBTITLE = u"Journal d'un dev"
 SITEURL = ''
+
+THEME = 'vautour'
+
 
 TIMEZONE = 'Europe/Paris'
 
@@ -12,13 +16,12 @@ DEFAULT_LANG = 'fr'
 # Blogroll
 #LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),)
 
-# Social widget$
-SOCIAL = (('twitter', 'http://twitter.com/azhagg'),
-          ('github', 'http://github.com/fdovero'),)
+# Social widget
+SOCIAL = (('twitter', '//twitter.com/azhagg'),
+          ('github', '//github.com/fdovero'),)
+
+MENUITEMS = (('Home', '/'),)
 
 DEFAULT_PAGINATION = False
 
-DISPLAY_PAGES_ON_MENU = False
-MENUITEMS = ((u'À propos', 'pages/a-propos.html'),
-             ('Accueil', '/'),
-             ('Projets', 'pages/projets.html'),)
+DISPLAY_PAGES_ON_MENU = True

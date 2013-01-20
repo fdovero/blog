@@ -19,7 +19,7 @@ Mise en place de l'environnement
 
 Tout d'abord, il faut mettre en place un environnement virtuel avec virtualenv (j'utilise personnellement virtualenvwrapper_)
 
-.. code:: console
+.. code-block:: console
     
     $ mkdir devnode
     $ mkvirtualenv devnode
@@ -33,28 +33,28 @@ Configuration des « hooks »
 virtualenvwrapper propose des fichiers qui seront lus apres l'installation de l'environnement (postinstall) et surtout celui qui nous intéresse après l'activation de l'environnement (postactivate).
 Il nous suffit alors de le modifier afin d'y inclure certaines directives :
 
-.. code:: console
+.. code-block:: console
 
     $ workon devnode
     $ cdvirtualenv bin
 
 Editez ensuite le fichier postactivate et y ajouter les lignes suivantes :
 
-.. code:: bash
+.. code-block:: bash
 
     # node.js packages
     export npm_config_prefix=$VIRTUAL_ENV
 
 et dans le fichier predeactivate :
 
-.. code:: bash
+.. code-block:: bash
 
     # remove node.js config
     export npm_config_prefix=""
 
 Si virtualenv est configuré correctement il vous suffit de lancer les commandes d'installation des paquets habituelles :
 
-.. code:: console
+.. code-block:: console
 
     $ npm install -g stylus jade coffee-script
 
