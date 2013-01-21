@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all-fr.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-01-20T00:00:00+01:00</updated><entry><title>Vautour: thème pour pelican</title><link href="http://blog.dovero.org/vautour-theme-pour-pelican.html" rel="alternate"></link><updated>2013-01-20T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-20:vautour-theme-pour-pelican.html</id><summary type="html">&lt;p&gt;Ce blog est construit grâce à &lt;a class="reference external" href="//blog.getpelican.com"&gt;Pelican&lt;/a&gt;. Le thème par défaut ( qui s'appelle notmyidea ) ne me convenait pas. J'ai donc commencer par modifier ce thème pour finalement repartir de zéro ou presque.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all-fr.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-01-20T00:00:00+01:00</updated><entry><title>Vautour: thème pour pelican</title><link href="http://blog.dovero.org/vautour-theme-pour-pelican.html" rel="alternate"></link><updated>2013-01-20T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-20:vautour-theme-pour-pelican.html</id><summary type="html">&lt;p&gt;Ce blog est construit grâce à &lt;a class="reference external" href="//blog.getpelican.com"&gt;Pelican&lt;/a&gt;. Le thème par défaut ( qui s'appelle notmyidea ) ne me convenait pas. J'ai donc commencé par modifier ce thème pour finalement repartir de zéro ou presque.&lt;/p&gt;
 &lt;div class="section" id="point-de-depart"&gt;
 &lt;h2&gt;Point de départ&lt;/h2&gt;
 &lt;p&gt;Je suis parti du template « simple » sans CSS et me suis imposé certaines contraintes :&lt;/p&gt;
@@ -8,7 +8,7 @@
 &lt;li&gt;Ressources compréssées et compatibles avec des licences libres&lt;/li&gt;
 &lt;li&gt;Servir en un minimum de fichiers&lt;/li&gt;
 &lt;li&gt;Ne pas me servir des extensions propriétaires des navigateurs ( les -webkit- -moz- -o- )&lt;/li&gt;
-&lt;li&gt;Ne pas imposer google aux visiteurs ( aucune ressource servie par google )&lt;/li&gt;
+&lt;li&gt;Ne pas imposer Google aux visiteurs ( aucune ressource servie par google )&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Le but étant de fournir un site le plus réactif et léger possible.&lt;/p&gt;
