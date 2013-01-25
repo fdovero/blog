@@ -12,7 +12,7 @@ J'ouvre cet espace pour me servir de bloc note. Je traiterai de sujets technique
 Ce blog est :
 
     - Généré par Pelican_
-    - Hébergé sur github::pages (les sources sont disponibles sur `mon dépot`_)
+    - Hébergé sur github:pages (les sources sont disponibles sur `mon dépot`_)
 
 Étant développeur j'utilise énormément d'outils pour accélérer mon cycle de travail et comme je l'ai dis au début, je vais exposé ici mes astuces ou les quelques découvertes qui me paraissent utiles pour la suite de mon travail.
 

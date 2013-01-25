@@ -6,7 +6,7 @@ Vautour: thème pour pelican
 
 :date: 2013-01-20
 
-Ce blog est construit grâce à Pelican_. Le thème par défaut ( qui s'appelle notmyidea ) ne me convenait pas. J'ai donc commencer par modifier ce thème pour finalement repartir de zéro ou presque.
+Ce blog est construit grâce à Pelican_. Le thème par défaut ( qui s'appelle notmyidea ) ne me convenait pas. J'ai donc commencé par modifier ce thème pour finalement repartir de zéro ou presque.
 
 Point de départ
 ===============
@@ -16,7 +16,7 @@ Je suis parti du template « simple » sans CSS et me suis imposé certaines con
     - Ressources compréssées et compatibles avec des licences libres
     - Servir en un minimum de fichiers
     - Ne pas me servir des extensions propriétaires des navigateurs ( les -webkit- -moz- -o- )
-    - Ne pas imposer google aux visiteurs ( aucune ressource servie par google )
+    - Ne pas imposer Google aux visiteurs ( aucune ressource servie par google )
 
 Le but étant de fournir un site le plus réactif et léger possible.
 
