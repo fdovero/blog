@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all-fr.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-01-20T00:00:00+01:00</updated><entry><title>Vautour: thème pour pelican</title><link href="http://blog.dovero.org/vautour-theme-pour-pelican.html" rel="alternate"></link><updated>2013-01-20T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-20:vautour-theme-pour-pelican.html</id><summary type="html">&lt;p&gt;Ce blog est construit grâce à &lt;a class="reference external" href="//blog.getpelican.com"&gt;Pelican&lt;/a&gt;. Le thème par défaut ( qui s'appelle notmyidea ) ne me convenait pas. J'ai donc commencé par modifier ce thème pour finalement repartir de zéro ou presque.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all-fr.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-01-25T00:00:00+01:00</updated><entry><title>Lice : le générateur de licences Open Source(s)</title><link href="http://blog.dovero.org/lice-le-generateur-de-licences-open-sources.html" rel="alternate"></link><updated>2013-01-25T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-25:lice-le-generateur-de-licences-open-sources.html</id><summary type="html">&lt;p&gt;Il y a des petits programmes dont on ne parle pas parce-qu'ils ne font rien de spectaculaire. Et pourtant ils sont tellement pratiques que l'on a du mal à s'en passer. Le petit logiciel que je vais présenter tombe dans cette catégorie.&lt;/p&gt;
+&lt;div class="section" id="que-fait-il"&gt;
+&lt;h2&gt;Que fait-il ?&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="//github.com/jcarbaugh/lice"&gt;Lice&lt;/a&gt; permet simplement, en ligne de commande, de générer le texte de la licence choisie en lui passant certains paramètres comme l'année, le nom de la licence ou encore le détenteur du copyright.
+Un exemple est certainement plus parlant :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; lice -o &lt;span class="s2"&gt;&amp;quot;Fabien Dovero&amp;quot;&lt;/span&gt; mit &amp;gt; LICENSE
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;ou encore :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; lice -y 2013 -p &lt;span class="s2"&gt;&amp;quot;My project&amp;quot;&lt;/span&gt; -o &lt;span class="s2"&gt;&amp;quot;Free soft org&amp;quot;&lt;/span&gt; bsd3
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;pour avoir une liste des variables disponibles pour une licence en particulier :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; lice --vars apache
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pour-quelles-licences"&gt;
+&lt;h2&gt;Pour quelles licences ?&lt;/h2&gt;
+&lt;p&gt;Pour l'instant il ne supporte en natif que les licences listées sur le site de l'&lt;a class="reference external" href="//opensource.org"&gt;OSI&lt;/a&gt;. Cependant il n'est pas compliqué de rajouter une licence quelconque en s'inspirant des fichiers de template et en utilisant l'option -t :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; mkdir .licenses
+&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Ma licence imba {{ year }}, {{ organization }}&amp;quot;&lt;/span&gt; &amp;gt; .licences/template-amoi
+&lt;span class="gp"&gt;$&lt;/span&gt; lice -y 2013 -o &lt;span class="s2"&gt;&amp;quot;Fabien Dovero&amp;quot;&lt;/span&gt; -t .licenses/template-amoi
+&lt;span class="go"&gt;Ma licence imba 2013, Fabien Dovero&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pour conclure, je ne saurai que trop vous encourager à utiliser des licences open source pour votre code, en particulier ma préférée : la license &lt;a class="reference external" href="//opensource.org/licenses/MIT"&gt;MIT&lt;/a&gt; qui est parfaitement adaptée pour des petits projets.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="licence"></category><category term="pratique"></category></entry><entry><title>Vautour: thème pour pelican</title><link href="http://blog.dovero.org/vautour-theme-pour-pelican.html" rel="alternate"></link><updated>2013-01-20T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-20:vautour-theme-pour-pelican.html</id><summary type="html">&lt;p&gt;Ce blog est construit grâce à &lt;a class="reference external" href="//blog.getpelican.com"&gt;Pelican&lt;/a&gt;. Le thème par défaut ( qui s'appelle notmyidea ) ne me convenait pas. J'ai donc commencé par modifier ce thème pour finalement repartir de zéro ou presque.&lt;/p&gt;
 &lt;div class="section" id="point-de-depart"&gt;
 &lt;h2&gt;Point de départ&lt;/h2&gt;
 &lt;p&gt;Je suis parti du template « simple » sans CSS et me suis imposé certaines contraintes :&lt;/p&gt;

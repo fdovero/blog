@@ -4,8 +4,8 @@
                 <title>/dev/log</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
-                <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="/dev/log Full Atom Feed" />
-                                                <link href="/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate" title="/dev/log Categories Atom Feed" />
+                <link href="http://blog.dovero.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="/dev/log Full Atom Feed" />
+                                                <link href="http://blog.dovero.org/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate" title="/dev/log Categories Atom Feed" />
                                         </head>
 
 <body id="index" class="home">
@@ -33,9 +33,30 @@
     </address>
       </footer><!-- /.post-info -->
   <div class="entry-content">
-    <p>Pour tout dévelopement logiciel, arrive un moment où il faut faire le choix de la licence.
-Et comme tout dévelopeur, une licence a ma <a class="reference external" href="//opensource.org/licenses/MIT">préférence</a>. Et pour chaque projet, je copie le texte de la licence trouvé sur le site de l'<a class="reference external" href="//opensource.org">OSI</a>.
-C'est là que <a class="reference external" href="//github.com/jcarbaugh/lice">lice</a> intervient !</p>
+    <p>Il y a des petits programmes dont on ne parle pas parce-qu'ils ne font rien de spectaculaire. Et pourtant ils sont tellement pratiques que l'on a du mal à s'en passer. Le petit logiciel que je vais présenter tombe dans cette catégorie.</p>
+<div class="section" id="que-fait-il">
+<h2>Que fait-il ?</h2>
+<p><a class="reference external" href="//github.com/jcarbaugh/lice">Lice</a> permet simplement, en ligne de commande, de générer le texte de la licence choisie en lui passant certains paramètres comme l'année, le nom de la licence ou encore le détenteur du copyright.
+Un exemple est certainement plus parlant :</p>
+<div class="highlight"><pre><span class="gp">$</span> lice -o <span class="s2">&quot;Fabien Dovero&quot;</span> mit &gt; LICENSE
+</pre></div>
+<p>ou encore :</p>
+<div class="highlight"><pre><span class="gp">$</span> lice -y 2013 -p <span class="s2">&quot;My project&quot;</span> -o <span class="s2">&quot;Free soft org&quot;</span> bsd3
+</pre></div>
+<p>pour avoir une liste des variables disponibles pour une licence en particulier :</p>
+<div class="highlight"><pre><span class="gp">$</span> lice --vars apache
+</pre></div>
+</div>
+<div class="section" id="pour-quelles-licences">
+<h2>Pour quelles licences ?</h2>
+<p>Pour l'instant il ne supporte en natif que les licences listées sur le site de l'<a class="reference external" href="//opensource.org">OSI</a>. Cependant il n'est pas compliqué de rajouter une licence quelconque en s'inspirant des fichiers de template et en utilisant l'option -t :</p>
+<div class="highlight"><pre><span class="gp">$</span> mkdir .licenses
+<span class="gp">$</span> <span class="nb">echo</span> <span class="s2">&quot;Ma licence imba {{ year }}, {{ organization }}&quot;</span> &gt; .licences/template-amoi
+<span class="gp">$</span> lice -y 2013 -o <span class="s2">&quot;Fabien Dovero&quot;</span> -t .licenses/template-amoi
+<span class="go">Ma licence imba 2013, Fabien Dovero</span>
+</pre></div>
+<p>Pour conclure, je ne saurai que trop vous encourager à utiliser des licences open source pour votre code, en particulier ma préférée : la license <a class="reference external" href="//opensource.org/licenses/MIT">MIT</a> qui est parfaitement adaptée pour des petits projets.</p>
+</div>
 
   </div><!-- /.entry-content -->
 </section>
