@@ -97,9 +97,13 @@ table{border-collapse:collapse;border-spacing:0}
 @font-face{font-family:Jura;src:url("/theme/fonts/jura.woff");font-weight:normal;font-style:normal}
 @font-face{font-family:entypo;src:url("/theme/fonts/entypo.woff");font-weight:normal;font-style:normal}
 [data-icon]:before{font-family:entypo;content:attr(data-icon);speak:none;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased}
-.icon-github:before,.icon-twitter:before{font-family:entypo;speak:none;font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased}
+.icon-github:before,.icon-twitter:before,.icon-cc:before,.icon-cc-by:before,.icon-cc-sa:before,.icon-mail:before{font-family:entypo;speak:none;font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased}
 .icon-github:before{content:"\e002"}
-.icon-twitter:before{content:"\e003"}
+.icon-twitter:before{content:"\e004"}
+.icon-cc:before{content:"\e000"}
+.icon-cc-by:before{content:"\e001"}
+.icon-cc-sa:before{content:"\e003"}
+.icon-mail:before{content:"\e005"}
 #error-content{font-family:Jura;width:380px;height:220px;margin:auto;margin-top:30%;color:#df013a;background:#a0928b;border-radius:10px;border:1px solid #463d39;box-shadow:0 0 20px #000;padding:10px;}
 #error-content header{margin:auto;text-align:center;font-size:2.4em;color:#fff;text-shadow:0 0 10px #fff;padding-top:5px;padding-bottom:5px;border-bottom:1px solid #463d39}
 html{height:100%}
@@ -128,5 +132,6 @@ body{height:100%;margin:0;padding:0;background:url("/theme/images/grid.png")}
 #contentinfo{font-family:Jura;background:#463d39;color:#a0928b;border-top:2px solid #27221f;padding-top:10px;padding-bottom:10px;text-align:center;}
 #contentinfo a{color:#df013a;padding-left:1px;padding-right:1px;}
 #contentinfo a:hover{color:#fff;background:#df013a;text-decoration:none;text-shadow:0 0 3px #fff;border-radius:3px;transition-property:text-shadow,background,color;transition-duration:.2s;transition-timing-function:ease-in-out}
-#contentinfo .social-links a{margin:1em;font-size:2em;color:#a0928b;text-decoration:none;background:none;}
-#contentinfo .social-links a:hover{color:#fff;text-shadow:0 0 3px #fff;transition-property:text-shadow,color;transition-duration:.2s;transition-timing-function:ease-in-out}
+#contentinfo .social-links a,#contentinfo #credits a{margin:1em;font-size:2em;color:#a0928b;text-decoration:none;background:none;}
+#contentinfo .social-links a:hover,#contentinfo #credits a:hover{color:#fff;text-shadow:0 0 3px #fff;transition-property:text-shadow,color;transition-duration:.2s;transition-timing-function:ease-in-out}
+#contentinfo #credits a{font-size:1em;margin:.2em}
