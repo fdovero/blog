@@ -97,13 +97,14 @@ table{border-collapse:collapse;border-spacing:0}
 @font-face{font-family:Oswald;src:url("/theme/fonts/oswald.woff");font-weight:normal;font-style:normal}
 @font-face{font-family:entypo;src:url("/theme/fonts/entypo.woff");font-weight:normal;font-style:normal}
 [data-icon]:before{font-family:entypo;content:attr(data-icon);speak:none;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased}
-.icon-github:before,.icon-twitter:before,.icon-cc:before,.icon-cc-by:before,.icon-cc-sa:before,.icon-mail:before{font-family:entypo;speak:none;font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased}
+.icon-github:before,.icon-twitter:before,.icon-cc:before,.icon-cc-by:before,.icon-cc-sa:before,.icon-mail:before,.icon-flattr:before{font-family:entypo;speak:none;font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased}
 .icon-github:before{content:"\e002"}
 .icon-twitter:before{content:"\e004"}
 .icon-cc:before{content:"\e000"}
 .icon-cc-by:before{content:"\e001"}
 .icon-cc-sa:before{content:"\e003"}
 .icon-mail:before{content:"\e005"}
+.icon-flattr:before{content:"\e006"}
 #error-content{font-family:Oswald;width:380px;height:220px;margin:auto;margin-top:30%;color:#df013a;background:#a0928b;border-radius:10px;border:1px solid #463d39;box-shadow:0 0 20px #000;padding:10px;}
 #error-content header{margin:auto;text-align:center;font-size:2.4em;color:#fff;text-shadow:0 0 10px #fff;padding-top:5px;padding-bottom:5px;border-bottom:1px solid #463d39}
 html{height:100%}
