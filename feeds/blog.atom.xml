@@ -2,24 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/blog.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-03-23T00:00:00+01:00</updated><entry><title>Toulon : Compte rendu de ma JIL 2013</title><link href="http://blog.dovero.org/posts/2013/03/23/toulon-compte-rendu-de-ma-jil-2013/" rel="alternate"></link><updated>2013-03-23T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-03-23:posts/2013/03/23/toulon-compte-rendu-de-ma-jil-2013/</id><summary type="html">&lt;p&gt;Pour la troisième année consécutive, j'ai l'occasion d'assister à la Journée de l'Informatique Libre à Toulon, organisée par le &lt;a class="reference external" href="//www.cill-isen.fr/"&gt;CILL&lt;/a&gt; de l'ISEN.  L'occasion pour moi de rencontrer des gens intéressants et de cultiver encore un peu plus ma fibre libriste. Je vais racconter dans ce billet mes impressions sur cette journée.&lt;/p&gt;
 &lt;div class="section" id="l-arrivee"&gt;
 &lt;h2&gt;L'arrivée&lt;/h2&gt;
-&lt;p&gt;Cette année, tout comme l'année dernière, la JIL prend place à l'ISEN. À peine arrivé et c'est déjà l'occasion de revoir les visages familiers des acteurs des GULL locaux ( &lt;a class="reference external" href="//gullivar.org/"&gt;Gullivar&lt;/a&gt; et &lt;a class="reference external" href="//toulonux.tuxfamily.org/"&gt;Toulonux&lt;/a&gt; en tête, mais était aussi présent &lt;a class="reference external" href="//www.linux-azur.org/"&gt;LinuxAzur&lt;/a&gt; et &lt;a class="reference external" href="//mandraix.onlynux.org/"&gt;Mandr'aix&lt;/a&gt; ).
+&lt;p&gt;Cette année, tout comme l'année dernière, la JIL prend place à l'ISEN. À peine arrivé et c'est déjà l'occasion de revoir les visages familiers des acteurs des GULL locaux (&lt;a class="reference external" href="//gullivar.org/"&gt;Gullivar&lt;/a&gt; et &lt;a class="reference external" href="//toulonux.tuxfamily.org/"&gt;Toulonux&lt;/a&gt; en tête, mais étaient aussi présents &lt;a class="reference external" href="//www.linux-azur.org/"&gt;LinuxAzur&lt;/a&gt; et &lt;a class="reference external" href="//mandraix.onlynux.org/"&gt;Mandr'aix&lt;/a&gt;).
 La conférence d'ouverture est retardée de 30 minutes pour laisser le temps aux personnes présentes de se retrouver à la cantine.
 Amandine Benoit ( la responsable de la JIL ) prend la parole et c'est l'occasion de nous souhaiter la bienvenue et de remercier les acteurs qui ont rendu cette journée possible. Sans plus de fioriture la première conférence est annoncée.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="matin"&gt;
 &lt;h2&gt;Matin&lt;/h2&gt;
 &lt;div class="section" id="conference-formats-ouverts"&gt;
-&lt;h3&gt;Conférence : Formats-Ouverts&lt;/h3&gt;
+&lt;h3&gt;Conférence : Formats Ouverts&lt;/h3&gt;
 &lt;p&gt;Thierry Stœhr cofondateur et vice président de l'&lt;a class="reference external" href="//aful.org/"&gt;AFUL&lt;/a&gt;, auteur du site &lt;a class="reference external" href="//formats-ouverts.org/"&gt;formats-ouverts.org&lt;/a&gt; et professeur à l'université Paris-Diderot,  nous présente la première conférence de la journée : les formats ouverts. Le ton est donné.
 On y apprend ce qu'est un format et ce que Thierry Stœhr appelle le « mille-feuilles » : un empilement de couches afin de rendre une information pérenne dans le temps. Le ton est léger et très pédagogue mais on parle néanmoins de limitations techniques (support, connectique, langue etc...).
-L'exemple choisit est très parlant : il s'agit de récupérer un fichier archivé. Dans un premier temps récupérer le support et un lecteur capable de lire ce support. puis avoir la bonne connectique afin de le relier à un PC, avoir le bon logiciel ( et la bonne version ! ) pour lire ce fichier etc... Les 45 minutes sont avalées d'une traite. Presque trop court pour parler d'un sujet aussi vaste.&lt;/p&gt;
+L'exemple choisi est très parlant : il s'agit de récupérer un fichier archivé. Dans un premier temps, récupérer le support et un lecteur capable de lire ce support. puis avoir la bonne connectique afin de le relier à un PC, avoir le bon logiciel (et la bonne version !) pour lire ce fichier etc... Les 45 minutes sont avalées d'une traite. Presque trop court pour parler d'un sujet aussi vaste.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="conference-comment-faire-de-l-open-source-quand-on-est-une-entreprise"&gt;
 &lt;h3&gt;Conférence : Comment faire de l'open source quand on est une entreprise&lt;/h3&gt;
-&lt;p&gt;&lt;a class="reference external" href="//hybird.org/"&gt;Hybird&lt;/a&gt; ( la société éditrice de &lt;a class="reference external" href="//www.cremecrm.com/"&gt;Crème CRM&lt;/a&gt; ) nous parle de son expérience en temps qu'éditeur de logiciel libre à travers un de ses fondateurs. Il nous dévoile ses recettes pour réussir à concilier business et logiciel libre. On y apprend notamment que le choix de la licence et du nom du logiciel sont les étapes les plus importantes lors du lancement de celui-ci. En effet pour attirer des intégrateurs, un nom simple et original est un avantage non négligeable. Il nous conseille aussi la plus grande transparence en ce qui concerne les méthodes commerciales.
+&lt;p&gt;&lt;a class="reference external" href="//hybird.org/"&gt;Hybird&lt;/a&gt; (la société éditrice de &lt;a class="reference external" href="//www.cremecrm.com/"&gt;Crème CRM&lt;/a&gt;) nous parle de son expérience en temps qu'éditeur de logiciel libre à travers un de ses fondateurs. Il nous dévoile ses recettes pour réussir à concilier business et logiciel libre. On y apprend notamment que le choix de la licence et du nom du logiciel sont les étapes les plus importantes lors du lancement de celui-ci. En effet pour attirer des intégrateurs, un nom simple et original est un avantage non négligeable. Il nous conseille aussi la plus grande transparence en ce qui concerne les méthodes commerciales.
 Personellement j'aurai intitulé cette conférence : « business éthique ».&lt;/p&gt;
 &lt;p&gt;La conférence se conclue sur une très belle phrase rappelée par Thierry Stœhr : &amp;quot;Expliquez leur qu'ils peuvent partir et ils viendront&amp;quot;&lt;/p&gt;
-&lt;p&gt;C'est après cette conférence que je choisi de prendre ma pause déjeuner.&lt;/p&gt;
+&lt;p&gt;C'est après cette conférence que je choisis de prendre ma pause déjeuner.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="midi"&gt;
@@ -27,7 +27,7 @@ Personellement j'aurai intitulé cette conférence : « business éthique ».&lt
 &lt;div class="section" id="atelier-osm"&gt;
 &lt;h3&gt;Atelier OSM&lt;/h3&gt;
 &lt;p&gt;C'est un atelier que je n'avais pas prévu de faire. J'ai été happé par la présentation des projets réalisés grâce à &lt;a class="reference external" href="//openstreetmap.org/"&gt;Open Street Map&lt;/a&gt; : MapOSMatic, Carte des trains en temps réel, cartes des pistes de ski, des réseaux de transports en commun et j'en passe.
-On discute contributions, Nicolas Moyroud ( un contributeur très très ( très ! ) actif dans l'Héraut ) me montre comment utiliser les fonctions avancées de &lt;a class="reference external" href="//josm.openstreetmap.de/"&gt;JOSM&lt;/a&gt;.
+On discute contributions, Nicolas Moyroud (un contributeur très très (très !) actif dans l'Héraut) me montre comment utiliser les fonctions avancées de &lt;a class="reference external" href="//josm.openstreetmap.de/"&gt;JOSM&lt;/a&gt;.
 Malheureusement, le temps est pluvieux et il a raison de mon courage pour aller cartographier les rues alentours.
 Cet atelier m'a donné envie de contribuer à mon niveau et d'enrichir la carte de mes tracés GPS. Je ne peux que vous inviter à vous rendre à la cartoparty la plus proche de chez vous.&lt;/p&gt;
 &lt;/div&gt;
@@ -36,8 +36,8 @@ Cet atelier m'a donné envie de contribuer à mon niveau et d'enrichir la carte 
 &lt;h2&gt;Après-midi&lt;/h2&gt;
 &lt;div class="section" id="conference-latex"&gt;
 &lt;h3&gt;Conférence : LaTeX&lt;/h3&gt;
-&lt;p&gt;Thierry Stœhr est de nouveau sur le devant de la scène malgré un problème technique de tableau noir ( ah la technologie ! ) et cette fois c'est LaTeX qu'il nous présente.
-Un historique et une explication rapide de ce qu'est LaTeX puis une démo très simple ( avec du &lt;a class="reference external" href="//orgmode.org/"&gt;Orgmode&lt;/a&gt; inside ) et c'est déjà la fin !&lt;/p&gt;
+&lt;p&gt;Thierry Stœhr est de nouveau sur le devant de la scène malgré un problème technique de tableau noir (ah la technologie !) et cette fois c'est LaTeX qu'il nous présente.
+Un historique et une explication rapide de ce qu'est LaTeX puis une démo très simple (avec du &lt;a class="reference external" href="//orgmode.org/"&gt;Orgmode&lt;/a&gt; inside) et c'est déjà la fin !&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="conference-les-licences-libres-comme-un-acte-de-resistance"&gt;
 &lt;h3&gt;Conférence : Les licences libres comme un acte de résistance&lt;/h3&gt;
@@ -45,11 +45,11 @@ Un historique et une explication rapide de ce qu'est LaTeX puis une démo très 
 &lt;/div&gt;
 &lt;div class="section" id="conference-creative-commons"&gt;
 &lt;h3&gt;Conférence : Creative Commons&lt;/h3&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://twitter.com/legui"&gt;Guillaume Pérocheau&lt;/a&gt;, Enseignant chercheur à l'ISEN, nous explique la notion de bien communs et présente les licences creative commons.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://twitter.com/legui"&gt;Guillaume Pérocheau&lt;/a&gt;, Enseignant chercheur à l'ISEN, nous explique la notion de biens communs et présente les licences creative commons.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="conference-openpgp"&gt;
 &lt;h3&gt;Conférence : OpenPGP&lt;/h3&gt;
-&lt;p&gt;Dernière conférence de la journée ! Le sujet n'est pas des plus simples et Jean-Jacques Brucker n'hésite pas à troller pour tenir la salle en éveil. Le sujet aborde la problématique de la confiance sur Internet ( et notamment dans les mails mais pas que ! ), de l'anonymat ( je pense que j'y reviendrai ) et nous présente son projet : &lt;a class="reference external" href="//openudc.org/"&gt;OpenUDC&lt;/a&gt; ( alternative à Bitcoin ).&lt;/p&gt;
+&lt;p&gt;Dernière conférence de la journée ! Le sujet n'est pas des plus simples et Jean-Jacques Brucker n'hésite pas à troller pour tenir la salle en éveil. Le sujet aborde la problématique de la confiance sur Internet (et notamment dans les mails mais pas que !), de l'anonymat (je pense que j'y reviendrai) et nous présente son projet : &lt;a class="reference external" href="//openudc.org/"&gt;OpenUDC&lt;/a&gt; (alternative à Bitcoin).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="fermeture"&gt;
 &lt;h3&gt;Fermeture&lt;/h3&gt;
@@ -58,8 +58,8 @@ Un historique et une explication rapide de ce qu'est LaTeX puis une démo très 
 &lt;/div&gt;
 &lt;div class="section" id="conclusion"&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;La journée était bien remplie et les conférences en parrallèle des ateliers rend l'organisation de la journée difficile ( l'atelier rasberrypi à phagocyté la conférence de Hybird etc... ). Le programme est tellement dense que je n'ai pas pu prendre le temps de discuter avec les intervenants après coup. Un petit regret pour ma part.
-Pour finir, je tiens moi même à remercier les organisateurs ainsi que les conférenciers et les intervenants ( qui pour certains viennent de très loin ) pour cette journée. Je vais reprendre honteusement la devise de &lt;a class="reference external" href="//www.framasoft.net/"&gt;Framasoft&lt;/a&gt; : la route est longue mais la voie est libre. Et heureusement ces personnes, aujourd'hui, sont là pour nous indiquer le chemin et nous aider à faire les premiers pas.&lt;/p&gt;
+&lt;p&gt;La journée était bien remplie et les conférences en parallèle des ateliers rendent l'organisation de la journée difficile (l'atelier rasberrypi à phagocyté la conférence de Hybird etc...). Le programme est tellement dense que je n'ai pas pu prendre le temps de discuter avec les intervenants après coup. Un petit regret pour ma part.
+Pour finir, je tiens moi même à remercier les organisateurs ainsi que les conférenciers et les intervenants (qui pour certains viennent de très loin) pour cette journée. Je vais reprendre honteusement la devise de &lt;a class="reference external" href="//www.framasoft.net/"&gt;Framasoft&lt;/a&gt; : la route est longue mais la voie est libre. Et heureusement ces personnes, aujourd'hui, sont là pour nous indiquer le chemin et nous aider à faire les premiers pas.&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="JIL"></category><category term="Toulon"></category><category term="libre"></category></entry><entry><title>Lice : le générateur de licences Open Source(s)</title><link href="http://blog.dovero.org/posts/2013/01/25/lice-le-generateur-de-licences-open-sources/" rel="alternate"></link><updated>2013-01-25T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-25:posts/2013/01/25/lice-le-generateur-de-licences-open-sources/</id><summary type="html">&lt;p&gt;Il y a des petits programmes dont on ne parle pas parce-qu'ils ne font rien de spectaculaire. Et pourtant ils sont tellement pratiques que l'on a du mal à s'en passer. Le petit logiciel que je vais présenter tombe dans cette catégorie.&lt;/p&gt;
 &lt;div class="section" id="que-fait-il"&gt;
