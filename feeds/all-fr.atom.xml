@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all-fr.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-03-23T00:00:00+01:00</updated><entry><title>Toulon : Compte rendu de ma JIL 2013</title><link href="http://blog.dovero.org/posts/2013/03/23/toulon-compte-rendu-de-ma-jil-2013/" rel="alternate"></link><updated>2013-03-23T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-03-23:posts/2013/03/23/toulon-compte-rendu-de-ma-jil-2013/</id><summary type="html">&lt;p&gt;Pour la troisième année consécutive, j'ai l'occasion d'assister à la Journée de l'Informatique Libre à Toulon, organisée par le &lt;a class="reference external" href="//www.cill-isen.fr/"&gt;CILL&lt;/a&gt; de l'ISEN.  L'occasion pour moi de rencontrer des gens intéressants et de cultiver encore un peu plus ma fibre libriste. Je vais racconter dans ce billet mes impressions sur cette journée.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all-fr.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-04-02T00:00:00+02:00</updated><entry><title>Sheevaplug : installation</title><link href="http://blog.dovero.org/posts/2013/04/02/sheevaplug-installation/" rel="alternate"></link><updated>2013-04-02T00:00:00+02:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-04-02:posts/2013/04/02/sheevaplug-installation/</id><summary type="html">&lt;p&gt;À l'heure où la popularité du Raspberrypi n'en fini pas de grimper, j'ai ressorti mon &lt;a class="reference external" href="https://fr.wikipedia.org/wiki/SheevaPlug"&gt;Sheevaplug&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Plusieurs raisons à cela. Déjà je me sens bien plus à l'aise avec l'administration système (depuis que je suis passé à Archlinux il y a 2 ans). Deuxième raison, depuis l'annonce de la fermeture de Google Reader, j'ai décidé de passer plus de temps pour m'auto-héberger.&lt;/p&gt;
+&lt;p&gt;Je vais donc expliquer pas à pas comment mettre en place un serveur auto-hébergé grace à un bon vieux Sheevaplug.&lt;/p&gt;
+&lt;div class="section" id="materiel"&gt;
+&lt;h2&gt;Matériel&lt;/h2&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;Le Sheevaplug n'est pas un matériel récent. Cependant il est &lt;a class="reference external" href="//archlinuxarm.org/platforms/armv5/sheevaplug"&gt;plus que correct&lt;/a&gt; et à de nombreux avantages :&lt;/dt&gt;
+&lt;dd&gt;&lt;ul class="first last simple"&gt;
+&lt;li&gt;consomation au démarrage : 5W&lt;/li&gt;
+&lt;li&gt;consomation  moyenne : 3,5W&lt;/li&gt;
+&lt;li&gt;faible encombrement&lt;/li&gt;
+&lt;li&gt;très silencieux&lt;/li&gt;
+&lt;li&gt;ne chauffe pas&lt;/li&gt;
+&lt;li&gt;matériel très bien supporté&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;La première étape avant de jouer avec ce petit serveur est de vérifier que l'on arrive à se connecter par la liaison série.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="connection-serie"&gt;
+&lt;h2&gt;Connection série&lt;/h2&gt;
+&lt;p&gt;Si votre système inclu udev, vous ne devriez avoir aucun problème pour vous connecter par la liaison série (JTAG) avec screen :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; screen /dev/ttyUSB0 115200
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Normalement, en branchant le Sheevaplug puis en lançant la commande ci dessus, on doit voir la séquence de boot. Si ce n'est pas le cas, vérifiez que votre Sheevaplug est bien reconnu par votre système :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; lsusb
+&lt;span class="go"&gt;Bus 001 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub&lt;/span&gt;
+&lt;span class="go"&gt;Bus 004 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub&lt;/span&gt;
+&lt;span class="go"&gt;Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub&lt;/span&gt;
+&lt;span class="go"&gt;Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub&lt;/span&gt;
+&lt;span class="go"&gt;Bus 003 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub&lt;/span&gt;
+&lt;span class="go"&gt;Bus 004 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub&lt;/span&gt;
+&lt;span class="go"&gt;Bus 001 Device 003: ID 058f:b002 Alcor Micro Corp.&lt;/span&gt;
+&lt;span class="go"&gt;Bus 004 Device 003: ID 9e88:9e8f&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;C'est la dernière ligne qui nous intéresse ici. Ces 2 valeurs hexadécimales sont les identifiants spécifiques au Sheevaplug. Si vous n'avez pas la dernière ligne ou que la liaison série ne fonctionne pas :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;#&lt;/span&gt; modprobe usbserial &lt;span class="nv"&gt;vendor&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;0x9e88 &lt;span class="nv"&gt;product&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;0x9e8f
+&lt;span class="gp"&gt;#&lt;/span&gt; modprobe ftdi_sio &lt;span class="nv"&gt;vendor&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;0x9e88 &lt;span class="nv"&gt;product&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;0x9e8f
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On peut admirer la séquence de boot.
+Mon Sheevaplug a été livré avec une Debian Lenny dans la NAND. J'ai rapidement joué avec (utilisateur « root » et mot de passe « nosoup4u » par défaut). Cependant j'ai très vite voulu installer une distribution que j'ai l'habitude d'administrer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="installation-de-la-distribution-archlinux-arm"&gt;
+&lt;h2&gt;Installation de la distribution Archlinux ARM&lt;/h2&gt;
+&lt;p&gt;Le site d'Archlinux ARM propose un pack pour installer la distribution sur la NAND ou la carte SD. Après avoir télécharger les 2 archives et suivi la procédure un premier problème se pose : le fichier &lt;code&gt;runme.php&lt;/code&gt; donné n'est pas compatible avec la dernière version de php.
+Il faut modifier le tag de la première ligne du fichier &lt;code&gt;runme.php&lt;/code&gt; :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Il faut également commenter les lignes 7,8 et 43,44 (vérification root et système windows).&lt;/p&gt;
+&lt;p&gt;Mais ce n'est pas tout : les fichiers d'&lt;a class="reference external" href="//openocd.sourceforge.net/"&gt;OpenOCD&lt;/a&gt; fournis dans le pack ne sont pas à jour ni utilisables sur mon système hôte Archlinux 64 bits.&lt;/p&gt;
+&lt;p&gt;Pour y remédier j'ai installé OpenOCD puis j'ai copié les fichiers suivants (en supposant que le pack d'installation a été décompréssé dans un dossier &lt;code&gt;sheevapluginstall&lt;/code&gt;) :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; cp /usr/share/openocd/scripts/board/sheevaplug.cfg &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="go"&gt;    sheevapluginstall/uboot/openocd/config/board/sheevaplug.cfg&lt;/span&gt;
+&lt;span class="gp"&gt;$&lt;/span&gt; cp /usr/share/openocd/scripts/interface/sheevaplug.cfg &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="go"&gt;    sheevapluginstall/uboot/openocd/config/interface/sheevaplug.cfg&lt;/span&gt;
+&lt;span class="gp"&gt;$&lt;/span&gt; cp /usr/share/openocd/scripts/target/feroceon.cfg &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="go"&gt;    sheevapluginstall/uboot/openocd/config/board/feroceon.cfg&lt;/span&gt;
+&lt;span class="gp"&gt;$&lt;/span&gt; cp /usr/bin/openocd sheevapluginstall/uboot/openocd/openocd
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Voilà pour les modifications.&lt;/p&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;Maintenant en suivant les instructions de la page d'Archlinux ARM :&lt;/dt&gt;
+&lt;dd&gt;&lt;ul class="first last simple"&gt;
+&lt;li&gt;formater une clé usb en FAT32 et y copier les fichiers modules.tar.gz, uImage et initrd&lt;/li&gt;
+&lt;li&gt;formater une carte SD&lt;/li&gt;
+&lt;li&gt;insérer la carte SD et la clé usb dans le Sheevaplug, connecter le JTAG et un câble ethernet&lt;/li&gt;
+&lt;li&gt;mettre sous tension, se connecter en série et interrompre le boot automatique&lt;/li&gt;
+&lt;li&gt;lancer la commande &lt;code&gt;sudo php runme.php mmc&lt;/code&gt; sur le système hôte.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;Le script se termine sur une erreur mais l'opération se termine toutefois correctement. Sur le terminal de la liaison série, on peut voir le boot du système sur la clé usb et l'installation d'Archlinux ARM sur la carte SD. L'opération dure environ 5 minutes. Après ça le Sheevaplug redémarre encore et on boot sur la carte SD cette fois et c'est systemd et Archlinux qui nous accueil (utilisateur et mot de passe « root » par défaut).&lt;/p&gt;
+&lt;p&gt;C'est tout pour ce billet. La suite traitera des premières étapes d'administration de votre serveur.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="sheevaplug"></category><category term="archlinux"></category></entry><entry><title>Toulon : Compte rendu de ma JIL 2013</title><link href="http://blog.dovero.org/posts/2013/03/23/toulon-compte-rendu-de-ma-jil-2013/" rel="alternate"></link><updated>2013-03-23T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-03-23:posts/2013/03/23/toulon-compte-rendu-de-ma-jil-2013/</id><summary type="html">&lt;p&gt;Pour la troisième année consécutive, j'ai l'occasion d'assister à la Journée de l'Informatique Libre à Toulon, organisée par le &lt;a class="reference external" href="//www.cill-isen.fr/"&gt;CILL&lt;/a&gt; de l'ISEN.  L'occasion pour moi de rencontrer des gens intéressants et de cultiver encore un peu plus ma fibre libriste. Je vais racconter dans ce billet mes impressions sur cette journée.&lt;/p&gt;
 &lt;div class="section" id="l-arrivee"&gt;
 &lt;h2&gt;L'arrivée&lt;/h2&gt;
 &lt;p&gt;Cette année, tout comme l'année dernière, la JIL prend place à l'ISEN. À peine arrivé et c'est déjà l'occasion de revoir les visages familiers des acteurs des GULL locaux (&lt;a class="reference external" href="//gullivar.org/"&gt;Gullivar&lt;/a&gt; et &lt;a class="reference external" href="//toulonux.tuxfamily.org/"&gt;Toulonux&lt;/a&gt; en tête, mais étaient aussi présents &lt;a class="reference external" href="//www.linux-azur.org/"&gt;LinuxAzur&lt;/a&gt; et &lt;a class="reference external" href="//mandraix.onlynux.org/"&gt;Mandr'aix&lt;/a&gt;).

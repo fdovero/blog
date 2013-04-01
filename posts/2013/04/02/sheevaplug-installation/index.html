@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+                <title>/dev/log</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="http://blog.dovero.org/theme/css/main.css" type="text/css" />
+                <link href="http://blog.dovero.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="/dev/log Full Atom Feed" />
+                                                <link href="http://blog.dovero.org/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate" title="/dev/log Categories Atom Feed" />
+                                        </head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+            <h1><a href="http://blog.dovero.org">/dev/log<br><strong>Journal d'un dev</strong></a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+                    <li><a href="/">Home</a></li>
+                                      <li><a href="http://blog.dovero.org/pages/about.html">About</a></li>
+                      <li><a href="http://blog.dovero.org/pages/work.html">Work</a></li>
+                          </ul></nav><!-- /#menu -->
+        <section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="posts/2013/04/02/sheevaplug-installation/" rel="bookmark"
+         title="Permalink to Sheevaplug : installation">Sheevaplug : installation</a></h2>
+  
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2013-04-02T00:00:00">
+      mar. 02 avril 2013
+    </abbr>
+        <address class="vcard author">
+      By <a class="url fn" href="http://blog.dovero.org/author/fabien-dovero.html">Fabien Dovero</a>
+    </address>
+      </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <p>À l'heure où la popularité du Raspberrypi n'en fini pas de grimper, j'ai ressorti mon <a class="reference external" href="https://fr.wikipedia.org/wiki/SheevaPlug">Sheevaplug</a>.</p>
+<p>Plusieurs raisons à cela. Déjà je me sens bien plus à l'aise avec l'administration système (depuis que je suis passé à Archlinux il y a 2 ans). Deuxième raison, depuis l'annonce de la fermeture de Google Reader, j'ai décidé de passer plus de temps pour m'auto-héberger.</p>
+<p>Je vais donc expliquer pas à pas comment mettre en place un serveur auto-hébergé grace à un bon vieux Sheevaplug.</p>
+<div class="section" id="materiel">
+<h2>Matériel</h2>
+<dl class="docutils">
+<dt>Le Sheevaplug n'est pas un matériel récent. Cependant il est <a class="reference external" href="//archlinuxarm.org/platforms/armv5/sheevaplug">plus que correct</a> et à de nombreux avantages :</dt>
+<dd><ul class="first last simple">
+<li>consomation au démarrage : 5W</li>
+<li>consomation  moyenne : 3,5W</li>
+<li>faible encombrement</li>
+<li>très silencieux</li>
+<li>ne chauffe pas</li>
+<li>matériel très bien supporté</li>
+</ul>
+</dd>
+</dl>
+<p>La première étape avant de jouer avec ce petit serveur est de vérifier que l'on arrive à se connecter par la liaison série.</p>
+</div>
+<div class="section" id="connection-serie">
+<h2>Connection série</h2>
+<p>Si votre système inclu udev, vous ne devriez avoir aucun problème pour vous connecter par la liaison série (JTAG) avec screen :</p>
+<div class="highlight"><pre><span class="gp">$</span> screen /dev/ttyUSB0 115200
+</pre></div>
+<p>Normalement, en branchant le Sheevaplug puis en lançant la commande ci dessus, on doit voir la séquence de boot. Si ce n'est pas le cas, vérifiez que votre Sheevaplug est bien reconnu par votre système :</p>
+<div class="highlight"><pre><span class="gp">$</span> lsusb
+<span class="go">Bus 001 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub</span>
+<span class="go">Bus 004 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub</span>
+<span class="go">Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub</span>
+<span class="go">Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub</span>
+<span class="go">Bus 003 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub</span>
+<span class="go">Bus 004 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub</span>
+<span class="go">Bus 001 Device 003: ID 058f:b002 Alcor Micro Corp.</span>
+<span class="go">Bus 004 Device 003: ID 9e88:9e8f</span>
+</pre></div>
+<p>C'est la dernière ligne qui nous intéresse ici. Ces 2 valeurs hexadécimales sont les identifiants spécifiques au Sheevaplug. Si vous n'avez pas la dernière ligne ou que la liaison série ne fonctionne pas :</p>
+<div class="highlight"><pre><span class="gp">#</span> modprobe usbserial <span class="nv">vendor</span><span class="o">=</span>0x9e88 <span class="nv">product</span><span class="o">=</span>0x9e8f
+<span class="gp">#</span> modprobe ftdi_sio <span class="nv">vendor</span><span class="o">=</span>0x9e88 <span class="nv">product</span><span class="o">=</span>0x9e8f
+</pre></div>
+<p>On peut admirer la séquence de boot.
+Mon Sheevaplug a été livré avec une Debian Lenny dans la NAND. J'ai rapidement joué avec (utilisateur « root » et mot de passe « nosoup4u » par défaut). Cependant j'ai très vite voulu installer une distribution que j'ai l'habitude d'administrer.</p>
+</div>
+<div class="section" id="installation-de-la-distribution-archlinux-arm">
+<h2>Installation de la distribution Archlinux ARM</h2>
+<p>Le site d'Archlinux ARM propose un pack pour installer la distribution sur la NAND ou la carte SD. Après avoir télécharger les 2 archives et suivi la procédure un premier problème se pose : le fichier <code>runme.php</code> donné n'est pas compatible avec la dernière version de php.
+Il faut modifier le tag de la première ligne du fichier <code>runme.php</code> :</p>
+<div class="highlight"><pre><span class="cp">&lt;?php</span>
+</pre></div>
+<p>Il faut également commenter les lignes 7,8 et 43,44 (vérification root et système windows).</p>
+<p>Mais ce n'est pas tout : les fichiers d'<a class="reference external" href="//openocd.sourceforge.net/">OpenOCD</a> fournis dans le pack ne sont pas à jour ni utilisables sur mon système hôte Archlinux 64 bits.</p>
+<p>Pour y remédier j'ai installé OpenOCD puis j'ai copié les fichiers suivants (en supposant que le pack d'installation a été décompréssé dans un dossier <code>sheevapluginstall</code>) :</p>
+<div class="highlight"><pre><span class="gp">$</span> cp /usr/share/openocd/scripts/board/sheevaplug.cfg <span class="se">\</span>
+<span class="go">    sheevapluginstall/uboot/openocd/config/board/sheevaplug.cfg</span>
+<span class="gp">$</span> cp /usr/share/openocd/scripts/interface/sheevaplug.cfg <span class="se">\</span>
+<span class="go">    sheevapluginstall/uboot/openocd/config/interface/sheevaplug.cfg</span>
+<span class="gp">$</span> cp /usr/share/openocd/scripts/target/feroceon.cfg <span class="se">\</span>
+<span class="go">    sheevapluginstall/uboot/openocd/config/board/feroceon.cfg</span>
+<span class="gp">$</span> cp /usr/bin/openocd sheevapluginstall/uboot/openocd/openocd
+</pre></div>
+<p>Voilà pour les modifications.</p>
+<dl class="docutils">
+<dt>Maintenant en suivant les instructions de la page d'Archlinux ARM :</dt>
+<dd><ul class="first last simple">
+<li>formater une clé usb en FAT32 et y copier les fichiers modules.tar.gz, uImage et initrd</li>
+<li>formater une carte SD</li>
+<li>insérer la carte SD et la clé usb dans le Sheevaplug, connecter le JTAG et un câble ethernet</li>
+<li>mettre sous tension, se connecter en série et interrompre le boot automatique</li>
+<li>lancer la commande <code>sudo php runme.php mmc</code> sur le système hôte.</li>
+</ul>
+</dd>
+</dl>
+<p>Le script se termine sur une erreur mais l'opération se termine toutefois correctement. Sur le terminal de la liaison série, on peut voir le boot du système sur la clé usb et l'installation d'Archlinux ARM sur la carte SD. L'opération dure environ 5 minutes. Après ça le Sheevaplug redémarre encore et on boot sur la carte SD cette fois et c'est systemd et Archlinux qui nous accueil (utilisateur et mot de passe « root » par défaut).</p>
+<p>C'est tout pour ce billet. La suite traitera des premières étapes d'administration de votre serveur.</p>
+</div>
+
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+            <div class="social-links">
+                            <a href="//twitter.com/azhagg" target="_blank"><i class="icon-twitter"></i></a>
+                            <a href="//github.com/fdovero" target="_blank"><i class="icon-github"></i></a>
+                            <a href="//flattr.com/thing/1129258/devlog-journal-dun-dev" target="_blank"><i class="icon-flattr"></i></a>
+             
+            </div>
+            <div id="credits">
+               Except where otherwise noted, content on this site is licensed under<a href="//creativecommons.org/licenses/by-sa/3.0/deed.en"><i class="icon-cc"></i><i class="icon-cc-by"></i><i class="icon-cc-sa"></i></a>
+            </div>
+            <address id="about" class="vcard body">
+                Proudly powered by <a href="//getpelican.com/">Pelican</a>,
+                vautour theme by <a href="//blog.dovero.org">Fabien Dovero</a>
+            </address><!-- /#about --> 
+        </footer><!-- /#contentinfo -->
+</body>
+</html>
