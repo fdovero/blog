@@ -80,7 +80,7 @@ Il faut modifier le tag de la première ligne du fichier &lt;code&gt;runme.php&l
 &lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -c sheevaplug_reflash_uboot&amp;quot;;&lt;/span&gt;
 &lt;span class="x"&gt;$openocd_cmd.= ($WIN32==1) ? &amp;quot; -c init&amp;quot; : &amp;quot; -c exit&amp;quot;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Voilà pour les modifications. Je met à disposition &lt;a class="reference external" href="https://github.com/fdovero/sheevaplug-archlinux64"&gt;mon fichier runme.php&lt;/a&gt; au cas où...&lt;/p&gt;
+&lt;p&gt;Voilà pour les modifications. Je met à disposition &lt;a class="reference external" href="https://github.com/fdovero/sheevaplug-archlinux64"&gt;mon fichier runme&lt;/a&gt; au cas où...&lt;/p&gt;
 &lt;dl class="docutils"&gt;
 &lt;dt&gt;Maintenant en suivant les instructions de la page d'Archlinux ARM :&lt;/dt&gt;
 &lt;dd&gt;&lt;ul class="first last simple"&gt;
