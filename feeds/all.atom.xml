@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-04-02T00:00:00+02:00</updated><entry><title>Sheevaplug : installation</title><link href="http://blog.dovero.org/posts/2013/04/02/sheevaplug-installation/" rel="alternate"></link><updated>2013-04-02T00:00:00+02:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-04-02:posts/2013/04/02/sheevaplug-installation/</id><summary type="html">&lt;p&gt;À l'heure où la popularité du Raspberrypi n'en fini pas de grimper, j'ai ressorti mon &lt;a class="reference external" href="https://fr.wikipedia.org/wiki/SheevaPlug"&gt;Sheevaplug&lt;/a&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-04-02T00:00:00+02:00</updated><entry><title>Sheevaplug : installation d'Archlinux ARM</title><link href="http://blog.dovero.org/posts/2013/04/02/sheevaplug-installation-darchlinux-arm/" rel="alternate"></link><updated>2013-04-02T00:00:00+02:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-04-02:posts/2013/04/02/sheevaplug-installation-darchlinux-arm/</id><summary type="html">&lt;p&gt;À l'heure où la popularité du Raspberrypi n'en fini pas de grimper, j'ai ressorti mon &lt;a class="reference external" href="https://fr.wikipedia.org/wiki/SheevaPlug"&gt;Sheevaplug&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Plusieurs raisons à cela. Déjà je me sens bien plus à l'aise avec l'administration système (depuis que je suis passé à Archlinux il y a 2 ans). Deuxième raison, depuis l'annonce de la fermeture de Google Reader, j'ai décidé de passer plus de temps pour m'auto-héberger.&lt;/p&gt;
 &lt;p&gt;Je vais donc expliquer pas à pas comment mettre en place un serveur auto-hébergé grace à un bon vieux Sheevaplug.&lt;/p&gt;
 &lt;div class="section" id="materiel"&gt;
@@ -58,7 +58,29 @@ Il faut modifier le tag de la première ligne du fichier &lt;code&gt;runme.php&l
 &lt;span class="go"&gt;    sheevapluginstall/uboot/openocd/config/board/feroceon.cfg&lt;/span&gt;
 &lt;span class="gp"&gt;$&lt;/span&gt; cp /usr/bin/openocd sheevapluginstall/uboot/openocd/openocd
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Voilà pour les modifications.&lt;/p&gt;
+&lt;p&gt;Il y a aussi une solution plus simple qui consiste à modifier les lignes de &lt;code&gt;runme.php&lt;/code&gt; :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;chdir(&amp;quot;uboot&amp;quot;);&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd= &amp;quot;openocd/openocd&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= ($WIN32==1) ? &amp;quot;.exe&amp;quot; : &amp;quot;&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -f openocd/config/board/sheevaplug.cfg&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -s openocd/config/&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -c init&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -c sheevaplug_reflash_uboot_env&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -c sheevaplug_reflash_uboot&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= ($WIN32==1) ? &amp;quot; -c init&amp;quot; : &amp;quot; -c exit&amp;quot;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;pour obtenir :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;chdir(&amp;quot;uboot&amp;quot;);&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd= &amp;quot;/usr/bin/openocd&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= ($WIN32==1) ? &amp;quot;.exe&amp;quot; : &amp;quot;&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -f /usr/share/openocd/scripts/board/sheevaplug.cfg&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -s /usr/share/openocd/scripts/&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -c init&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -c sheevaplug_reflash_uboot_env&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -c sheevaplug_reflash_uboot&amp;quot;;&lt;/span&gt;
+&lt;span class="x"&gt;$openocd_cmd.= ($WIN32==1) ? &amp;quot; -c init&amp;quot; : &amp;quot; -c exit&amp;quot;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Voilà pour les modifications. Je met à disposition &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;`mon fichier runme.php`_&lt;/span&gt;&lt;/a&gt; au cas où...&lt;/p&gt;
 &lt;dl class="docutils"&gt;
 &lt;dt&gt;Maintenant en suivant les instructions de la page d'Archlinux ARM :&lt;/dt&gt;
 &lt;dd&gt;&lt;ul class="first last simple"&gt;
@@ -72,6 +94,12 @@ Il faut modifier le tag de la première ligne du fichier &lt;code&gt;runme.php&l
 &lt;/dl&gt;
 &lt;p&gt;Le script se termine sur une erreur mais l'opération se termine toutefois correctement. Sur le terminal de la liaison série, on peut voir le boot du système sur la clé usb et l'installation d'Archlinux ARM sur la carte SD. L'opération dure environ 5 minutes. Après ça le Sheevaplug redémarre encore et on boot sur la carte SD cette fois et c'est systemd et Archlinux qui nous accueil (utilisateur et mot de passe « root » par défaut).&lt;/p&gt;
 &lt;p&gt;C'est tout pour ce billet. La suite traitera des premières étapes d'administration de votre serveur.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/home/azhagg/Workspace/blog.dovero.org/content/blog/sheevaplug_tuto.rst&lt;/tt&gt;, line 117); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;mon fichier runme.php&amp;quot;.&lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="sheevaplug"></category><category term="archlinux"></category></entry><entry><title>Toulon : Compte rendu de ma JIL 2013</title><link href="http://blog.dovero.org/posts/2013/03/23/toulon-compte-rendu-de-ma-jil-2013/" rel="alternate"></link><updated>2013-03-23T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-03-23:posts/2013/03/23/toulon-compte-rendu-de-ma-jil-2013/</id><summary type="html">&lt;p&gt;Pour la troisième année consécutive, j'ai l'occasion d'assister à la Journée de l'Informatique Libre à Toulon, organisée par le &lt;a class="reference external" href="//www.cill-isen.fr/"&gt;CILL&lt;/a&gt; de l'ISEN.  L'occasion pour moi de rencontrer des gens intéressants et de cultiver encore un peu plus ma fibre libriste. Je vais racconter dans ce billet mes impressions sur cette journée.&lt;/p&gt;
 &lt;div class="section" id="l-arrivee"&gt;
