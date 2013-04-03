@@ -114,7 +114,7 @@ Il faut modifier le tag de la première ligne du fichier <code>runme.php</code> 
 <span class="x">$openocd_cmd.= &quot; -c sheevaplug_reflash_uboot&quot;;</span>
 <span class="x">$openocd_cmd.= ($WIN32==1) ? &quot; -c init&quot; : &quot; -c exit&quot;;</span>
 </pre></div>
-<p>Voilà pour les modifications. Je met à disposition <a href="#id1"><span class="problematic" id="id2">`mon fichier runme.php`_</span></a> au cas où...</p>
+<p>Voilà pour les modifications. Je met à disposition <a class="reference external" href="https://github.com/fdovero/sheevaplug-archlinux64">mon fichier runme.php</a> au cas où...</p>
 <dl class="docutils">
 <dt>Maintenant en suivant les instructions de la page d'Archlinux ARM :</dt>
 <dd><ul class="first last simple">
@@ -128,12 +128,6 @@ Il faut modifier le tag de la première ligne du fichier <code>runme.php</code> 
 </dl>
 <p>Le script se termine sur une erreur mais l'opération se termine toutefois correctement. Sur le terminal de la liaison série, on peut voir le boot du système sur la clé usb et l'installation d'Archlinux ARM sur la carte SD. L'opération dure environ 5 minutes. Après ça le Sheevaplug redémarre encore et on boot sur la carte SD cette fois et c'est systemd et Archlinux qui nous accueil (utilisateur et mot de passe « root » par défaut).</p>
 <p>C'est tout pour ce billet. La suite traitera des premières étapes d'administration de votre serveur.</p>
-</div>
-<div class="system-messages section">
-<h2>Docutils System Messages</h2>
-<div class="system-message" id="id1">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/home/azhagg/Workspace/blog.dovero.org/content/blog/sheevaplug_tuto.rst</tt>, line 117); <em><a href="#id2">backlink</a></em></p>
-Unknown target name: &quot;mon fichier runme.php&quot;.</div>
 </div>
 
   </div><!-- /.entry-content -->
