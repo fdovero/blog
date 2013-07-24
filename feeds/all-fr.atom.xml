@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all-fr.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-04-02T00:00:00+02:00</updated><entry><title>Sheevaplug : installation d'Archlinux ARM</title><link href="http://blog.dovero.org/posts/2013/04/02/sheevaplug-installation-darchlinux-arm/" rel="alternate"></link><updated>2013-04-02T00:00:00+02:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-04-02:posts/2013/04/02/sheevaplug-installation-darchlinux-arm/</id><summary type="html">&lt;p&gt;À l'heure où la popularité du Raspberrypi n'en fini pas de grimper, j'ai ressorti mon &lt;a class="reference external" href="https://fr.wikipedia.org/wiki/SheevaPlug"&gt;Sheevaplug&lt;/a&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all-fr.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-07-23T00:00:00+02:00</updated><entry><title>Pathogen : Gerez vos plugins vim efficacement !</title><link href="http://blog.dovero.org/posts/2013/07/23/pathogen-gerez-vos-plugins-vim-efficacement/" rel="alternate"></link><updated>2013-07-23T00:00:00+02:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-07-23:posts/2013/07/23/pathogen-gerez-vos-plugins-vim-efficacement/</id><summary type="html">&lt;p&gt;Je suis un grand utilisateur de vim. C'est bien simple, j'y passe 80% de mon temps (au travail ou en loisir). Du coup, les plugins sont devenus indispensables pour améliorer mon expérience sur cet éditeur hors norme et, avec eux, le besoin de les gérer simplement et efficacement.&lt;/p&gt;
+&lt;div class="section" id="installation-et-configuration-de-pathogen"&gt;
+&lt;h2&gt;Installation et configuration de Pathogen&lt;/h2&gt;
+&lt;p&gt;Commençons par l'installation de &lt;a class="reference external" href="https://github.com/tpope/vim-pathogen"&gt;Pathogen&lt;/a&gt;, qui est un plugin pour gérer le runtimepath de vim. C'est ce plugin qui va nous faciliter la vie!  Il suffit de le télécharger (ou cloner le dépot git) dans &lt;code&gt;~/.vim/autoload/pathogen.vim&lt;/code&gt;.
+Sur Archlinux un paquet est disponible dans &lt;a class="reference external" href="https://aur.archlinux.org/packages/vim-pathogen/"&gt;AUR&lt;/a&gt; pour faciliter la maintenance du script :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; yaourt -Sy vim-pathogen
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Une fois pathogen installé une seule ligne suffit dans votre &lt;code&gt;.vimrc&lt;/code&gt; :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;execute pathogen#infect&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Vous êtes prêt à utiliser efficacement vos plugins !&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="installation-d-un-plugin-vim"&gt;
+&lt;h2&gt;Installation d'un plugin vim&lt;/h2&gt;
+&lt;p&gt;Maintenant que pathogen est installé, passons à l'installation d'un autre plugin : &lt;a class="reference external" href="https://github.com/scrooloose/syntastic"&gt;syntastic&lt;/a&gt; par exemple.&lt;/p&gt;
+&lt;p&gt;Tout d'abord il faut créer un dossier &lt;code&gt;bundle&lt;/code&gt; qui contiendra nos plugins et on initialise un nouveau dépot git :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; mkdir -p .vim/bundle
+&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; .vim/bundle
+
+&lt;span class="gp"&gt;$&lt;/span&gt; git init
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Le dépot nous servira à garder une trace des installations et mises à jour des plugins ainsi qu'a partager la même configuration sur plusieurs machines. On va également exploiter les submodules de git pour gérer nos plugins :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git submodule add http://github.com/scrooloose/syntastic
+&lt;span class="gp"&gt;$&lt;/span&gt; git add .
+&lt;span class="gp"&gt;$&lt;/span&gt; git commit -m &lt;span class="s2"&gt;&amp;quot;installation de syntastic&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pour installer vos plugins sur une autre machine :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git clone http://github.com/username/dotvim.git ~/.vim/bundle
+&lt;span class="gp"&gt;$&lt;/span&gt; git submodule update --init
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ne pas oublier de copier le &lt;code&gt;.vimrc&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mettre-a-jour-les-plugins"&gt;
+&lt;h2&gt;Mettre à jour les plugins&lt;/h2&gt;
+&lt;p&gt;C'est maintenant que les submodules git prennent tout leur intérêt.&lt;/p&gt;
+&lt;p&gt;Pour mettre à jour un plugin particulier :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; .vim/bundle/syntastic
+&lt;span class="gp"&gt;$&lt;/span&gt; git pull origin master
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pour mettre à jour tous les plugins en une seule fois :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git submodule foreach git pull origin master
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Vous n'avez plus de raisons de ne pas utiliser vim !&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="pathogen"></category><category term="vim"></category><category term="git"></category></entry><entry><title>Sheevaplug : installation d'Archlinux ARM</title><link href="http://blog.dovero.org/posts/2013/04/02/sheevaplug-installation-darchlinux-arm/" rel="alternate"></link><updated>2013-04-02T00:00:00+02:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-04-02:posts/2013/04/02/sheevaplug-installation-darchlinux-arm/</id><summary type="html">&lt;p&gt;À l'heure où la popularité du Raspberrypi n'en fini pas de grimper, j'ai ressorti mon &lt;a class="reference external" href="https://fr.wikipedia.org/wiki/SheevaPlug"&gt;Sheevaplug&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Plusieurs raisons à cela. Déjà je me sens bien plus à l'aise avec l'administration système (depuis que je suis passé à Archlinux il y a 2 ans). Deuxième raison, depuis l'annonce de la fermeture de Google Reader, j'ai décidé de passer plus de temps pour m'auto-héberger.&lt;/p&gt;
 &lt;p&gt;Je vais donc expliquer pas à pas comment mettre en place un serveur auto-hébergé grace à un bon vieux Sheevaplug.&lt;/p&gt;
 &lt;div class="section" id="materiel"&gt;
