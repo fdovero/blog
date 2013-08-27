@@ -41,7 +41,17 @@ Sur Archlinux un paquet est disponible dans &lt;a class="reference external" hre
 &lt;p&gt;Pour mettre à jour tous les plugins en une seule fois :&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git submodule foreach git pull origin master
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Vous n'avez plus de raisons de ne pas utiliser vim !&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="supprimer-un-module"&gt;
+&lt;h2&gt;Supprimer un module&lt;/h2&gt;
+&lt;p&gt;Il n'existe aucun moyen de retirer un submodule simplement. Imaginons que l'on veuille retirer le plugin powerline :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; .vim/bundle
+&lt;span class="gp"&gt;$&lt;/span&gt; rm -r powerline
+&lt;span class="gp"&gt;$&lt;/span&gt; rm -r .git/module/powerline
+&lt;span class="gp"&gt;$&lt;/span&gt; git rm --cached powerline
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Mais ce n'est pas tout. Il faut également éditer 2 fichiers et enlever les entrées correspondants à powerline. Ces fichiers sont &lt;code&gt;.gitmodules&lt;/code&gt; et &lt;code&gt;.git/config&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Maintenant, vous n'avez plus de raisons de ne pas utiliser vim !&lt;/p&gt;
 &lt;/div&gt;
 </summary><category term="pathogen"></category><category term="vim"></category><category term="git"></category></entry><entry><title>Sheevaplug : installation d'Archlinux ARM</title><link href="http://blog.dovero.org/posts/2013/04/02/sheevaplug-installation-darchlinux-arm/" rel="alternate"></link><updated>2013-04-02T00:00:00+02:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-04-02:posts/2013/04/02/sheevaplug-installation-darchlinux-arm/</id><summary type="html">&lt;p&gt;À l'heure où la popularité du Raspberrypi n'en fini pas de grimper, j'ai ressorti mon &lt;a class="reference external" href="https://fr.wikipedia.org/wiki/SheevaPlug"&gt;Sheevaplug&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Plusieurs raisons à cela. Déjà je me sens bien plus à l'aise avec l'administration système (depuis que je suis passé à Archlinux il y a 2 ans). Deuxième raison, depuis l'annonce de la fermeture de Google Reader, j'ai décidé de passer plus de temps pour m'auto-héberger.&lt;/p&gt;

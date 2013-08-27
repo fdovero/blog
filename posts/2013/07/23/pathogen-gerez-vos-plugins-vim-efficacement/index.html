@@ -75,7 +75,17 @@ Sur Archlinux un paquet est disponible dans <a class="reference external" href="
 <p>Pour mettre à jour tous les plugins en une seule fois :</p>
 <div class="highlight"><pre><span class="gp">$</span> git submodule foreach git pull origin master
 </pre></div>
-<p>Vous n'avez plus de raisons de ne pas utiliser vim !</p>
+</div>
+<div class="section" id="supprimer-un-module">
+<h2>Supprimer un module</h2>
+<p>Il n'existe aucun moyen de retirer un submodule simplement. Imaginons que l'on veuille retirer le plugin powerline :</p>
+<div class="highlight"><pre><span class="gp">$</span> <span class="nb">cd</span> .vim/bundle
+<span class="gp">$</span> rm -r powerline
+<span class="gp">$</span> rm -r .git/module/powerline
+<span class="gp">$</span> git rm --cached powerline
+</pre></div>
+<p>Mais ce n'est pas tout. Il faut également éditer 2 fichiers et enlever les entrées correspondants à powerline. Ces fichiers sont <code>.gitmodules</code> et <code>.git/config</code>.</p>
+<p>Maintenant, vous n'avez plus de raisons de ne pas utiliser vim !</p>
 </div>
 
   </div><!-- /.entry-content -->
