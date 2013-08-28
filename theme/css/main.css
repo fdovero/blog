@@ -186,7 +186,7 @@ body{height:100%;margin:0;padding:0;background:url("/theme/images/grid.png")}
 #menu a{text-decoration:none;padding-top:115px;padding-left:6px;padding-right:6px;padding-bottom:5px;color:#8f7e76;border-radius:3px;transition-property:background,color,text-shadow;transition-duration:.7s;transition-timing-function:ease-in-out}
 #menu .active a,#menu a:hover{background-color:#8f7e76;color:#d46d24;text-shadow:0 0 6px #463d39}
 #content{position:relative;text-align:justify;min-height:100%;max-width:960px;width:70%;margin:auto;padding-bottom:30px;}
-#content h1,#content h2,#content h3,#content h4,#content h5,#content h6{font-family:Oswald;text-transform:uppercase}
+#content h1,#content h2,#content h3,#content h4,#content h5,#content h6{font-family:Oswald;font-variant:small-caps;text-transform:uppercase}
 #content h1{color:#463d39}
 #content h2{color:#463d39}
 #content h3{color:#8f7e76}
