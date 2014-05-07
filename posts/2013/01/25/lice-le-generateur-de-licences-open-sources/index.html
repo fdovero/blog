@@ -22,7 +22,7 @@
   <header>
     <h2 class="entry-title">
       <a href="posts/2013/01/25/lice-le-generateur-de-licences-open-sources/" rel="bookmark"
-         title="Permalink to Lice : le générateur de licences Open Source(s)">Lice : le générateur de licences Open Source(s)</a></h2>
+         title="Permalink to Lice : le générateur de licences Open Source(s)">Lice : le générateur de licences Open&nbsp;Source(s)</a></h2>
  
   </header>
   <footer class="post-info">
@@ -34,29 +34,29 @@
     </address>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    <p>Il y a des petits programmes dont on ne parle pas parce-qu'ils ne font rien de spectaculaire. Et pourtant ils sont tellement pratiques que l'on a du mal à s'en passer. Le petit logiciel que je vais présenter tombe dans cette catégorie.</p>
+    <p>Il y a des petits programmes dont on ne parle pas parce-qu&#8217;ils ne font rien de spectaculaire. Et pourtant ils sont tellement pratiques que l&#8217;on a du mal à s&#8217;en passer. Le petit logiciel que je vais présenter tombe dans cette&nbsp;catégorie.</p>
 <div class="section" id="que-fait-il">
-<h2>Que fait-il ?</h2>
-<p><a class="reference external" href="//github.com/jcarbaugh/lice">Lice</a> permet simplement, en ligne de commande, de générer le texte de la licence choisie en lui passant certains paramètres comme l'année, le nom de la licence ou encore le détenteur du copyright.
-Un exemple est certainement plus parlant :</p>
+<h2>Que fait-il&nbsp;?</h2>
+<p><a class="reference external" href="//github.com/jcarbaugh/lice">Lice</a> permet simplement, en ligne de commande, de générer le texte de la licence choisie en lui passant certains paramètres comme l&#8217;année, le nom de la licence ou encore le détenteur du copyright.
+Un exemple est certainement plus parlant&nbsp;:</p>
 <div class="highlight"><pre><span class="gp">$</span> lice -o <span class="s2">&quot;Fabien Dovero&quot;</span> mit &gt; LICENSE
 </pre></div>
-<p>ou encore :</p>
+<p>ou encore&nbsp;:</p>
 <div class="highlight"><pre><span class="gp">$</span> lice -y 2013 -p <span class="s2">&quot;My project&quot;</span> -o <span class="s2">&quot;Free soft org&quot;</span> bsd3
 </pre></div>
-<p>pour avoir une liste des variables disponibles pour une licence en particulier :</p>
+<p>pour avoir une liste des variables disponibles pour une licence en particulier&nbsp;:</p>
 <div class="highlight"><pre><span class="gp">$</span> lice --vars apache
 </pre></div>
 </div>
 <div class="section" id="pour-quelles-licences">
-<h2>Pour quelles licences ?</h2>
-<p>Pour l'instant il ne supporte en natif que les licences listées sur le site de l'<a class="reference external" href="//opensource.org">OSI</a>. Cependant il n'est pas compliqué de rajouter une licence quelconque en s'inspirant des fichiers de template et en utilisant l'option -t :</p>
+<h2>Pour quelles licences&nbsp;?</h2>
+<p>Pour l&#8217;instant il ne supporte en natif que les licences listées sur le site de l&#8217;<a class="reference external" href="//opensource.org"><span class="caps">OSI</span></a>. Cependant il n&#8217;est pas compliqué de rajouter une licence quelconque en s&#8217;inspirant des fichiers de template et en utilisant l&#8217;option -t&nbsp;:</p>
 <div class="highlight"><pre><span class="gp">$</span> mkdir .licenses
 <span class="gp">$</span> <span class="nb">echo</span> <span class="s2">&quot;Ma licence imba {{ year }}, {{ organization }}&quot;</span> &gt; .licences/template-amoi
 <span class="gp">$</span> lice -y 2013 -o <span class="s2">&quot;Fabien Dovero&quot;</span> -t .licenses/template-amoi
 <span class="go">Ma licence imba 2013, Fabien Dovero</span>
 </pre></div>
-<p>Pour conclure, je ne saurai que trop vous encourager à utiliser des licences open source pour votre code, en particulier ma préférée : la license <a class="reference external" href="//opensource.org/licenses/MIT">MIT</a> qui est parfaitement adaptée pour des petits projets.</p>
+<p>Pour conclure, je ne saurai que trop vous encourager à utiliser des licences open source pour votre code, en particulier ma préférée : la license <a class="reference external" href="//opensource.org/licenses/MIT"><span class="caps">MIT</span></a> qui est parfaitement adaptée pour des petits&nbsp;projets.</p>
 </div>
 
   </div><!-- /.entry-content -->

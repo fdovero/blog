@@ -22,7 +22,7 @@
   <header>
     <h2 class="entry-title">
       <a href="posts/2013/01/12/optimiser-un-site-web-reduire-la-taille-des-ressources-statiques/" rel="bookmark"
-         title="Permalink to Optimiser un site web : réduire la taille des ressources statiques">Optimiser un site web : réduire la taille des ressources statiques</a></h2>
+         title="Permalink to Optimiser un site web : réduire la taille des ressources statiques">Optimiser un site web : réduire la taille des ressources&nbsp;statiques</a></h2>
  
   </header>
   <footer class="post-info">
@@ -35,47 +35,47 @@
   </footer><!-- /.post-info -->
   <div class="entry-content">
     <p>La rapidité du web est le maitre mot depuis que les accès haut débit se sont démocratisés.
-Aujourd'hui plus que jamais, la réactivité d'un site web est un objectif à atteindre surtout que ces mêmes sites ont tendance à enfler.
-Google en fait même un critère de qualité pour son algorithme d'indexation.
-J'ai été confronté a cette problématique et je vais présenté dans une série de billets différentes techniques d'optimisation, de la plus évidente à la plus tordue !
-Cette série est amenée à évoluer.</p>
-<p>Dans ce premier billet de la série je vais donc parler  de ce qui est évident pour tout développeur web qui veut accélérer le rendu de son site : réduire la taille des ressources !</p>
+Aujourd&#8217;hui plus que jamais, la réactivité d&#8217;un site web est un objectif à atteindre surtout que ces mêmes sites ont tendance à enfler.
+Google en fait même un critère de qualité pour son algorithme d&#8217;indexation.
+J&#8217;ai été confronté a cette problématique et je vais présenté dans une série de billets différentes techniques d&#8217;optimisation, de la plus évidente à la plus tordue !
+Cette série est amenée à&nbsp;évoluer.</p>
+<p>Dans ce premier billet de la série je vais donc parler  de ce qui est évident pour tout développeur web qui veut accélérer le rendu de son site : réduire la taille des ressources&nbsp;!</p>
 <div class="section" id="reduire-le-javascript">
-<h2>Réduire le Javascript</h2>
-<p>Il existe plusieurs réducteur de javascript. J'aime la simplicité et la puissance de <a class="reference external" href="//lisperator.net/uglifyjs/">uglifyjs</a>.
-Pour l'installer :</p>
+<h2>Réduire le&nbsp;Javascript</h2>
+<p>Il existe plusieurs réducteur de javascript. J&#8217;aime la simplicité et la puissance de <a class="reference external" href="//lisperator.net/uglifyjs/">uglifyjs</a>.
+Pour l&#8217;installer&nbsp;:</p>
 <div class="highlight"><pre><span class="gp">$</span> npm install -g uglify-js
 </pre></div>
-<p>Ensuite pour compresser le javascript :</p>
+<p>Ensuite pour compresser le javascript&nbsp;:</p>
 <div class="highlight"><pre><span class="gp">$</span> uglifyjs -c app.js -o app.min.js
 </pre></div>
 </div>
 <div class="section" id="reduire-les-css">
-<h2>Réduire les CSS</h2>
-<p>J'utilise <a class="reference external" href="//learnboost.github.com/stylus/">stylus</a> comme préprocesseur CSS. La commande stylus propose un paramètre pour compresser la sortie</p>
+<h2>Réduire les <span class="caps">CSS</span></h2>
+<p>J&#8217;utilise <a class="reference external" href="//learnboost.github.com/stylus/">stylus</a> comme préprocesseur <span class="caps">CSS</span>. La commande stylus propose un paramètre pour compresser la&nbsp;sortie</p>
 <div class="highlight"><pre><span class="gp">$</span> npm install -g stylus
 <span class="gp">$</span> stylus --compress app.styl
 </pre></div>
-<p>Et comme j'aime les solutions tordues, on peut également passer un css pour le transformer en fichier stylus et compresser le css en sortie !</p>
+<p>Et comme j&#8217;aime les solutions tordues, on peut également passer un css pour le transformer en fichier stylus et compresser le css en sortie&nbsp;!</p>
 <div class="highlight"><pre><span class="gp">$</span> stylus --css app.css &amp; stylus --compress app.styl
 </pre></div>
-<p>Si vous préférez les solutions simples il existe <a class="reference external" href="//github.com/css/csso">csso</a> qui rempli cette tâche à merveille :</p>
+<p>Si vous préférez les solutions simples il existe <a class="reference external" href="//github.com/css/csso">csso</a> qui rempli cette tâche à merveille&nbsp;:</p>
 <div class="highlight"><pre><span class="gp">$</span> npm install -g csso
 <span class="gp">$</span> csso app.css app.min.css
 </pre></div>
-<p>Et voilà !</p>
+<p>Et voilà&nbsp;!</p>
 </div>
 <div class="section" id="reduire-les-images">
-<h2>Réduire les images</h2>
-<p>Les images sont les ressources le plus lourdes à transférer. Pourtant il y a un moyen simple et sans perte de réduire leur taille de 50% en moyenne. En effet les images embarquent toutes sortes de tags qui prennent une place non négligable.</p>
-<p>Pour optimiser des PNG il existe <a class="reference external" href="//optipng.sourceforge.net/">optipng</a> et <a class="reference external" href="//www.kokkonen.net/tjko/projects.htm">jpegoptim</a> pour les JPEG !</p>
+<h2>Réduire les&nbsp;images</h2>
+<p>Les images sont les ressources le plus lourdes à transférer. Pourtant il y a un moyen simple et sans perte de réduire leur taille de 50% en moyenne. En effet les images embarquent toutes sortes de tags qui prennent une place non&nbsp;négligable.</p>
+<p>Pour optimiser des <span class="caps">PNG</span> il existe <a class="reference external" href="//optipng.sourceforge.net/">optipng</a> et <a class="reference external" href="//www.kokkonen.net/tjko/projects.htm">jpegoptim</a> pour les <span class="caps">JPEG</span>&nbsp;!</p>
 <div class="highlight"><pre><span class="gp">$</span> optipng -o 7 ./images
 </pre></div>
 </div>
 <div class="section" id="cas-des-icon-fonts">
-<h2>Cas des « icon fonts »</h2>
-<p>J'utilise de plus en plus ces polices d'icones (grâce à la propriété &#64;font-face de CSS3). Seulement je n'utilise jamais toutes les icones proposées. J'aimerai pouvoir récupérer uniquement les icones qui m'interessent afin de réduire la taille des fichiers de la fonte et du css associé.
-Pour <a class="reference external" href="//fortawesome.github.com/Font-Awesome/">font awesome</a> il existe <a class="reference external" href="//icnfnt.com">icnfnt</a> qui justement permet de se constituer son fichier aux petits ognions.</p>
+<h2>Cas des « icon fonts&nbsp;»</h2>
+<p>J&#8217;utilise de plus en plus ces polices d&#8217;icones (grâce à la propriété &#64;font-face de <span class="caps">CSS3</span>). Seulement je n&#8217;utilise jamais toutes les icones proposées. J&#8217;aimerai pouvoir récupérer uniquement les icones qui m&#8217;interessent afin de réduire la taille des fichiers de la fonte et du css associé.
+Pour <a class="reference external" href="//fortawesome.github.com/Font-Awesome/">font awesome</a> il existe <a class="reference external" href="//icnfnt.com">icnfnt</a> qui justement permet de se constituer son fichier aux petits&nbsp;ognions.</p>
 </div>
 
   </div><!-- /.entry-content -->

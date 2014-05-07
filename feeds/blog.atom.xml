@@ -1,118 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/blog.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-11-17T00:00:00+01:00</updated><entry><title>Mon Firefox</title><link href="http://blog.dovero.org/posts/2013/11/17/mon-firefox/" rel="alternate"></link><updated>2013-11-17T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-11-17:posts/2013/11/17/mon-firefox/</id><summary type="html">&lt;p&gt;Je suis un amoureux du Web.&lt;/p&gt;
-&lt;p&gt;De tous les navigateurs, Firefox à toujours eu ma préférence depuis la version 2.0 qu'un ami m'avait installé pour remplacer IE6... Ce fut le coup de foudre ! Je n'ai plus jamais quitté mon panda roux !&lt;/p&gt;
-&lt;p&gt;Je tiens à jour cet article pour m'aider à maintenir mes differentes installations.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/blog.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-11-17T00:00:00+01:00</updated><entry><title>Mon Firefox</title><link href="http://blog.dovero.org/posts/2013/11/17/mon-firefox/" rel="alternate"></link><updated>2013-11-17T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-11-17:posts/2013/11/17/mon-firefox/</id><summary type="html">&lt;p&gt;Je suis un amoureux du&amp;nbsp;Web.&lt;/p&gt;
+&lt;p&gt;De tous les navigateurs, Firefox à toujours eu ma préférence depuis la version 2.0 qu&amp;#8217;un ami m&amp;#8217;avait installé pour remplacer &lt;span class="caps"&gt;IE6&lt;/span&gt;&amp;#8230; Ce fut le coup de foudre ! Je n&amp;#8217;ai plus jamais quitté mon panda roux&amp;nbsp;!&lt;/p&gt;
+&lt;p&gt;Je tiens à jour cet article pour m&amp;#8217;aider à maintenir mes differentes&amp;nbsp;installations.&lt;/p&gt;
 &lt;div class="section" id="les-extensions"&gt;
-&lt;h2&gt;Les extensions&lt;/h2&gt;
-&lt;p&gt;Je vais lister ici mes extensions. En règle générale j'essai de ne pas trop en installer pour ne pas allourdir le chargement et de préférence celles qui peuvent travailler sans laisser de trace dans le DOM ( j'ai par exemple désinstaller turn off the light à cause de sa balise script qu'il insère en entete de chaque page web ).&lt;/p&gt;
+&lt;h2&gt;Les&amp;nbsp;extensions&lt;/h2&gt;
+&lt;p&gt;Je vais lister ici mes extensions. En règle générale j&amp;#8217;essai de ne pas trop en installer pour ne pas allourdir le chargement et de préférence celles qui peuvent travailler sans laisser de trace dans le &lt;span class="caps"&gt;DOM&lt;/span&gt; ( j&amp;#8217;ai par exemple désinstaller turn off the light à cause de sa balise script qu&amp;#8217;il insère en entete de chaque page web&amp;nbsp;).&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/adblock-edge/"&gt;Adblock Edge&lt;/a&gt; ( avec les listes FR + EasyList, EasyPrivacy, Fanboy's Social Blocking List, Malware Domains )&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/adblock-plus-pop-up-addon/"&gt;Adblock Plus Pop-up Addon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/adblock-edge/"&gt;Adblock Edge&lt;/a&gt; ( avec les listes &lt;span class="caps"&gt;FR&lt;/span&gt; + EasyList, EasyPrivacy, Fanboy&amp;#8217;s Social Blocking List, Malware Domains&amp;nbsp;)&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/adblock-plus-pop-up-addon/"&gt;Adblock Plus Pop-up&amp;nbsp;Addon&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://disconnect.me/"&gt;Disconnect&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://www.eff.org/https-everywhere/"&gt;HTTPS-Everywhere&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/long-url-please/"&gt;Long URL Please&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/pure-url/"&gt;Pure URL&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/redirect-cleaner/"&gt;Redirect Cleaner&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/smart-referer/"&gt;Smart Referer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/"&gt;Self-Destructing Cookies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.eff.org/https-everywhere/"&gt;&lt;span class="caps"&gt;HTTPS&lt;/span&gt;-Everywhere&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/long-url-please/"&gt;Long &lt;span class="caps"&gt;URL&lt;/span&gt;&amp;nbsp;Please&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/pure-url/"&gt;Pure &lt;span class="caps"&gt;URL&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/redirect-cleaner/"&gt;Redirect&amp;nbsp;Cleaner&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/smart-referer/"&gt;Smart&amp;nbsp;Referer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/"&gt;Self-Destructing&amp;nbsp;Cookies&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/wot-safe-browsing-tool/"&gt;Wot&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://5digits.org/nightlies"&gt;Pentadactyl&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/click-to-play-per-element/"&gt;Click to Play per-element&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/click-to-play-per-element/"&gt;Click to Play&amp;nbsp;per-element&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/ecleaner/"&gt;eCleaner&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-ssl/"&gt;DuckDuckGo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="les-tweaks"&gt;
-&lt;h2&gt;Les tweaks&lt;/h2&gt;
-&lt;p&gt;Voici une liste des modifications que j'ai apporté dans le &lt;em&gt;about:config&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Les&amp;nbsp;tweaks&lt;/h2&gt;
+&lt;p&gt;Voici une liste des modifications que j&amp;#8217;ai apporté dans le &lt;em&gt;about:config&lt;/em&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;layers.acceleration.force-enabled=true ( pour forcer l'accélération matérielle )&lt;/li&gt;
-&lt;li&gt;network.proxy.socks_remote_dns=true ( pour que les requêtes DNS passent par le proxy socks )&lt;/li&gt;
-&lt;li&gt;layout.spellcheckDefault=4 ( changer le style d'affichage du correcteur d'orthographe )&lt;/li&gt;
-&lt;li&gt;media.gstreamer.enabled=true ( utilise gstreamer pour la balise video - bêta )&lt;/li&gt;
-&lt;li&gt;plugin.sessionPermissionNow.intervalInMinutes=0 ( avec l'addon Click to Play per-element )&lt;/li&gt;
-&lt;li&gt;browser.urlbar.trimURLs=false ( ré-affiche le protocole dans la barre de navigation )&lt;/li&gt;
+&lt;li&gt;layers.acceleration.force-enabled=true ( pour forcer l&amp;#8217;accélération matérielle&amp;nbsp;)&lt;/li&gt;
+&lt;li&gt;network.proxy.socks_remote_dns=true ( pour que les requêtes &lt;span class="caps"&gt;DNS&lt;/span&gt; passent par le proxy socks&amp;nbsp;)&lt;/li&gt;
+&lt;li&gt;layout.spellcheckDefault=4 ( changer le style d&amp;#8217;affichage du correcteur d&amp;#8217;orthographe&amp;nbsp;)&lt;/li&gt;
+&lt;li&gt;media.gstreamer.enabled=true ( utilise gstreamer pour la balise video - bêta&amp;nbsp;)&lt;/li&gt;
+&lt;li&gt;plugin.sessionPermissionNow.intervalInMinutes=0 ( avec l&amp;#8217;addon Click to Play per-element&amp;nbsp;)&lt;/li&gt;
+&lt;li&gt;browser.urlbar.trimURLs=false ( ré-affiche le protocole dans la barre de navigation&amp;nbsp;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</summary><category term="config"></category><category term="firefox"></category></entry><entry><title>Pathogen : Gérez vos plugins vim efficacement !</title><link href="http://blog.dovero.org/posts/2013/07/23/pathogen-gerez-vos-plugins-vim-efficacement/" rel="alternate"></link><updated>2013-07-23T00:00:00+02:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-07-23:posts/2013/07/23/pathogen-gerez-vos-plugins-vim-efficacement/</id><summary type="html">&lt;p&gt;Je suis un grand utilisateur de vim. C'est bien simple, j'y passe 80% de mon temps (au travail ou en loisir). Du coup, les plugins sont devenus indispensables pour améliorer mon expérience sur cet éditeur hors norme et, avec eux, le besoin de les gérer simplement et efficacement.&lt;/p&gt;
+</summary><category term="config"></category><category term="firefox"></category></entry><entry><title>Pathogen : Gérez vos plugins vim efficacement !</title><link href="http://blog.dovero.org/posts/2013/07/23/pathogen-gerez-vos-plugins-vim-efficacement/" rel="alternate"></link><updated>2013-07-23T00:00:00+02:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-07-23:posts/2013/07/23/pathogen-gerez-vos-plugins-vim-efficacement/</id><summary type="html">&lt;p&gt;Je suis un grand utilisateur de vim. C&amp;#8217;est bien simple, j&amp;#8217;y passe 80% de mon temps (au travail ou en loisir). Du coup, les plugins sont devenus indispensables pour améliorer mon expérience sur cet éditeur hors norme et, avec eux, le besoin de les gérer simplement et&amp;nbsp;efficacement.&lt;/p&gt;
 &lt;div class="section" id="installation-et-configuration-de-pathogen"&gt;
-&lt;h2&gt;Installation et configuration de Pathogen&lt;/h2&gt;
-&lt;p&gt;Commençons par l'installation de &lt;a class="reference external" href="https://github.com/tpope/vim-pathogen"&gt;Pathogen&lt;/a&gt;, qui est un plugin pour gérer le runtimepath de vim. C'est ce plugin qui va nous faciliter la vie!  Il suffit de le télécharger (ou cloner le dépot git) dans &lt;code&gt;~/.vim/autoload/pathogen.vim&lt;/code&gt;.
-Sur Archlinux un paquet est disponible dans &lt;a class="reference external" href="https://aur.archlinux.org/packages/vim-pathogen/"&gt;AUR&lt;/a&gt; pour faciliter la maintenance du script :&lt;/p&gt;
+&lt;h2&gt;Installation et configuration de&amp;nbsp;Pathogen&lt;/h2&gt;
+&lt;p&gt;Commençons par l&amp;#8217;installation de &lt;a class="reference external" href="https://github.com/tpope/vim-pathogen"&gt;Pathogen&lt;/a&gt;, qui est un plugin pour gérer le runtimepath de vim. C&amp;#8217;est ce plugin qui va nous faciliter la vie!  Il suffit de le télécharger (ou cloner le dépot git) dans &lt;code&gt;~/.vim/autoload/pathogen.vim&lt;/code&gt;.
+Sur Archlinux un paquet est disponible dans &lt;a class="reference external" href="https://aur.archlinux.org/packages/vim-pathogen/"&gt;&lt;span class="caps"&gt;AUR&lt;/span&gt;&lt;/a&gt; pour faciliter la maintenance du script&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; yaourt -Sy vim-pathogen
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Une fois pathogen installé une seule ligne suffit dans votre &lt;code&gt;.vimrc&lt;/code&gt; :&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;execute pathogen#infect&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Vous êtes prêt à utiliser efficacement vos plugins !&lt;/p&gt;
+&lt;p&gt;Vous êtes prêt à utiliser efficacement vos plugins&amp;nbsp;!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="installation-d-un-plugin-vim"&gt;
-&lt;h2&gt;Installation d'un plugin vim&lt;/h2&gt;
-&lt;p&gt;Maintenant que pathogen est installé, passons à l'installation d'un autre plugin : &lt;a class="reference external" href="https://github.com/scrooloose/syntastic"&gt;syntastic&lt;/a&gt; par exemple.&lt;/p&gt;
-&lt;p&gt;Tout d'abord il faut créer un dossier &lt;code&gt;bundle&lt;/code&gt; qui contiendra nos plugins et on initialise un nouveau dépot git :&lt;/p&gt;
+&lt;h2&gt;Installation d&amp;#8217;un plugin&amp;nbsp;vim&lt;/h2&gt;
+&lt;p&gt;Maintenant que pathogen est installé, passons à l&amp;#8217;installation d&amp;#8217;un autre plugin : &lt;a class="reference external" href="https://github.com/scrooloose/syntastic"&gt;syntastic&lt;/a&gt; par&amp;nbsp;exemple.&lt;/p&gt;
+&lt;p&gt;Tout d&amp;#8217;abord il faut créer un dossier &lt;code&gt;bundle&lt;/code&gt; qui contiendra nos plugins et on initialise un nouveau dépot git&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; mkdir -p .vim/bundle
 &lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; .vim/bundle
 
 &lt;span class="gp"&gt;$&lt;/span&gt; git init
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Le dépot nous servira à garder une trace des installations et mises à jour des plugins ainsi qu'a partager la même configuration sur plusieurs machines. On va également exploiter les submodules de git pour gérer nos plugins :&lt;/p&gt;
+&lt;p&gt;Le dépot nous servira à garder une trace des installations et mises à jour des plugins ainsi qu&amp;#8217;a partager la même configuration sur plusieurs machines. On va également exploiter les submodules de git pour gérer nos plugins&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git submodule add http://github.com/scrooloose/syntastic
 &lt;span class="gp"&gt;$&lt;/span&gt; git add .
 &lt;span class="gp"&gt;$&lt;/span&gt; git commit -m &lt;span class="s2"&gt;&amp;quot;installation de syntastic&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pour installer vos plugins sur une autre machine :&lt;/p&gt;
+&lt;p&gt;Pour installer vos plugins sur une autre machine&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git clone http://github.com/username/dotvim.git ~/.vim/bundle
 &lt;span class="gp"&gt;$&lt;/span&gt; git submodule update --init
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Ne pas oublier de copier le &lt;code&gt;.vimrc&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="mettre-a-jour-les-plugins"&gt;
-&lt;h2&gt;Mettre à jour les plugins&lt;/h2&gt;
-&lt;p&gt;C'est maintenant que les submodules git prennent tout leur intérêt.&lt;/p&gt;
-&lt;p&gt;Pour mettre à jour un plugin particulier :&lt;/p&gt;
+&lt;h2&gt;Mettre à jour les&amp;nbsp;plugins&lt;/h2&gt;
+&lt;p&gt;C&amp;#8217;est maintenant que les submodules git prennent tout leur&amp;nbsp;intérêt.&lt;/p&gt;
+&lt;p&gt;Pour mettre à jour un plugin particulier&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; .vim/bundle/syntastic
 &lt;span class="gp"&gt;$&lt;/span&gt; git pull origin master
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pour mettre à jour tous les plugins en une seule fois :&lt;/p&gt;
+&lt;p&gt;Pour mettre à jour tous les plugins en une seule fois&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git submodule foreach git pull origin master
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="supprimer-un-module"&gt;
-&lt;h2&gt;Supprimer un module&lt;/h2&gt;
-&lt;p&gt;Il n'existe aucun moyen de retirer un submodule simplement. Imaginons que l'on veuille retirer le plugin powerline :&lt;/p&gt;
+&lt;h2&gt;Supprimer un&amp;nbsp;module&lt;/h2&gt;
+&lt;p&gt;Il n&amp;#8217;existe aucun moyen de retirer un submodule simplement. Imaginons que l&amp;#8217;on veuille retirer le plugin powerline&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; .vim/bundle
 &lt;span class="gp"&gt;$&lt;/span&gt; rm -r powerline
 &lt;span class="gp"&gt;$&lt;/span&gt; rm -r .git/module/powerline
 &lt;span class="gp"&gt;$&lt;/span&gt; git rm --cached powerline
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Mais ce n'est pas tout. Il faut également éditer 2 fichiers et enlever les entrées correspondants à powerline. Ces fichiers sont &lt;code&gt;.gitmodules&lt;/code&gt; et &lt;code&gt;.git/config&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Maintenant, vous n'avez plus de raisons de ne pas utiliser vim !&lt;/p&gt;
+&lt;p&gt;Mais ce n&amp;#8217;est pas tout. Il faut également éditer 2 fichiers et enlever les entrées correspondants à powerline. Ces fichiers sont &lt;code&gt;.gitmodules&lt;/code&gt; et &lt;code&gt;.git/config&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Maintenant, vous n&amp;#8217;avez plus de raisons de ne pas utiliser vim&amp;nbsp;!&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="pathogen"></category><category term="vim"></category><category term="git"></category></entry><entry><title>Sheevaplug : installation d'Archlinux ARM</title><link href="http://blog.dovero.org/posts/2013/04/02/sheevaplug-installation-darchlinux-arm/" rel="alternate"></link><updated>2013-04-02T00:00:00+02:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-04-02:posts/2013/04/02/sheevaplug-installation-darchlinux-arm/</id><summary type="html">&lt;p&gt;À l'heure où la popularité du Raspberrypi n'en fini pas de grimper, j'ai ressorti mon &lt;a class="reference external" href="https://fr.wikipedia.org/wiki/SheevaPlug"&gt;Sheevaplug&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Plusieurs raisons à cela. Déjà je me sens bien plus à l'aise avec l'administration système (depuis que je suis passé à Archlinux il y a 2 ans). Deuxième raison, depuis l'annonce de la fermeture de Google Reader, j'ai décidé de passer plus de temps pour m'auto-héberger.&lt;/p&gt;
-&lt;p&gt;Je vais donc expliquer pas à pas comment mettre en place un serveur auto-hébergé grace à un bon vieux Sheevaplug.&lt;/p&gt;
+</summary><category term="pathogen"></category><category term="vim"></category><category term="git"></category></entry><entry><title>Sheevaplug : installation d’Archlinux ARM</title><link href="http://blog.dovero.org/posts/2013/04/02/sheevaplug-installation-darchlinux-arm/" rel="alternate"></link><updated>2013-04-02T00:00:00+02:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-04-02:posts/2013/04/02/sheevaplug-installation-darchlinux-arm/</id><summary type="html">&lt;p&gt;À l&amp;#8217;heure où la popularité du Raspberrypi n&amp;#8217;en fini pas de grimper, j&amp;#8217;ai ressorti mon &lt;a class="reference external" href="https://fr.wikipedia.org/wiki/SheevaPlug"&gt;Sheevaplug&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Plusieurs raisons à cela. Déjà je me sens bien plus à l&amp;#8217;aise avec l&amp;#8217;administration système (depuis que je suis passé à Archlinux il y a 2 ans). Deuxième raison, depuis l&amp;#8217;annonce de la fermeture de Google Reader, j&amp;#8217;ai décidé de passer plus de temps pour&amp;nbsp;m&amp;#8217;auto-héberger.&lt;/p&gt;
+&lt;p&gt;Je vais donc expliquer pas à pas comment mettre en place un serveur auto-hébergé grace à un bon vieux&amp;nbsp;Sheevaplug.&lt;/p&gt;
 &lt;div class="section" id="materiel"&gt;
 &lt;h2&gt;Matériel&lt;/h2&gt;
 &lt;dl class="docutils"&gt;
-&lt;dt&gt;Le Sheevaplug n'est pas un matériel récent. Cependant il est &lt;a class="reference external" href="//archlinuxarm.org/platforms/armv5/sheevaplug"&gt;plus que correct&lt;/a&gt; et à de nombreux avantages :&lt;/dt&gt;
+&lt;dt&gt;Le Sheevaplug n&amp;#8217;est pas un matériel récent. Cependant il est &lt;a class="reference external" href="//archlinuxarm.org/platforms/armv5/sheevaplug"&gt;plus que correct&lt;/a&gt; et à de nombreux avantages&amp;nbsp;:&lt;/dt&gt;
 &lt;dd&gt;&lt;ul class="first last simple"&gt;
-&lt;li&gt;consomation au démarrage : 5W&lt;/li&gt;
-&lt;li&gt;consomation  moyenne : 3,5W&lt;/li&gt;
-&lt;li&gt;faible encombrement&lt;/li&gt;
-&lt;li&gt;très silencieux&lt;/li&gt;
-&lt;li&gt;ne chauffe pas&lt;/li&gt;
-&lt;li&gt;matériel très bien supporté&lt;/li&gt;
+&lt;li&gt;consomation au démarrage :&amp;nbsp;5W&lt;/li&gt;
+&lt;li&gt;consomation  moyenne :&amp;nbsp;3,5W&lt;/li&gt;
+&lt;li&gt;faible&amp;nbsp;encombrement&lt;/li&gt;
+&lt;li&gt;très&amp;nbsp;silencieux&lt;/li&gt;
+&lt;li&gt;ne chauffe&amp;nbsp;pas&lt;/li&gt;
+&lt;li&gt;matériel très bien&amp;nbsp;supporté&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/dd&gt;
 &lt;/dl&gt;
-&lt;p&gt;La première étape avant de jouer avec ce petit serveur est de vérifier que l'on arrive à se connecter par la liaison série.&lt;/p&gt;
+&lt;p&gt;La première étape avant de jouer avec ce petit serveur est de vérifier que l&amp;#8217;on arrive à se connecter par la liaison&amp;nbsp;série.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="connection-serie"&gt;
-&lt;h2&gt;Connection série&lt;/h2&gt;
-&lt;p&gt;Si votre système inclu udev, vous ne devriez avoir aucun problème pour vous connecter par la liaison série (JTAG) avec screen :&lt;/p&gt;
+&lt;h2&gt;Connection&amp;nbsp;série&lt;/h2&gt;
+&lt;p&gt;Si votre système inclu udev, vous ne devriez avoir aucun problème pour vous connecter par la liaison série (&lt;span class="caps"&gt;JTAG&lt;/span&gt;) avec screen&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; screen /dev/ttyUSB0 115200
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Normalement, en branchant le Sheevaplug puis en lançant la commande ci dessus, on doit voir la séquence de boot. Si ce n'est pas le cas, vérifiez que votre Sheevaplug est bien reconnu par votre système :&lt;/p&gt;
+&lt;p&gt;Normalement, en branchant le Sheevaplug puis en lançant la commande ci dessus, on doit voir la séquence de boot. Si ce n&amp;#8217;est pas le cas, vérifiez que votre Sheevaplug est bien reconnu par votre système&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; lsusb
 &lt;span class="go"&gt;Bus 001 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub&lt;/span&gt;
 &lt;span class="go"&gt;Bus 004 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub&lt;/span&gt;
@@ -123,22 +123,22 @@ Sur Archlinux un paquet est disponible dans &lt;a class="reference external" hre
 &lt;span class="go"&gt;Bus 001 Device 003: ID 058f:b002 Alcor Micro Corp.&lt;/span&gt;
 &lt;span class="go"&gt;Bus 004 Device 003: ID 9e88:9e8f&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;C'est la dernière ligne qui nous intéresse ici. Ces 2 valeurs hexadécimales sont les identifiants spécifiques au Sheevaplug. Si vous n'avez pas la dernière ligne ou que la liaison série ne fonctionne pas :&lt;/p&gt;
+&lt;p&gt;C&amp;#8217;est la dernière ligne qui nous intéresse ici. Ces 2 valeurs hexadécimales sont les identifiants spécifiques au Sheevaplug. Si vous n&amp;#8217;avez pas la dernière ligne ou que la liaison série ne fonctionne pas&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;#&lt;/span&gt; modprobe usbserial &lt;span class="nv"&gt;vendor&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;0x9e88 &lt;span class="nv"&gt;product&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;0x9e8f
 &lt;span class="gp"&gt;#&lt;/span&gt; modprobe ftdi_sio &lt;span class="nv"&gt;vendor&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;0x9e88 &lt;span class="nv"&gt;product&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;0x9e8f
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;On peut admirer la séquence de boot.
-Mon Sheevaplug a été livré avec une Debian Lenny dans la NAND. J'ai rapidement joué avec (utilisateur « root » et mot de passe « nosoup4u » par défaut). Cependant j'ai très vite voulu installer une distribution que j'ai l'habitude d'administrer.&lt;/p&gt;
+Mon Sheevaplug a été livré avec une Debian Lenny dans la &lt;span class="caps"&gt;NAND&lt;/span&gt;. J&amp;#8217;ai rapidement joué avec (utilisateur « root » et mot de passe « nosoup4u » par défaut). Cependant j&amp;#8217;ai très vite voulu installer une distribution que j&amp;#8217;ai l&amp;#8217;habitude&amp;nbsp;d&amp;#8217;administrer.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="installation-de-la-distribution-archlinux-arm"&gt;
-&lt;h2&gt;Installation de la distribution Archlinux ARM&lt;/h2&gt;
-&lt;p&gt;Le site d'Archlinux ARM propose un pack pour installer la distribution sur la NAND ou la carte SD. Après avoir télécharger les 2 archives et suivi la procédure un premier problème se pose : le fichier &lt;code&gt;runme.php&lt;/code&gt; donné n'est pas compatible avec la dernière version de php.
+&lt;h2&gt;Installation de la distribution Archlinux &lt;span class="caps"&gt;ARM&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;Le site d&amp;#8217;Archlinux &lt;span class="caps"&gt;ARM&lt;/span&gt; propose un pack pour installer la distribution sur la &lt;span class="caps"&gt;NAND&lt;/span&gt; ou la carte &lt;span class="caps"&gt;SD&lt;/span&gt;. Après avoir télécharger les 2 archives et suivi la procédure un premier problème se pose : le fichier &lt;code&gt;runme.php&lt;/code&gt; donné n&amp;#8217;est pas compatible avec la dernière version de php.
 Il faut modifier le tag de la première ligne du fichier &lt;code&gt;runme.php&lt;/code&gt; :&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Il faut également commenter les lignes 7,8 et 43,44 (vérification root et système windows).&lt;/p&gt;
-&lt;p&gt;Mais ce n'est pas tout : les fichiers d'&lt;a class="reference external" href="//openocd.sourceforge.net/"&gt;OpenOCD&lt;/a&gt; fournis dans le pack ne sont pas à jour ni utilisables sur mon système hôte Archlinux 64 bits.&lt;/p&gt;
-&lt;p&gt;Pour y remédier j'ai installé OpenOCD puis j'ai copié les fichiers suivants (en supposant que le pack d'installation a été décompréssé dans un dossier &lt;code&gt;sheevapluginstall&lt;/code&gt;) :&lt;/p&gt;
+&lt;p&gt;Il faut également commenter les lignes 7,8 et 43,44 (vérification root et système&amp;nbsp;windows).&lt;/p&gt;
+&lt;p&gt;Mais ce n&amp;#8217;est pas tout : les fichiers d&amp;#8217;&lt;a class="reference external" href="//openocd.sourceforge.net/"&gt;OpenOCD&lt;/a&gt; fournis dans le pack ne sont pas à jour ni utilisables sur mon système hôte Archlinux 64&amp;nbsp;bits.&lt;/p&gt;
+&lt;p&gt;Pour y remédier j&amp;#8217;ai installé OpenOCD puis j&amp;#8217;ai copié les fichiers suivants (en supposant que le pack d&amp;#8217;installation a été décompréssé dans un dossier &lt;code&gt;sheevapluginstall&lt;/code&gt;)&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; cp /usr/share/openocd/scripts/board/sheevaplug.cfg &lt;span class="se"&gt;\&lt;/span&gt;
 &lt;span class="go"&gt;    sheevapluginstall/uboot/openocd/config/board/sheevaplug.cfg&lt;/span&gt;
 &lt;span class="gp"&gt;$&lt;/span&gt; cp /usr/share/openocd/scripts/interface/sheevaplug.cfg &lt;span class="se"&gt;\&lt;/span&gt;
@@ -158,7 +158,7 @@ Il faut modifier le tag de la première ligne du fichier &lt;code&gt;runme.php&l
 &lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -c sheevaplug_reflash_uboot&amp;quot;;&lt;/span&gt;
 &lt;span class="x"&gt;$openocd_cmd.= ($WIN32==1) ? &amp;quot; -c init&amp;quot; : &amp;quot; -c exit&amp;quot;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;pour obtenir :&lt;/p&gt;
+&lt;p&gt;pour obtenir&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;chdir(&amp;quot;uboot&amp;quot;);&lt;/span&gt;
 &lt;span class="x"&gt;$openocd_cmd= &amp;quot;/usr/bin/openocd&amp;quot;;&lt;/span&gt;
 &lt;span class="x"&gt;$openocd_cmd.= ($WIN32==1) ? &amp;quot;.exe&amp;quot; : &amp;quot;&amp;quot;;&lt;/span&gt;
@@ -169,223 +169,223 @@ Il faut modifier le tag de la première ligne du fichier &lt;code&gt;runme.php&l
 &lt;span class="x"&gt;$openocd_cmd.= &amp;quot; -c sheevaplug_reflash_uboot&amp;quot;;&lt;/span&gt;
 &lt;span class="x"&gt;$openocd_cmd.= ($WIN32==1) ? &amp;quot; -c init&amp;quot; : &amp;quot; -c exit&amp;quot;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Voilà pour les modifications. Je met à disposition &lt;a class="reference external" href="https://github.com/fdovero/sheevaplug-archlinux64"&gt;mon fichier runme&lt;/a&gt; au cas où...&lt;/p&gt;
+&lt;p&gt;Voilà pour les modifications. Je met à disposition &lt;a class="reference external" href="https://github.com/fdovero/sheevaplug-archlinux64"&gt;mon fichier runme&lt;/a&gt; au cas&amp;nbsp;où&amp;#8230;&lt;/p&gt;
 &lt;dl class="docutils"&gt;
-&lt;dt&gt;Maintenant en suivant les instructions de la page d'Archlinux ARM :&lt;/dt&gt;
+&lt;dt&gt;Maintenant en suivant les instructions de la page d&amp;#8217;Archlinux &lt;span class="caps"&gt;ARM&lt;/span&gt;&amp;nbsp;:&lt;/dt&gt;
 &lt;dd&gt;&lt;ul class="first last simple"&gt;
-&lt;li&gt;formater une clé usb en FAT32 et y copier les fichiers modules.tar.gz, uImage et initrd&lt;/li&gt;
-&lt;li&gt;formater une carte SD&lt;/li&gt;
-&lt;li&gt;insérer la carte SD et la clé usb dans le Sheevaplug, connecter le JTAG et un câble ethernet&lt;/li&gt;
-&lt;li&gt;mettre sous tension, se connecter en série et interrompre le boot automatique&lt;/li&gt;
-&lt;li&gt;lancer la commande &lt;code&gt;sudo php runme.php mmc&lt;/code&gt; sur le système hôte.&lt;/li&gt;
+&lt;li&gt;formater une clé usb en &lt;span class="caps"&gt;FAT32&lt;/span&gt; et y copier les fichiers modules.tar.gz, uImage et&amp;nbsp;initrd&lt;/li&gt;
+&lt;li&gt;formater une carte &lt;span class="caps"&gt;SD&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;insérer la carte &lt;span class="caps"&gt;SD&lt;/span&gt; et la clé usb dans le Sheevaplug, connecter le &lt;span class="caps"&gt;JTAG&lt;/span&gt; et un câble&amp;nbsp;ethernet&lt;/li&gt;
+&lt;li&gt;mettre sous tension, se connecter en série et interrompre le boot&amp;nbsp;automatique&lt;/li&gt;
+&lt;li&gt;lancer la commande &lt;code&gt;sudo php runme.php mmc&lt;/code&gt; sur le système&amp;nbsp;hôte.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/dd&gt;
 &lt;/dl&gt;
-&lt;p&gt;Le script se termine sur une erreur mais l'opération se termine toutefois correctement. Sur le terminal de la liaison série, on peut voir le boot du système sur la clé usb et l'installation d'Archlinux ARM sur la carte SD. L'opération dure environ 5 minutes. Après ça le Sheevaplug redémarre encore et on boot sur la carte SD cette fois et c'est systemd et Archlinux qui nous accueil (utilisateur et mot de passe « root » par défaut).&lt;/p&gt;
-&lt;p&gt;C'est tout pour ce billet. La suite traitera des premières étapes d'administration de votre serveur.&lt;/p&gt;
+&lt;p&gt;Le script se termine sur une erreur mais l&amp;#8217;opération se termine toutefois correctement. Sur le terminal de la liaison série, on peut voir le boot du système sur la clé usb et l&amp;#8217;installation d&amp;#8217;Archlinux &lt;span class="caps"&gt;ARM&lt;/span&gt; sur la carte &lt;span class="caps"&gt;SD&lt;/span&gt;. L&amp;#8217;opération dure environ 5 minutes. Après ça le Sheevaplug redémarre encore et on boot sur la carte &lt;span class="caps"&gt;SD&lt;/span&gt; cette fois et c&amp;#8217;est systemd et Archlinux qui nous accueil (utilisateur et mot de passe « root » par&amp;nbsp;défaut).&lt;/p&gt;
+&lt;p&gt;C&amp;#8217;est tout pour ce billet. La suite traitera des premières étapes d&amp;#8217;administration de votre&amp;nbsp;serveur.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="sheevaplug"></category><category term="archlinux"></category></entry><entry><title>Toulon : Compte rendu de ma JIL 2013</title><link href="http://blog.dovero.org/posts/2013/03/23/toulon-compte-rendu-de-ma-jil-2013/" rel="alternate"></link><updated>2013-03-23T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-03-23:posts/2013/03/23/toulon-compte-rendu-de-ma-jil-2013/</id><summary type="html">&lt;p&gt;Pour la troisième année consécutive, j'ai l'occasion d'assister à la Journée de l'Informatique Libre à Toulon, organisée par le &lt;a class="reference external" href="//www.cill-isen.fr/"&gt;CILL&lt;/a&gt; de l'ISEN.  L'occasion pour moi de rencontrer des gens intéressants et de cultiver encore un peu plus ma fibre libriste. Je vais racconter dans ce billet mes impressions sur cette journée.&lt;/p&gt;
+</summary><category term="sheevaplug"></category><category term="archlinux"></category></entry><entry><title>Toulon : Compte rendu de ma JIL 2013</title><link href="http://blog.dovero.org/posts/2013/03/23/toulon-compte-rendu-de-ma-jil-2013/" rel="alternate"></link><updated>2013-03-23T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-03-23:posts/2013/03/23/toulon-compte-rendu-de-ma-jil-2013/</id><summary type="html">&lt;p&gt;Pour la troisième année consécutive, j&amp;#8217;ai l&amp;#8217;occasion d&amp;#8217;assister à la Journée de l&amp;#8217;Informatique Libre à Toulon, organisée par le &lt;a class="reference external" href="//www.cill-isen.fr/"&gt;&lt;span class="caps"&gt;CILL&lt;/span&gt;&lt;/a&gt; de l&amp;#8217;&lt;span class="caps"&gt;ISEN&lt;/span&gt;.  L&amp;#8217;occasion pour moi de rencontrer des gens intéressants et de cultiver encore un peu plus ma fibre libriste. Je vais racconter dans ce billet mes impressions sur cette&amp;nbsp;journée.&lt;/p&gt;
 &lt;div class="section" id="l-arrivee"&gt;
-&lt;h2&gt;L'arrivée&lt;/h2&gt;
-&lt;p&gt;Cette année, tout comme l'année dernière, la JIL prend place à l'ISEN. À peine arrivé et c'est déjà l'occasion de revoir les visages familiers des acteurs des GULL locaux (&lt;a class="reference external" href="//gullivar.org/"&gt;Gullivar&lt;/a&gt; et &lt;a class="reference external" href="//toulonux.tuxfamily.org/"&gt;Toulonux&lt;/a&gt; en tête, mais étaient aussi présents &lt;a class="reference external" href="//www.linux-azur.org/"&gt;LinuxAzur&lt;/a&gt; et &lt;a class="reference external" href="//mandraix.onlynux.org/"&gt;Mandr'aix&lt;/a&gt;).
-La conférence d'ouverture est retardée de 30 minutes pour laisser le temps aux personnes présentes de se retrouver à la cantine.
-Amandine Benoit ( la responsable de la JIL ) prend la parole et c'est l'occasion de nous souhaiter la bienvenue et de remercier les acteurs qui ont rendu cette journée possible. Sans plus de fioriture la première conférence est annoncée.&lt;/p&gt;
+&lt;h2&gt;L&amp;#8217;arrivée&lt;/h2&gt;
+&lt;p&gt;Cette année, tout comme l&amp;#8217;année dernière, la &lt;span class="caps"&gt;JIL&lt;/span&gt; prend place à l&amp;#8217;&lt;span class="caps"&gt;ISEN&lt;/span&gt;. À peine arrivé et c&amp;#8217;est déjà l&amp;#8217;occasion de revoir les visages familiers des acteurs des &lt;span class="caps"&gt;GULL&lt;/span&gt; locaux (&lt;a class="reference external" href="//gullivar.org/"&gt;Gullivar&lt;/a&gt; et &lt;a class="reference external" href="//toulonux.tuxfamily.org/"&gt;Toulonux&lt;/a&gt; en tête, mais étaient aussi présents &lt;a class="reference external" href="//www.linux-azur.org/"&gt;LinuxAzur&lt;/a&gt; et &lt;a class="reference external" href="//mandraix.onlynux.org/"&gt;Mandr&amp;#8217;aix&lt;/a&gt;).
+La conférence d&amp;#8217;ouverture est retardée de 30 minutes pour laisser le temps aux personnes présentes de se retrouver à la cantine.
+Amandine Benoit ( la responsable de la &lt;span class="caps"&gt;JIL&lt;/span&gt; ) prend la parole et c&amp;#8217;est l&amp;#8217;occasion de nous souhaiter la bienvenue et de remercier les acteurs qui ont rendu cette journée possible. Sans plus de fioriture la première conférence est&amp;nbsp;annoncée.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="matin"&gt;
 &lt;h2&gt;Matin&lt;/h2&gt;
 &lt;div class="section" id="conference-formats-ouverts"&gt;
-&lt;h3&gt;Conférence : Formats Ouverts&lt;/h3&gt;
-&lt;p&gt;Thierry Stœhr cofondateur et vice président de l'&lt;a class="reference external" href="//aful.org/"&gt;AFUL&lt;/a&gt;, auteur du site &lt;a class="reference external" href="//formats-ouverts.org/"&gt;formats-ouverts.org&lt;/a&gt; et professeur à l'université Paris-Diderot,  nous présente la première conférence de la journée : les formats ouverts. Le ton est donné.
-On y apprend ce qu'est un format et ce que Thierry Stœhr appelle le « mille-feuilles » : un empilement de couches afin de rendre une information pérenne dans le temps. Le ton est léger et très pédagogue mais on parle néanmoins de limitations techniques (support, connectique, langue etc...).
-L'exemple choisi est très parlant : il s'agit de récupérer un fichier archivé. Dans un premier temps, récupérer le support et un lecteur capable de lire ce support. puis avoir la bonne connectique afin de le relier à un PC, avoir le bon logiciel (et la bonne version !) pour lire ce fichier etc... Les 45 minutes sont avalées d'une traite. Presque trop court pour parler d'un sujet aussi vaste.&lt;/p&gt;
+&lt;h3&gt;Conférence : Formats&amp;nbsp;Ouverts&lt;/h3&gt;
+&lt;p&gt;Thierry Stœhr cofondateur et vice président de l&amp;#8217;&lt;a class="reference external" href="//aful.org/"&gt;&lt;span class="caps"&gt;AFUL&lt;/span&gt;&lt;/a&gt;, auteur du site &lt;a class="reference external" href="//formats-ouverts.org/"&gt;formats-ouverts.org&lt;/a&gt; et professeur à l&amp;#8217;université Paris-Diderot,  nous présente la première conférence de la journée : les formats ouverts. Le ton est donné.
+On y apprend ce qu&amp;#8217;est un format et ce que Thierry Stœhr appelle le « mille-feuilles » : un empilement de couches afin de rendre une information pérenne dans le temps. Le ton est léger et très pédagogue mais on parle néanmoins de limitations techniques (support, connectique, langue etc&amp;#8230;).
+L&amp;#8217;exemple choisi est très parlant : il s&amp;#8217;agit de récupérer un fichier archivé. Dans un premier temps, récupérer le support et un lecteur capable de lire ce support. puis avoir la bonne connectique afin de le relier à un &lt;span class="caps"&gt;PC&lt;/span&gt;, avoir le bon logiciel (et la bonne version !) pour lire ce fichier etc&amp;#8230; Les 45 minutes sont avalées d&amp;#8217;une traite. Presque trop court pour parler d&amp;#8217;un sujet aussi&amp;nbsp;vaste.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="conference-comment-faire-de-l-open-source-quand-on-est-une-entreprise"&gt;
-&lt;h3&gt;Conférence : Comment faire de l'open source quand on est une entreprise&lt;/h3&gt;
-&lt;p&gt;&lt;a class="reference external" href="//hybird.org/"&gt;Hybird&lt;/a&gt; (la société éditrice de &lt;a class="reference external" href="//www.cremecrm.com/"&gt;Crème CRM&lt;/a&gt;) nous parle de son expérience en temps qu'éditeur de logiciel libre à travers un de ses fondateurs. Il nous dévoile ses recettes pour réussir à concilier business et logiciel libre. On y apprend notamment que le choix de la licence et du nom du logiciel sont les étapes les plus importantes lors du lancement de celui-ci. En effet pour attirer des intégrateurs, un nom simple et original est un avantage non négligeable. Il nous conseille aussi la plus grande transparence en ce qui concerne les méthodes commerciales.
-Personellement j'aurai intitulé cette conférence : « business éthique ».&lt;/p&gt;
-&lt;p&gt;La conférence se conclue sur une très belle phrase rappelée par Thierry Stœhr : « Expliquez leur qu'ils peuvent partir et ils viendront »&lt;/p&gt;
-&lt;p&gt;C'est après cette conférence que je choisis de prendre ma pause déjeuner.&lt;/p&gt;
+&lt;h3&gt;Conférence : Comment faire de l&amp;#8217;open source quand on est une&amp;nbsp;entreprise&lt;/h3&gt;
+&lt;p&gt;&lt;a class="reference external" href="//hybird.org/"&gt;Hybird&lt;/a&gt; (la société éditrice de &lt;a class="reference external" href="//www.cremecrm.com/"&gt;Crème &lt;span class="caps"&gt;CRM&lt;/span&gt;&lt;/a&gt;) nous parle de son expérience en temps qu&amp;#8217;éditeur de logiciel libre à travers un de ses fondateurs. Il nous dévoile ses recettes pour réussir à concilier business et logiciel libre. On y apprend notamment que le choix de la licence et du nom du logiciel sont les étapes les plus importantes lors du lancement de celui-ci. En effet pour attirer des intégrateurs, un nom simple et original est un avantage non négligeable. Il nous conseille aussi la plus grande transparence en ce qui concerne les méthodes commerciales.
+Personellement j&amp;#8217;aurai intitulé cette conférence : « business éthique&amp;nbsp;».&lt;/p&gt;
+&lt;p&gt;La conférence se conclue sur une très belle phrase rappelée par Thierry Stœhr : « Expliquez leur qu&amp;#8217;ils peuvent partir et ils viendront&amp;nbsp;»&lt;/p&gt;
+&lt;p&gt;C&amp;#8217;est après cette conférence que je choisis de prendre ma pause&amp;nbsp;déjeuner.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="midi"&gt;
 &lt;h2&gt;Midi&lt;/h2&gt;
 &lt;div class="section" id="atelier-osm"&gt;
-&lt;h3&gt;Atelier OSM&lt;/h3&gt;
-&lt;p&gt;C'est un atelier que je n'avais pas prévu de faire. J'ai été happé par la présentation des projets réalisés grâce à &lt;a class="reference external" href="//openstreetmap.org/"&gt;Open Street Map&lt;/a&gt; : MapOSMatic, Carte des trains en temps réel, cartes des pistes de ski, des réseaux de transports en commun et j'en passe.
-On discute contributions, Nicolas Moyroud (un contributeur très très (très !) actif dans l'Héraut) me montre comment utiliser les fonctions avancées de &lt;a class="reference external" href="//josm.openstreetmap.de/"&gt;JOSM&lt;/a&gt;.
+&lt;h3&gt;Atelier &lt;span class="caps"&gt;OSM&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;C&amp;#8217;est un atelier que je n&amp;#8217;avais pas prévu de faire. J&amp;#8217;ai été happé par la présentation des projets réalisés grâce à &lt;a class="reference external" href="//openstreetmap.org/"&gt;Open Street Map&lt;/a&gt; : MapOSMatic, Carte des trains en temps réel, cartes des pistes de ski, des réseaux de transports en commun et j&amp;#8217;en passe.
+On discute contributions, Nicolas Moyroud (un contributeur très très (très !) actif dans l&amp;#8217;Héraut) me montre comment utiliser les fonctions avancées de &lt;a class="reference external" href="//josm.openstreetmap.de/"&gt;&lt;span class="caps"&gt;JOSM&lt;/span&gt;&lt;/a&gt;.
 Malheureusement, le temps est pluvieux et il a raison de mon courage pour aller cartographier les rues alentours.
-Cet atelier m'a donné envie de contribuer à mon niveau et d'enrichir la carte de mes tracés GPS. Je ne peux que vous inviter à vous rendre à la cartoparty la plus proche de chez vous.&lt;/p&gt;
+Cet atelier m&amp;#8217;a donné envie de contribuer à mon niveau et d&amp;#8217;enrichir la carte de mes tracés &lt;span class="caps"&gt;GPS&lt;/span&gt;. Je ne peux que vous inviter à vous rendre à la cartoparty la plus proche de chez&amp;nbsp;vous.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="apres-midi"&gt;
 &lt;h2&gt;Après-midi&lt;/h2&gt;
 &lt;div class="section" id="conference-latex"&gt;
-&lt;h3&gt;Conférence : LaTeX&lt;/h3&gt;
-&lt;p&gt;Thierry Stœhr est de nouveau sur le devant de la scène malgré un problème technique de tableau noir (ah la technologie !) et cette fois c'est LaTeX qu'il nous présente.
-Un historique et une explication rapide de ce qu'est LaTeX puis une démo très simple (avec du &lt;a class="reference external" href="//orgmode.org/"&gt;Org mode&lt;/a&gt; inside) et c'est déjà la fin !&lt;/p&gt;
+&lt;h3&gt;Conférence :&amp;nbsp;LaTeX&lt;/h3&gt;
+&lt;p&gt;Thierry Stœhr est de nouveau sur le devant de la scène malgré un problème technique de tableau noir (ah la technologie !) et cette fois c&amp;#8217;est LaTeX qu&amp;#8217;il nous présente.
+Un historique et une explication rapide de ce qu&amp;#8217;est LaTeX puis une démo très simple (avec du &lt;a class="reference external" href="//orgmode.org/"&gt;Org mode&lt;/a&gt; inside) et c&amp;#8217;est déjà la fin&amp;nbsp;!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="conference-les-licences-libres-comme-un-acte-de-resistance"&gt;
-&lt;h3&gt;Conférence : Les licences libres comme un acte de résistance&lt;/h3&gt;
-&lt;p&gt;Laurent Paoletti, qui de son propre aveu manie l'amalgame avec brio, nous gratifie d'une conférence sans langue de bois sur le thème du « Copyright Madness » cher à &lt;a class="reference external" href="https://scinfolex.wordpress.com/copyright-madness/"&gt;Calimaq&lt;/a&gt;. Une conférence très rapide mais néanmoins un parfait prologue à la suivante.&lt;/p&gt;
+&lt;h3&gt;Conférence : Les licences libres comme un acte de&amp;nbsp;résistance&lt;/h3&gt;
+&lt;p&gt;Laurent Paoletti, qui de son propre aveu manie l&amp;#8217;amalgame avec brio, nous gratifie d&amp;#8217;une conférence sans langue de bois sur le thème du « Copyright Madness » cher à &lt;a class="reference external" href="https://scinfolex.wordpress.com/copyright-madness/"&gt;Calimaq&lt;/a&gt;. Une conférence très rapide mais néanmoins un parfait prologue à la&amp;nbsp;suivante.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="conference-creative-commons"&gt;
-&lt;h3&gt;Conférence : Creative Commons&lt;/h3&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://twitter.com/legui"&gt;Guillaume Pérocheau&lt;/a&gt;, Enseignant chercheur à l'ISEN, nous explique la notion de biens communs et présente les licences creative commons.&lt;/p&gt;
+&lt;h3&gt;Conférence : Creative&amp;nbsp;Commons&lt;/h3&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://twitter.com/legui"&gt;Guillaume Pérocheau&lt;/a&gt;, Enseignant chercheur à l&amp;#8217;&lt;span class="caps"&gt;ISEN&lt;/span&gt;, nous explique la notion de biens communs et présente les licences creative&amp;nbsp;commons.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="conference-openpgp"&gt;
-&lt;h3&gt;Conférence : OpenPGP&lt;/h3&gt;
-&lt;p&gt;Dernière conférence de la journée ! Le sujet n'est pas des plus simples et Jean-Jacques Brucker n'hésite pas à troller pour tenir la salle en éveil. Le sujet aborde la problématique de la confiance sur Internet (et notamment dans les mails mais pas que !), de l'anonymat (je pense que j'y reviendrai) et nous présente son projet : &lt;a class="reference external" href="//openudc.org/"&gt;OpenUDC&lt;/a&gt; (alternative à Bitcoin).&lt;/p&gt;
+&lt;h3&gt;Conférence :&amp;nbsp;OpenPGP&lt;/h3&gt;
+&lt;p&gt;Dernière conférence de la journée ! Le sujet n&amp;#8217;est pas des plus simples et Jean-Jacques Brucker n&amp;#8217;hésite pas à troller pour tenir la salle en éveil. Le sujet aborde la problématique de la confiance sur Internet (et notamment dans les mails mais pas que !), de l&amp;#8217;anonymat (je pense que j&amp;#8217;y reviendrai) et nous présente son projet : &lt;a class="reference external" href="//openudc.org/"&gt;OpenUDC&lt;/a&gt; (alternative à&amp;nbsp;Bitcoin).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="fermeture"&gt;
 &lt;h3&gt;Fermeture&lt;/h3&gt;
-&lt;p&gt;Il est 18H00 et la JIL touche à sa fin. Le tirage de la tombola à lieu et c'est encore l'occasion de rire. Mon nom sort de la boîte ! Je gagne un livre de la collection « Acces libre » aux éditions &lt;a class="reference external" href="//www.editions-eyrolles.com/Collection/1490/acces-libre"&gt;Eyrolles&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Il est 18H00 et la &lt;span class="caps"&gt;JIL&lt;/span&gt; touche à sa fin. Le tirage de la tombola à lieu et c&amp;#8217;est encore l&amp;#8217;occasion de rire. Mon nom sort de la boîte ! Je gagne un livre de la collection « Acces libre » aux éditions &lt;a class="reference external" href="//www.editions-eyrolles.com/Collection/1490/acces-libre"&gt;Eyrolles&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="conclusion"&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;La journée était bien remplie et les conférences en parallèle des ateliers rendent l'organisation de la journée difficile (l'atelier rasberrypi à phagocyté la conférence de Hybird etc...). Le programme est tellement dense que je n'ai pas pu prendre le temps de discuter avec les intervenants après coup. Un petit regret pour ma part.
-Pour finir, je tiens moi même à remercier les organisateurs ainsi que les conférenciers et les intervenants (qui pour certains viennent de très loin) pour cette journée. Je vais reprendre honteusement la devise de &lt;a class="reference external" href="//www.framasoft.net/"&gt;Framasoft&lt;/a&gt; : la route est longue mais la voie est libre. Et heureusement ces personnes, aujourd'hui, sont là pour nous indiquer le chemin et nous aider à faire les premiers pas.&lt;/p&gt;
+&lt;p&gt;La journée était bien remplie et les conférences en parallèle des ateliers rendent l&amp;#8217;organisation de la journée difficile (l&amp;#8217;atelier rasberrypi à phagocyté la conférence de Hybird etc&amp;#8230;). Le programme est tellement dense que je n&amp;#8217;ai pas pu prendre le temps de discuter avec les intervenants après coup. Un petit regret pour ma part.
+Pour finir, je tiens moi même à remercier les organisateurs ainsi que les conférenciers et les intervenants (qui pour certains viennent de très loin) pour cette journée. Je vais reprendre honteusement la devise de &lt;a class="reference external" href="//www.framasoft.net/"&gt;Framasoft&lt;/a&gt; : la route est longue mais la voie est libre. Et heureusement ces personnes, aujourd&amp;#8217;hui, sont là pour nous indiquer le chemin et nous aider à faire les premiers&amp;nbsp;pas.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="JIL"></category><category term="Toulon"></category><category term="libre"></category></entry><entry><title>Lice : le générateur de licences Open Source(s)</title><link href="http://blog.dovero.org/posts/2013/01/25/lice-le-generateur-de-licences-open-sources/" rel="alternate"></link><updated>2013-01-25T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-25:posts/2013/01/25/lice-le-generateur-de-licences-open-sources/</id><summary type="html">&lt;p&gt;Il y a des petits programmes dont on ne parle pas parce-qu'ils ne font rien de spectaculaire. Et pourtant ils sont tellement pratiques que l'on a du mal à s'en passer. Le petit logiciel que je vais présenter tombe dans cette catégorie.&lt;/p&gt;
+</summary><category term="JIL"></category><category term="Toulon"></category><category term="libre"></category></entry><entry><title>Lice : le générateur de licences Open Source(s)</title><link href="http://blog.dovero.org/posts/2013/01/25/lice-le-generateur-de-licences-open-sources/" rel="alternate"></link><updated>2013-01-25T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-25:posts/2013/01/25/lice-le-generateur-de-licences-open-sources/</id><summary type="html">&lt;p&gt;Il y a des petits programmes dont on ne parle pas parce-qu&amp;#8217;ils ne font rien de spectaculaire. Et pourtant ils sont tellement pratiques que l&amp;#8217;on a du mal à s&amp;#8217;en passer. Le petit logiciel que je vais présenter tombe dans cette&amp;nbsp;catégorie.&lt;/p&gt;
 &lt;div class="section" id="que-fait-il"&gt;
-&lt;h2&gt;Que fait-il ?&lt;/h2&gt;
-&lt;p&gt;&lt;a class="reference external" href="//github.com/jcarbaugh/lice"&gt;Lice&lt;/a&gt; permet simplement, en ligne de commande, de générer le texte de la licence choisie en lui passant certains paramètres comme l'année, le nom de la licence ou encore le détenteur du copyright.
-Un exemple est certainement plus parlant :&lt;/p&gt;
+&lt;h2&gt;Que fait-il&amp;nbsp;?&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="//github.com/jcarbaugh/lice"&gt;Lice&lt;/a&gt; permet simplement, en ligne de commande, de générer le texte de la licence choisie en lui passant certains paramètres comme l&amp;#8217;année, le nom de la licence ou encore le détenteur du copyright.
+Un exemple est certainement plus parlant&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; lice -o &lt;span class="s2"&gt;&amp;quot;Fabien Dovero&amp;quot;&lt;/span&gt; mit &amp;gt; LICENSE
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;ou encore :&lt;/p&gt;
+&lt;p&gt;ou encore&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; lice -y 2013 -p &lt;span class="s2"&gt;&amp;quot;My project&amp;quot;&lt;/span&gt; -o &lt;span class="s2"&gt;&amp;quot;Free soft org&amp;quot;&lt;/span&gt; bsd3
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;pour avoir une liste des variables disponibles pour une licence en particulier :&lt;/p&gt;
+&lt;p&gt;pour avoir une liste des variables disponibles pour une licence en particulier&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; lice --vars apache
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="pour-quelles-licences"&gt;
-&lt;h2&gt;Pour quelles licences ?&lt;/h2&gt;
-&lt;p&gt;Pour l'instant il ne supporte en natif que les licences listées sur le site de l'&lt;a class="reference external" href="//opensource.org"&gt;OSI&lt;/a&gt;. Cependant il n'est pas compliqué de rajouter une licence quelconque en s'inspirant des fichiers de template et en utilisant l'option -t :&lt;/p&gt;
+&lt;h2&gt;Pour quelles licences&amp;nbsp;?&lt;/h2&gt;
+&lt;p&gt;Pour l&amp;#8217;instant il ne supporte en natif que les licences listées sur le site de l&amp;#8217;&lt;a class="reference external" href="//opensource.org"&gt;&lt;span class="caps"&gt;OSI&lt;/span&gt;&lt;/a&gt;. Cependant il n&amp;#8217;est pas compliqué de rajouter une licence quelconque en s&amp;#8217;inspirant des fichiers de template et en utilisant l&amp;#8217;option -t&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; mkdir .licenses
 &lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Ma licence imba {{ year }}, {{ organization }}&amp;quot;&lt;/span&gt; &amp;gt; .licences/template-amoi
 &lt;span class="gp"&gt;$&lt;/span&gt; lice -y 2013 -o &lt;span class="s2"&gt;&amp;quot;Fabien Dovero&amp;quot;&lt;/span&gt; -t .licenses/template-amoi
 &lt;span class="go"&gt;Ma licence imba 2013, Fabien Dovero&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pour conclure, je ne saurai que trop vous encourager à utiliser des licences open source pour votre code, en particulier ma préférée : la license &lt;a class="reference external" href="//opensource.org/licenses/MIT"&gt;MIT&lt;/a&gt; qui est parfaitement adaptée pour des petits projets.&lt;/p&gt;
+&lt;p&gt;Pour conclure, je ne saurai que trop vous encourager à utiliser des licences open source pour votre code, en particulier ma préférée : la license &lt;a class="reference external" href="//opensource.org/licenses/MIT"&gt;&lt;span class="caps"&gt;MIT&lt;/span&gt;&lt;/a&gt; qui est parfaitement adaptée pour des petits&amp;nbsp;projets.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="licence"></category><category term="pratique"></category></entry><entry><title>Vautour: thème pour pelican</title><link href="http://blog.dovero.org/posts/2013/01/20/vautour-theme-pour-pelican/" rel="alternate"></link><updated>2013-01-20T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-20:posts/2013/01/20/vautour-theme-pour-pelican/</id><summary type="html">&lt;p&gt;Ce blog est construit grâce à &lt;a class="reference external" href="//blog.getpelican.com"&gt;Pelican&lt;/a&gt;. Le thème par défaut ( qui s'appelle notmyidea ) ne me convenait pas. J'ai donc commencé par modifier ce thème pour finalement repartir de zéro ou presque.&lt;/p&gt;
+</summary><category term="licence"></category><category term="pratique"></category></entry><entry><title>Vautour: thème pour pelican</title><link href="http://blog.dovero.org/posts/2013/01/20/vautour-theme-pour-pelican/" rel="alternate"></link><updated>2013-01-20T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-20:posts/2013/01/20/vautour-theme-pour-pelican/</id><summary type="html">&lt;p&gt;Ce blog est construit grâce à &lt;a class="reference external" href="//blog.getpelican.com"&gt;Pelican&lt;/a&gt;. Le thème par défaut ( qui s&amp;#8217;appelle notmyidea ) ne me convenait pas. J&amp;#8217;ai donc commencé par modifier ce thème pour finalement repartir de zéro ou&amp;nbsp;presque.&lt;/p&gt;
 &lt;div class="section" id="point-de-depart"&gt;
-&lt;h2&gt;Point de départ&lt;/h2&gt;
-&lt;p&gt;Je suis parti du template « simple » sans CSS et me suis imposé certaines contraintes :&lt;/p&gt;
+&lt;h2&gt;Point de&amp;nbsp;départ&lt;/h2&gt;
+&lt;p&gt;Je suis parti du template « simple » sans &lt;span class="caps"&gt;CSS&lt;/span&gt; et me suis imposé certaines contraintes&amp;nbsp;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Ressources compréssées et compatibles avec des licences libres&lt;/li&gt;
-&lt;li&gt;Servir en un minimum de fichiers&lt;/li&gt;
-&lt;li&gt;Ne pas me servir des extensions propriétaires des navigateurs ( les -webkit- -moz- -o- )&lt;/li&gt;
-&lt;li&gt;Ne pas imposer Google aux visiteurs ( aucune ressource servie par google )&lt;/li&gt;
+&lt;li&gt;Ressources compréssées et compatibles avec des licences&amp;nbsp;libres&lt;/li&gt;
+&lt;li&gt;Servir en un minimum de&amp;nbsp;fichiers&lt;/li&gt;
+&lt;li&gt;Ne pas me servir des extensions propriétaires des navigateurs ( les -webkit- -moz- -o-&amp;nbsp;)&lt;/li&gt;
+&lt;li&gt;Ne pas imposer Google aux visiteurs ( aucune ressource servie par google&amp;nbsp;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Le but étant de fournir un site le plus réactif et léger possible.&lt;/p&gt;
-&lt;p&gt;J'ai utilisé &lt;a class="reference external" href="//learnboost.github.com/stylus"&gt;Stylus&lt;/a&gt; pour générer le CSS. En effet il me permet de construire mes CSS en plusieurs fichiers distincts mais de générer une sortie dans un unique fichier CSS compréssé. De plus l'utilitaire fourni une fonction de surveillance de fichier : quand le fichier surveillé est modifié il est compilé instantanément ( ce qui est un énorme avantage quand on développe pour le web ).&lt;/p&gt;
-&lt;p&gt;Pour la police de caractères, il s'agit de &lt;a class="reference external" href="//openfontlibrary.org/en/font/jura"&gt;Jura&lt;/a&gt; sous licence OFL servit par &lt;a class="reference external" href="//openfontlibrary.org"&gt;openfontlibrary&lt;/a&gt; ( pour éviter google web font ), la texture de fond de la page est &lt;a class="reference external" href="//subtlepatterns.com/grid"&gt;grid&lt;/a&gt; trouvée sur &lt;a class="reference external" href="//subtlepatterns.com"&gt;subtlepatterns&lt;/a&gt; et l'echantillon d'icones est issu d' &lt;a class="reference external" href="//entypo.com"&gt;entypo&lt;/a&gt; sous licence CC-BY-SA.
-Pour les icones j'ai généré un subset avec les seules icones qui m'interessent grace à l'application d'&lt;a class="reference external" href="//icomoon.io/app"&gt;icomoon&lt;/a&gt; pour réduire la taille du fichier servi.&lt;/p&gt;
+&lt;p&gt;Le but étant de fournir un site le plus réactif et léger&amp;nbsp;possible.&lt;/p&gt;
+&lt;p&gt;J&amp;#8217;ai utilisé &lt;a class="reference external" href="//learnboost.github.com/stylus"&gt;Stylus&lt;/a&gt; pour générer le &lt;span class="caps"&gt;CSS&lt;/span&gt;. En effet il me permet de construire mes &lt;span class="caps"&gt;CSS&lt;/span&gt; en plusieurs fichiers distincts mais de générer une sortie dans un unique fichier &lt;span class="caps"&gt;CSS&lt;/span&gt; compréssé. De plus l&amp;#8217;utilitaire fourni une fonction de surveillance de fichier : quand le fichier surveillé est modifié il est compilé instantanément ( ce qui est un énorme avantage quand on développe pour le web&amp;nbsp;).&lt;/p&gt;
+&lt;p&gt;Pour la police de caractères, il s&amp;#8217;agit de &lt;a class="reference external" href="//openfontlibrary.org/en/font/jura"&gt;Jura&lt;/a&gt; sous licence &lt;span class="caps"&gt;OFL&lt;/span&gt; servit par &lt;a class="reference external" href="//openfontlibrary.org"&gt;openfontlibrary&lt;/a&gt; ( pour éviter google web font ), la texture de fond de la page est &lt;a class="reference external" href="//subtlepatterns.com/grid"&gt;grid&lt;/a&gt; trouvée sur &lt;a class="reference external" href="//subtlepatterns.com"&gt;subtlepatterns&lt;/a&gt; et l&amp;#8217;echantillon d&amp;#8217;icones est issu d&amp;#8217; &lt;a class="reference external" href="//entypo.com"&gt;entypo&lt;/a&gt; sous licence &lt;span class="caps"&gt;CC&lt;/span&gt;-&lt;span class="caps"&gt;BY&lt;/span&gt;-&lt;span class="caps"&gt;SA&lt;/span&gt;.
+Pour les icones j&amp;#8217;ai généré un subset avec les seules icones qui m&amp;#8217;interessent grace à l&amp;#8217;application d&amp;#8217;&lt;a class="reference external" href="//icomoon.io/app"&gt;icomoon&lt;/a&gt; pour réduire la taille du fichier&amp;nbsp;servi.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="la-suite"&gt;
-&lt;h2&gt;La suite&lt;/h2&gt;
-&lt;p&gt;J'ai construis ce thème pour mes besoins personnels et il est donc très loin de couvrir tous les usages de Pelican. De plus, je ne l'ai testé que sur Firefox et Opera.&lt;/p&gt;
-&lt;p&gt;Mon objectif pour la suite est de le rendre pleinements compatible sans utiliser des tricks ( commes les commentaires conditionnels ou des attributs non standardisés ) et d'englober le maximum d'usages.&lt;/p&gt;
+&lt;h2&gt;La&amp;nbsp;suite&lt;/h2&gt;
+&lt;p&gt;J&amp;#8217;ai construis ce thème pour mes besoins personnels et il est donc très loin de couvrir tous les usages de Pelican. De plus, je ne l&amp;#8217;ai testé que sur Firefox et&amp;nbsp;Opera.&lt;/p&gt;
+&lt;p&gt;Mon objectif pour la suite est de le rendre pleinements compatible sans utiliser des tricks ( commes les commentaires conditionnels ou des attributs non standardisés ) et d&amp;#8217;englober le maximum&amp;nbsp;d&amp;#8217;usages.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="choix-de-licence"&gt;
-&lt;h2&gt;Choix de licence&lt;/h2&gt;
-&lt;p&gt;J'ai choisi de placer le code de &lt;a class="reference external" href="//github.com/fdovero/vautour"&gt;vautour&lt;/a&gt; sous licence MIT donc amusez-vous !&lt;/p&gt;
+&lt;h2&gt;Choix de&amp;nbsp;licence&lt;/h2&gt;
+&lt;p&gt;J&amp;#8217;ai choisi de placer le code de &lt;a class="reference external" href="//github.com/fdovero/vautour"&gt;vautour&lt;/a&gt; sous licence &lt;span class="caps"&gt;MIT&lt;/span&gt; donc amusez-vous&amp;nbsp;!&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="pelican"></category><category term="blog"></category><category term="vautour"></category></entry><entry><title>Optimiser un site web : réduire la taille des ressources statiques</title><link href="http://blog.dovero.org/posts/2013/01/12/optimiser-un-site-web-reduire-la-taille-des-ressources-statiques/" rel="alternate"></link><updated>2013-01-12T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-12:posts/2013/01/12/optimiser-un-site-web-reduire-la-taille-des-ressources-statiques/</id><summary type="html">&lt;p&gt;La rapidité du web est le maitre mot depuis que les accès haut débit se sont démocratisés.
-Aujourd'hui plus que jamais, la réactivité d'un site web est un objectif à atteindre surtout que ces mêmes sites ont tendance à enfler.
-Google en fait même un critère de qualité pour son algorithme d'indexation.
-J'ai été confronté a cette problématique et je vais présenté dans une série de billets différentes techniques d'optimisation, de la plus évidente à la plus tordue !
-Cette série est amenée à évoluer.&lt;/p&gt;
-&lt;p&gt;Dans ce premier billet de la série je vais donc parler  de ce qui est évident pour tout développeur web qui veut accélérer le rendu de son site : réduire la taille des ressources !&lt;/p&gt;
+</summary><category term="pelican"></category><category term="blog"></category><category term="vautour"></category></entry><entry><title>Optimiser un site web : réduire la taille des ressources statiques</title><link href="http://blog.dovero.org/posts/2013/01/12/optimiser-un-site-web-reduire-la-taille-des-ressources-statiques/" rel="alternate"></link><updated>2013-01-12T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-01-12:posts/2013/01/12/optimiser-un-site-web-reduire-la-taille-des-ressources-statiques/</id><summary type="html">&lt;p&gt;La rapidité du web est le maitre mot depuis que les accès haut débit se sont démocratisés.
+Aujourd&amp;#8217;hui plus que jamais, la réactivité d&amp;#8217;un site web est un objectif à atteindre surtout que ces mêmes sites ont tendance à enfler.
+Google en fait même un critère de qualité pour son algorithme d&amp;#8217;indexation.
+J&amp;#8217;ai été confronté a cette problématique et je vais présenté dans une série de billets différentes techniques d&amp;#8217;optimisation, de la plus évidente à la plus tordue !
+Cette série est amenée à&amp;nbsp;évoluer.&lt;/p&gt;
+&lt;p&gt;Dans ce premier billet de la série je vais donc parler  de ce qui est évident pour tout développeur web qui veut accélérer le rendu de son site : réduire la taille des ressources&amp;nbsp;!&lt;/p&gt;
 &lt;div class="section" id="reduire-le-javascript"&gt;
-&lt;h2&gt;Réduire le Javascript&lt;/h2&gt;
-&lt;p&gt;Il existe plusieurs réducteur de javascript. J'aime la simplicité et la puissance de &lt;a class="reference external" href="//lisperator.net/uglifyjs/"&gt;uglifyjs&lt;/a&gt;.
-Pour l'installer :&lt;/p&gt;
+&lt;h2&gt;Réduire le&amp;nbsp;Javascript&lt;/h2&gt;
+&lt;p&gt;Il existe plusieurs réducteur de javascript. J&amp;#8217;aime la simplicité et la puissance de &lt;a class="reference external" href="//lisperator.net/uglifyjs/"&gt;uglifyjs&lt;/a&gt;.
+Pour l&amp;#8217;installer&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; npm install -g uglify-js
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Ensuite pour compresser le javascript :&lt;/p&gt;
+&lt;p&gt;Ensuite pour compresser le javascript&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; uglifyjs -c app.js -o app.min.js
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="reduire-les-css"&gt;
-&lt;h2&gt;Réduire les CSS&lt;/h2&gt;
-&lt;p&gt;J'utilise &lt;a class="reference external" href="//learnboost.github.com/stylus/"&gt;stylus&lt;/a&gt; comme préprocesseur CSS. La commande stylus propose un paramètre pour compresser la sortie&lt;/p&gt;
+&lt;h2&gt;Réduire les &lt;span class="caps"&gt;CSS&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;J&amp;#8217;utilise &lt;a class="reference external" href="//learnboost.github.com/stylus/"&gt;stylus&lt;/a&gt; comme préprocesseur &lt;span class="caps"&gt;CSS&lt;/span&gt;. La commande stylus propose un paramètre pour compresser la&amp;nbsp;sortie&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; npm install -g stylus
 &lt;span class="gp"&gt;$&lt;/span&gt; stylus --compress app.styl
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Et comme j'aime les solutions tordues, on peut également passer un css pour le transformer en fichier stylus et compresser le css en sortie !&lt;/p&gt;
+&lt;p&gt;Et comme j&amp;#8217;aime les solutions tordues, on peut également passer un css pour le transformer en fichier stylus et compresser le css en sortie&amp;nbsp;!&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; stylus --css app.css &amp;amp; stylus --compress app.styl
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Si vous préférez les solutions simples il existe &lt;a class="reference external" href="//github.com/css/csso"&gt;csso&lt;/a&gt; qui rempli cette tâche à merveille :&lt;/p&gt;
+&lt;p&gt;Si vous préférez les solutions simples il existe &lt;a class="reference external" href="//github.com/css/csso"&gt;csso&lt;/a&gt; qui rempli cette tâche à merveille&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; npm install -g csso
 &lt;span class="gp"&gt;$&lt;/span&gt; csso app.css app.min.css
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Et voilà !&lt;/p&gt;
+&lt;p&gt;Et voilà&amp;nbsp;!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="reduire-les-images"&gt;
-&lt;h2&gt;Réduire les images&lt;/h2&gt;
-&lt;p&gt;Les images sont les ressources le plus lourdes à transférer. Pourtant il y a un moyen simple et sans perte de réduire leur taille de 50% en moyenne. En effet les images embarquent toutes sortes de tags qui prennent une place non négligable.&lt;/p&gt;
-&lt;p&gt;Pour optimiser des PNG il existe &lt;a class="reference external" href="//optipng.sourceforge.net/"&gt;optipng&lt;/a&gt; et &lt;a class="reference external" href="//www.kokkonen.net/tjko/projects.htm"&gt;jpegoptim&lt;/a&gt; pour les JPEG !&lt;/p&gt;
+&lt;h2&gt;Réduire les&amp;nbsp;images&lt;/h2&gt;
+&lt;p&gt;Les images sont les ressources le plus lourdes à transférer. Pourtant il y a un moyen simple et sans perte de réduire leur taille de 50% en moyenne. En effet les images embarquent toutes sortes de tags qui prennent une place non&amp;nbsp;négligable.&lt;/p&gt;
+&lt;p&gt;Pour optimiser des &lt;span class="caps"&gt;PNG&lt;/span&gt; il existe &lt;a class="reference external" href="//optipng.sourceforge.net/"&gt;optipng&lt;/a&gt; et &lt;a class="reference external" href="//www.kokkonen.net/tjko/projects.htm"&gt;jpegoptim&lt;/a&gt; pour les &lt;span class="caps"&gt;JPEG&lt;/span&gt;&amp;nbsp;!&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; optipng -o 7 ./images
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="cas-des-icon-fonts"&gt;
-&lt;h2&gt;Cas des « icon fonts »&lt;/h2&gt;
-&lt;p&gt;J'utilise de plus en plus ces polices d'icones (grâce à la propriété &amp;#64;font-face de CSS3). Seulement je n'utilise jamais toutes les icones proposées. J'aimerai pouvoir récupérer uniquement les icones qui m'interessent afin de réduire la taille des fichiers de la fonte et du css associé.
-Pour &lt;a class="reference external" href="//fortawesome.github.com/Font-Awesome/"&gt;font awesome&lt;/a&gt; il existe &lt;a class="reference external" href="//icnfnt.com"&gt;icnfnt&lt;/a&gt; qui justement permet de se constituer son fichier aux petits ognions.&lt;/p&gt;
+&lt;h2&gt;Cas des « icon fonts&amp;nbsp;»&lt;/h2&gt;
+&lt;p&gt;J&amp;#8217;utilise de plus en plus ces polices d&amp;#8217;icones (grâce à la propriété &amp;#64;font-face de &lt;span class="caps"&gt;CSS3&lt;/span&gt;). Seulement je n&amp;#8217;utilise jamais toutes les icones proposées. J&amp;#8217;aimerai pouvoir récupérer uniquement les icones qui m&amp;#8217;interessent afin de réduire la taille des fichiers de la fonte et du css associé.
+Pour &lt;a class="reference external" href="//fortawesome.github.com/Font-Awesome/"&gt;font awesome&lt;/a&gt; il existe &lt;a class="reference external" href="//icnfnt.com"&gt;icnfnt&lt;/a&gt; qui justement permet de se constituer son fichier aux petits&amp;nbsp;ognions.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="web"></category><category term="optimisation"></category><category term="bonne pratique"></category></entry><entry><title>Installer des paquets Node.js dans virtualenv</title><link href="http://blog.dovero.org/posts/2012/12/14/installer-des-paquets-nodejs-dans-virtualenv/" rel="alternate"></link><updated>2012-12-14T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2012-12-14:posts/2012/12/14/installer-des-paquets-nodejs-dans-virtualenv/</id><summary type="html">&lt;p&gt;Virtualenv est un outil formidable. Si vous ne l'utilisez pas encore il faut vous y mettre absoluement !
-Pour résumer rapidement c'est un outil qui sert à créer des environnements de développements python isolés les uns des autres.&lt;/p&gt;
-&lt;p&gt;Il m'arrive d'avoir besoin de modules d'autres languages que python notemment pour le développement web.&lt;/p&gt;
-&lt;p&gt;Ce qui m'interresse aujourd'hui, c'est d'obtenir un environnement virtualisé avec virtualenv et des modules node.js (stylus jade et coffee-script)&lt;/p&gt;
+</summary><category term="web"></category><category term="optimisation"></category><category term="bonne pratique"></category></entry><entry><title>Installer des paquets Node.js dans virtualenv</title><link href="http://blog.dovero.org/posts/2012/12/14/installer-des-paquets-nodejs-dans-virtualenv/" rel="alternate"></link><updated>2012-12-14T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2012-12-14:posts/2012/12/14/installer-des-paquets-nodejs-dans-virtualenv/</id><summary type="html">&lt;p&gt;Virtualenv est un outil formidable. Si vous ne l&amp;#8217;utilisez pas encore il faut vous y mettre absoluement !
+Pour résumer rapidement c&amp;#8217;est un outil qui sert à créer des environnements de développements python isolés les uns des&amp;nbsp;autres.&lt;/p&gt;
+&lt;p&gt;Il m&amp;#8217;arrive d&amp;#8217;avoir besoin de modules d&amp;#8217;autres languages que python notemment pour le développement&amp;nbsp;web.&lt;/p&gt;
+&lt;p&gt;Ce qui m&amp;#8217;interresse aujourd&amp;#8217;hui, c&amp;#8217;est d&amp;#8217;obtenir un environnement virtualisé avec virtualenv et des modules node.js (stylus jade et&amp;nbsp;coffee-script)&lt;/p&gt;
 &lt;div class="section" id="mise-en-place-de-l-environnement"&gt;
-&lt;h2&gt;Mise en place de l'environnement&lt;/h2&gt;
-&lt;p&gt;Tout d'abord, il faut mettre en place un environnement virtuel avec virtualenv (j'utilise personnellement &lt;a class="reference external" href="//www.doughellmann.com/projects/virtualenvwrapper/"&gt;virtualenvwrapper&lt;/a&gt;)&lt;/p&gt;
+&lt;h2&gt;Mise en place de&amp;nbsp;l&amp;#8217;environnement&lt;/h2&gt;
+&lt;p&gt;Tout d&amp;#8217;abord, il faut mettre en place un environnement virtuel avec virtualenv (j&amp;#8217;utilise personnellement &lt;a class="reference external" href="//www.doughellmann.com/projects/virtualenvwrapper/"&gt;virtualenvwrapper&lt;/a&gt;)&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; mkdir devnode
 &lt;span class="gp"&gt;$&lt;/span&gt; mkvirtualenv devnode
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Et c'est tout !
-Enfin... pour l'environnement de developpement seulement. Mais la suite est tout aussi triviale.&lt;/p&gt;
+&lt;p&gt;Et c&amp;#8217;est tout !
+Enfin&amp;#8230; pour l&amp;#8217;environnement de developpement seulement. Mais la suite est tout aussi&amp;nbsp;triviale.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="configuration-des-hooks"&gt;
-&lt;h2&gt;Configuration des « hooks »&lt;/h2&gt;
-&lt;p&gt;virtualenvwrapper propose des fichiers qui seront lus apres l'installation de l'environnement (postinstall) et surtout celui qui nous intéresse après l'activation de l'environnement (postactivate).
-Il nous suffit alors de le modifier afin d'y inclure certaines directives :&lt;/p&gt;
+&lt;h2&gt;Configuration des « hooks&amp;nbsp;»&lt;/h2&gt;
+&lt;p&gt;virtualenvwrapper propose des fichiers qui seront lus apres l&amp;#8217;installation de l&amp;#8217;environnement (postinstall) et surtout celui qui nous intéresse après l&amp;#8217;activation de l&amp;#8217;environnement (postactivate).
+Il nous suffit alors de le modifier afin d&amp;#8217;y inclure certaines directives&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; workon devnode
 &lt;span class="gp"&gt;$&lt;/span&gt; cdvirtualenv bin
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Editez ensuite le fichier postactivate et y ajouter les lignes suivantes :&lt;/p&gt;
+&lt;p&gt;Editez ensuite le fichier postactivate et y ajouter les lignes suivantes&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# node.js packages&lt;/span&gt;
 &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;npm_config_prefix&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$VIRTUAL_ENV&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;et dans le fichier predeactivate :&lt;/p&gt;
+&lt;p&gt;et dans le fichier predeactivate&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# remove node.js config&lt;/span&gt;
 &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;npm_config_prefix&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Si virtualenv est configuré correctement il vous suffit de lancer les commandes d'installation des paquets habituelles :&lt;/p&gt;
+&lt;p&gt;Si virtualenv est configuré correctement il vous suffit de lancer les commandes d&amp;#8217;installation des paquets habituelles&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; npm install -g stylus jade coffee-script
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Notez l'utilisation de l'option -g (installation globale).&lt;/p&gt;
-&lt;p&gt;Et voilà. Rien de plus compliqué que ça ! Et ça fonctionne également avec les gem ruby etc...&lt;/p&gt;
-&lt;p&gt;Comme ce billet le laisse entrevoir, je parlerai bientôt des préprocesseurs css (stylus) html (jade) et javascript (coffee-script).&lt;/p&gt;
+&lt;p&gt;Notez l&amp;#8217;utilisation de l&amp;#8217;option -g (installation&amp;nbsp;globale).&lt;/p&gt;
+&lt;p&gt;Et voilà. Rien de plus compliqué que ça ! Et ça fonctionne également avec les gem ruby&amp;nbsp;etc&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Comme ce billet le laisse entrevoir, je parlerai bientôt des préprocesseurs css (stylus) html (jade) et javascript&amp;nbsp;(coffee-script).&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="virtualenv"></category><category term="node.js"></category></entry><entry><title>Hello World</title><link href="http://blog.dovero.org/posts/2012/11/10/hello-world/" rel="alternate"></link><updated>2012-11-10T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2012-11-10:posts/2012/11/10/hello-world/</id><summary type="html">&lt;p&gt;Tout blog commence par son «Hello World» et celui-ci ne fait pas exception.
-J'ouvre cet espace pour me servir de bloc note. Je traiterai de sujets techniques principalement.&lt;/p&gt;
-&lt;p&gt;Ce blog est :&lt;/p&gt;
+</summary><category term="virtualenv"></category><category term="node.js"></category></entry><entry><title>Hello World</title><link href="http://blog.dovero.org/posts/2012/11/10/hello-world/" rel="alternate"></link><updated>2012-11-10T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2012-11-10:posts/2012/11/10/hello-world/</id><summary type="html">&lt;p&gt;Tout blog commence par son «Hello World» et celui-ci ne fait pas exception.
+J&amp;#8217;ouvre cet espace pour me servir de bloc note. Je traiterai de sujets techniques&amp;nbsp;principalement.&lt;/p&gt;
+&lt;p&gt;Ce blog est&amp;nbsp;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Généré par &lt;a class="reference external" href="//blog.getpelican.com"&gt;Pelican&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Hébergé sur github:pages (les sources sont disponibles sur &lt;a class="reference external" href="//github.com/fdovero/blog"&gt;mon dépot&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Étant développeur j'utilise énormément d'outils pour accélérer mon cycle de travail et comme je l'ai dis au début, je vais exposé ici mes astuces ou les quelques découvertes qui me paraissent utiles pour la suite de mon travail.&lt;/p&gt;
-&lt;p&gt;Je suis également un partisan de la culture &lt;cite&gt;Open Source&lt;/cite&gt; (j'aime le libre mais je reste pragmatique) et en tant que tel j'essai dans la mesure du possible d'utiliser des outils (logiciels ou bibliothèques) sous licences libre ou open source (les licences approuvés par l'&lt;a class="reference external" href="//opensource.org"&gt;OSI&lt;/a&gt;), il se peut donc que je parle de ce thème également.&lt;/p&gt;
-&lt;p&gt;Il n'y a pas de systèmes de commentaires. C'est une volonté de ma part. Pour me contacter utilisez Twitter ou mon adress mail.&lt;/p&gt;
-&lt;p&gt;Je vais donc conclure ce «Hello World».&lt;/p&gt;
-&lt;p&gt;À bientôt.&lt;/p&gt;
+&lt;p&gt;Étant développeur j&amp;#8217;utilise énormément d&amp;#8217;outils pour accélérer mon cycle de travail et comme je l&amp;#8217;ai dis au début, je vais exposé ici mes astuces ou les quelques découvertes qui me paraissent utiles pour la suite de mon&amp;nbsp;travail.&lt;/p&gt;
+&lt;p&gt;Je suis également un partisan de la culture &lt;cite&gt;Open Source&lt;/cite&gt; (j&amp;#8217;aime le libre mais je reste pragmatique) et en tant que tel j&amp;#8217;essai dans la mesure du possible d&amp;#8217;utiliser des outils (logiciels ou bibliothèques) sous licences libre ou open source (les licences approuvés par l&amp;#8217;&lt;a class="reference external" href="//opensource.org"&gt;&lt;span class="caps"&gt;OSI&lt;/span&gt;&lt;/a&gt;), il se peut donc que je parle de ce thème&amp;nbsp;également.&lt;/p&gt;
+&lt;p&gt;Il n&amp;#8217;y a pas de systèmes de commentaires. C&amp;#8217;est une volonté de ma part. Pour me contacter utilisez Twitter ou mon adress&amp;nbsp;mail.&lt;/p&gt;
+&lt;p&gt;Je vais donc conclure ce «Hello&amp;nbsp;World».&lt;/p&gt;
+&lt;p&gt;À&amp;nbsp;bientôt.&lt;/p&gt;
 </summary><category term="blog"></category><category term="hello"></category></entry></feed>
