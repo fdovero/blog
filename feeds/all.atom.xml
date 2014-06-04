@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2013-11-17T00:00:00+01:00</updated><entry><title>Mon Firefox</title><link href="http://blog.dovero.org/posts/2013/11/17/mon-firefox/" rel="alternate"></link><updated>2013-11-17T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-11-17:posts/2013/11/17/mon-firefox/</id><summary type="html">&lt;p&gt;Je suis un amoureux du&amp;nbsp;Web.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>/dev/log</title><link href="http://blog.dovero.org/" rel="alternate"></link><link href="http://blog.dovero.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.dovero.org/</id><updated>2014-06-06T00:00:00+02:00</updated><entry><title>Comment gérer des utilisateurs dans Couchdb</title><link href="http://blog.dovero.org/posts/2014/06/06/comment-gerer-des-utilisateurs-dans-couchdb/" rel="alternate"></link><updated>2014-06-06T00:00:00+02:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2014-06-06:posts/2014/06/06/comment-gerer-des-utilisateurs-dans-couchdb/</id><summary type="html">&lt;p&gt;La plupart du temps, une application web est bâtie sur le même modèle :
+un frontend en html/css/js, une base de donnée et un backend ( dans le language de votre choix ) qui fait le lien entre les deux et permet de gérer les permissions utilisateurs&amp;nbsp;etc&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Avec Couchdb il est possible de se passer de backend et de gérer la sécurité directement en base de données.
+Tout ce que je vais expliquer dans la suite de ce billet se retrouve dans la &lt;a class="reference external" href="http://docs.couchdb.org/en/latest/intro/security.html"&gt;doc en ligne de Couchdb&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="creation-de-l-utilisateur"&gt;
+&lt;h2&gt;Création de&amp;nbsp;l&amp;#8217;utilisateur&lt;/h2&gt;
+&lt;p&gt;Tout d&amp;#8217;abord nous ajoutons un utilisateur.
+Pour cela il suffit de créer un document dans la base _users et de renseigner quelques champs&amp;nbsp;obligatoires.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;org.couchdb.user:test&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;test&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;quot;password&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;test&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;user&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;quot;roles&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ce sont les champs &lt;strong&gt;au minimum requis&lt;/strong&gt; mais on peut tout à fait en rajouter à&amp;nbsp;volonté.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note : le champs id doit obligatoirement être préfixé par&amp;nbsp;org.couchdb.user:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;L&amp;#8217;énorme avantage de passer par cette méthode ( et non pas de créer une nouvelle base « custom » pour gérer nos propres modèles d&amp;#8217;utilisateurs ) c&amp;#8217;est que couchdb assure le hashage et le salage du mot de passe au moment de la création de l&amp;#8217;utilisateur&amp;nbsp;!&lt;/p&gt;
+&lt;p&gt;Vérifions&amp;nbsp;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; curl -X POST http://localhost:5984/_session -d &lt;span class="s1"&gt;&amp;#39;name=test&amp;amp;password=test&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;ok&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;test&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;roles&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:[]}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Tout fonctionne, on peut passer à la&amp;nbsp;suite.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="gestion-des-droits"&gt;
+&lt;h2&gt;Gestion des&amp;nbsp;droits&lt;/h2&gt;
+&lt;p&gt;Commençons par créer une base de&amp;nbsp;données&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; curl -X PUT http://localhost:5984/testdb &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="go"&gt;    -u admin:adminpass \&lt;/span&gt;
+&lt;span class="go"&gt;    -H &amp;quot;Content-Type: application/json&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;et donnons des droits à l&amp;#8217;utilisateur « test » sur cette base.
+Pour ça, nous créons le document spécial &lt;strong&gt;_security&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; curl -X PUT http://localhost:5984/testdb/_security &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="go"&gt;    -u admin:adminpass \&lt;/span&gt;
+&lt;span class="go"&gt;    -H &amp;quot;Content-Type: application/json&amp;quot; \&lt;/span&gt;
+&lt;span class="go"&gt;    -d &amp;#39;{&amp;quot;admins&amp;quot;: { &amp;quot;names&amp;quot;: [], &amp;quot;roles&amp;quot;: [] }, &amp;quot;members&amp;quot;: { &amp;quot;names&amp;quot;: [&amp;quot;test&amp;quot;], &amp;quot;roles&amp;quot;: [] } }&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Et voilà ! On ne peut plus accéder à la base « testdb » en anonyme&amp;nbsp;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; curl http://localhost:5984/testdb
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;error&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;unauthorized&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;reason&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;You are not authorized to access this db.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Les « members » d&amp;#8217;un base ont les droits en lecture et écriture sur leur propre base mais ne peuvent pas créer de &lt;em&gt;design&amp;nbsp;docs&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Voilà pour ce qui est de la base de la gestion de droits sans utiliser de backend. On peut approfondir en créant des rôles pour gérer les droits au niveau de groupe mais ce n&amp;#8217;est pas l&amp;#8217;objectif visé&amp;nbsp;ici.&lt;/p&gt;
+&lt;p&gt;Dans mon prochain billet je vais aborder la création d&amp;#8217;une application simple avec react.js, couchdb, et les custom event&amp;nbsp;listener.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="couchdb"></category><category term="sécurité"></category></entry><entry><title>Mon Firefox</title><link href="http://blog.dovero.org/posts/2013/11/17/mon-firefox/" rel="alternate"></link><updated>2013-11-17T00:00:00+01:00</updated><author><name>Fabien Dovero</name></author><id>tag:blog.dovero.org,2013-11-17:posts/2013/11/17/mon-firefox/</id><summary type="html">&lt;p&gt;Je suis un amoureux du&amp;nbsp;Web.&lt;/p&gt;
 &lt;p&gt;De tous les navigateurs, Firefox à toujours eu ma préférence depuis la version 2.0 qu&amp;#8217;un ami m&amp;#8217;avait installé pour remplacer &lt;span class="caps"&gt;IE6&lt;/span&gt;&amp;#8230; Ce fut le coup de foudre ! Je n&amp;#8217;ai plus jamais quitté mon panda roux&amp;nbsp;!&lt;/p&gt;
 &lt;p&gt;Je tiens à jour cet article pour m&amp;#8217;aider à maintenir mes differentes&amp;nbsp;installations.&lt;/p&gt;
 &lt;div class="section" id="les-extensions"&gt;

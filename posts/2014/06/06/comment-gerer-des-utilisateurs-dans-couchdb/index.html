@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <title>/dev/log</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+        <link rel="stylesheet" href="http://blog.dovero.org/theme/css/main.css" type="text/css" />
+        <link href="http://blog.dovero.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="/dev/log Full Atom Feed" />
+        <link href="http://blog.dovero.org/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate" title="/dev/log Categories Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+            <h1><a href="http://blog.dovero.org">/dev/log<br><strong>Journal d'un dev</strong></a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="http://blog.dovero.org/pages/about.html">About</a></li>
+            <li><a href="http://blog.dovero.org/pages/projects.html">Projects</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="posts/2014/06/06/comment-gerer-des-utilisateurs-dans-couchdb/" rel="bookmark"
+         title="Permalink to Comment gérer des utilisateurs dans Couchdb">Comment gérer des utilisateurs dans&nbsp;Couchdb</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2014-06-06T00:00:00">
+      ven. 06 juin 2014
+    </abbr>
+    <address class="vcard author">
+      By <a class="url fn" href="http://blog.dovero.org/author/fabien-dovero.html">Fabien Dovero</a>
+    </address>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <p>La plupart du temps, une application web est bâtie sur le même modèle :
+un frontend en html/css/js, une base de donnée et un backend ( dans le language de votre choix ) qui fait le lien entre les deux et permet de gérer les permissions utilisateurs&nbsp;etc&#8230;</p>
+<p>Avec Couchdb il est possible de se passer de backend et de gérer la sécurité directement en base de données.
+Tout ce que je vais expliquer dans la suite de ce billet se retrouve dans la <a class="reference external" href="http://docs.couchdb.org/en/latest/intro/security.html">doc en ligne de Couchdb</a>.</p>
+<div class="section" id="creation-de-l-utilisateur">
+<h2>Création de&nbsp;l&#8217;utilisateur</h2>
+<p>Tout d&#8217;abord nous ajoutons un utilisateur.
+Pour cela il suffit de créer un document dans la base _users et de renseigner quelques champs&nbsp;obligatoires.</p>
+<div class="highlight"><pre><span class="p">{</span>
+  <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;org.couchdb.user:test&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</pre></div>
+<p>Ce sont les champs <strong>au minimum requis</strong> mais on peut tout à fait en rajouter à&nbsp;volonté.</p>
+<p><em>Note : le champs id doit obligatoirement être préfixé par&nbsp;org.couchdb.user:</em></p>
+<p>L&#8217;énorme avantage de passer par cette méthode ( et non pas de créer une nouvelle base « custom » pour gérer nos propres modèles d&#8217;utilisateurs ) c&#8217;est que couchdb assure le hashage et le salage du mot de passe au moment de la création de l&#8217;utilisateur&nbsp;!</p>
+<p>Vérifions&nbsp;:</p>
+<div class="highlight"><pre><span class="gp">$</span> curl -X POST http://localhost:5984/_session -d <span class="s1">&#39;name=test&amp;password=test&#39;</span>
+</pre></div>
+<div class="highlight"><pre><span class="p">{</span><span class="nt">&quot;ok&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="nt">&quot;roles&quot;</span><span class="p">:[]}</span>
+</pre></div>
+<p>Tout fonctionne, on peut passer à la&nbsp;suite.</p>
+</div>
+<div class="section" id="gestion-des-droits">
+<h2>Gestion des&nbsp;droits</h2>
+<p>Commençons par créer une base de&nbsp;données</p>
+<div class="highlight"><pre><span class="gp">$</span> curl -X PUT http://localhost:5984/testdb <span class="se">\</span>
+<span class="go">    -u admin:adminpass \</span>
+<span class="go">    -H &quot;Content-Type: application/json&quot;</span>
+</pre></div>
+<p>et donnons des droits à l&#8217;utilisateur « test » sur cette base.
+Pour ça, nous créons le document spécial <strong>_security</strong></p>
+<div class="highlight"><pre><span class="gp">$</span> curl -X PUT http://localhost:5984/testdb/_security <span class="se">\</span>
+<span class="go">    -u admin:adminpass \</span>
+<span class="go">    -H &quot;Content-Type: application/json&quot; \</span>
+<span class="go">    -d &#39;{&quot;admins&quot;: { &quot;names&quot;: [], &quot;roles&quot;: [] }, &quot;members&quot;: { &quot;names&quot;: [&quot;test&quot;], &quot;roles&quot;: [] } }&#39;</span>
+</pre></div>
+<p>Et voilà ! On ne peut plus accéder à la base « testdb » en anonyme&nbsp;:</p>
+<div class="highlight"><pre><span class="gp">$</span> curl http://localhost:5984/testdb
+</pre></div>
+<div class="highlight"><pre><span class="p">{</span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="s2">&quot;unauthorized&quot;</span><span class="p">,</span><span class="nt">&quot;reason&quot;</span><span class="p">:</span><span class="s2">&quot;You are not authorized to access this db.&quot;</span><span class="p">}</span>
+</pre></div>
+<p>Les « members » d&#8217;un base ont les droits en lecture et écriture sur leur propre base mais ne peuvent pas créer de <em>design&nbsp;docs</em></p>
+<p>Voilà pour ce qui est de la base de la gestion de droits sans utiliser de backend. On peut approfondir en créant des rôles pour gérer les droits au niveau de groupe mais ce n&#8217;est pas l&#8217;objectif visé&nbsp;ici.</p>
+<p>Dans mon prochain billet je vais aborder la création d&#8217;une application simple avec react.js, couchdb, et les custom event&nbsp;listener.</p>
+</div>
+
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+            <div id="bottom-links">
+                <a href="//twitter.com/azhagg" target="_blank"><i class="s-icon-twitter"></i></a>
+                <a href="//github.com/fdovero" target="_blank"><i class="s-icon-github"></i></a>
+                <a href="//flattr.com/thing/1129258/devlog-journal-dun-dev" target="_blank"><i class="s-icon-flattr"></i></a>
+                <a href="http://blog.dovero.org/feeds/all.atom.xml" target="_blank"><i class="s-icon-rss"></i></a>
+            </div>
+            <div id="credits">
+               Except where otherwise noted, content on this site is licensed under<a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/deed.en"><i class="s-icon-cc"></i><i class="s-icon-cc-by"></i><i class="s-icon-cc-sa"></i></a>
+            </div>
+            <address id="about" class="vcard body">
+                Proudly powered by <a href="//getpelican.com/">Pelican</a>,
+                vautour theme by <a href="//blog.dovero.org">Fabien Dovero</a>
+            </address><!-- /#about --> 
+        </footer><!-- /#contentinfo -->
+</body>
+</html>
