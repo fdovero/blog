@@ -303,7 +303,7 @@ Un exemple est certainement plus parlant&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; lice -o &lt;span class="s2"&gt;&amp;quot;Fabien Dovero&amp;quot;&lt;/span&gt; mit &amp;gt; LICENSE
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;ou encore&amp;nbsp;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; lice -y 2013 -p &lt;span class="s2"&gt;&amp;quot;My project&amp;quot;&lt;/span&gt; -o &lt;span class="s2"&gt;&amp;quot;Free soft org&amp;quot;&lt;/span&gt; bsd3
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; lice -y &lt;span class="m"&gt;2013&lt;/span&gt; -p &lt;span class="s2"&gt;&amp;quot;My project&amp;quot;&lt;/span&gt; -o &lt;span class="s2"&gt;&amp;quot;Free soft org&amp;quot;&lt;/span&gt; bsd3
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;pour avoir une liste des variables disponibles pour une licence en particulier&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; lice --vars apache
@@ -314,7 +314,7 @@ Un exemple est certainement plus parlant&amp;nbsp;:&lt;/p&gt;
 &lt;p&gt;Pour l&amp;#8217;instant il ne supporte en natif que les licences listées sur le site de l&amp;#8217;&lt;a class="reference external" href="//opensource.org"&gt;&lt;span class="caps"&gt;OSI&lt;/span&gt;&lt;/a&gt;. Cependant il n&amp;#8217;est pas compliqué de rajouter une licence quelconque en s&amp;#8217;inspirant des fichiers de template et en utilisant l&amp;#8217;option -t&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; mkdir .licenses
 &lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Ma licence imba {{ year }}, {{ organization }}&amp;quot;&lt;/span&gt; &amp;gt; .licences/template-amoi
-&lt;span class="gp"&gt;$&lt;/span&gt; lice -y 2013 -o &lt;span class="s2"&gt;&amp;quot;Fabien Dovero&amp;quot;&lt;/span&gt; -t .licenses/template-amoi
+&lt;span class="gp"&gt;$&lt;/span&gt; lice -y &lt;span class="m"&gt;2013&lt;/span&gt; -o &lt;span class="s2"&gt;&amp;quot;Fabien Dovero&amp;quot;&lt;/span&gt; -t .licenses/template-amoi
 &lt;span class="go"&gt;Ma licence imba 2013, Fabien Dovero&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Pour conclure, je ne saurai que trop vous encourager à utiliser des licences open source pour votre code, en particulier ma préférée : la license &lt;a class="reference external" href="//opensource.org/licenses/MIT"&gt;&lt;span class="caps"&gt;MIT&lt;/span&gt;&lt;/a&gt; qui est parfaitement adaptée pour des petits&amp;nbsp;projets.&lt;/p&gt;
@@ -368,7 +368,7 @@ Pour l&amp;#8217;installer&amp;nbsp;:&lt;/p&gt;
 &lt;span class="gp"&gt;$&lt;/span&gt; stylus --compress app.styl
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Et comme j&amp;#8217;aime les solutions tordues, on peut également passer un css pour le transformer en fichier stylus et compresser le css en sortie&amp;nbsp;!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; stylus --css app.css &amp;amp; stylus --compress app.styl
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; stylus --css app.css &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; stylus --compress app.styl
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Si vous préférez les solutions simples il existe &lt;a class="reference external" href="//github.com/css/csso"&gt;csso&lt;/a&gt; qui rempli cette tâche à merveille&amp;nbsp;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; npm install -g csso
@@ -380,7 +380,7 @@ Pour l&amp;#8217;installer&amp;nbsp;:&lt;/p&gt;
 &lt;h2&gt;Réduire les&amp;nbsp;images&lt;/h2&gt;
 &lt;p&gt;Les images sont les ressources le plus lourdes à transférer. Pourtant il y a un moyen simple et sans perte de réduire leur taille de 50% en moyenne. En effet les images embarquent toutes sortes de tags qui prennent une place non&amp;nbsp;négligable.&lt;/p&gt;
 &lt;p&gt;Pour optimiser des &lt;span class="caps"&gt;PNG&lt;/span&gt; il existe &lt;a class="reference external" href="//optipng.sourceforge.net/"&gt;optipng&lt;/a&gt; et &lt;a class="reference external" href="//www.kokkonen.net/tjko/projects.htm"&gt;jpegoptim&lt;/a&gt; pour les &lt;span class="caps"&gt;JPEG&lt;/span&gt;&amp;nbsp;!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; optipng -o 7 ./images
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; optipng -o &lt;span class="m"&gt;7&lt;/span&gt; ./images
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="cas-des-icon-fonts"&gt;

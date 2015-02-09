@@ -26,7 +26,7 @@
  
   </header>
   <footer class="post-info">
-    <abbr class="published" title="2013-01-25T00:00:00">
+    <abbr class="published" title="2013-01-25T00:00:00+01:00">
       ven. 25 janvier 2013
     </abbr>
     <address class="vcard author">
@@ -42,7 +42,7 @@ Un exemple est certainement plus parlant&nbsp;:</p>
 <div class="highlight"><pre><span class="gp">$</span> lice -o <span class="s2">&quot;Fabien Dovero&quot;</span> mit &gt; LICENSE
 </pre></div>
 <p>ou encore&nbsp;:</p>
-<div class="highlight"><pre><span class="gp">$</span> lice -y 2013 -p <span class="s2">&quot;My project&quot;</span> -o <span class="s2">&quot;Free soft org&quot;</span> bsd3
+<div class="highlight"><pre><span class="gp">$</span> lice -y <span class="m">2013</span> -p <span class="s2">&quot;My project&quot;</span> -o <span class="s2">&quot;Free soft org&quot;</span> bsd3
 </pre></div>
 <p>pour avoir une liste des variables disponibles pour une licence en particulier&nbsp;:</p>
 <div class="highlight"><pre><span class="gp">$</span> lice --vars apache
@@ -53,7 +53,7 @@ Un exemple est certainement plus parlant&nbsp;:</p>
 <p>Pour l&#8217;instant il ne supporte en natif que les licences listées sur le site de l&#8217;<a class="reference external" href="//opensource.org"><span class="caps">OSI</span></a>. Cependant il n&#8217;est pas compliqué de rajouter une licence quelconque en s&#8217;inspirant des fichiers de template et en utilisant l&#8217;option -t&nbsp;:</p>
 <div class="highlight"><pre><span class="gp">$</span> mkdir .licenses
 <span class="gp">$</span> <span class="nb">echo</span> <span class="s2">&quot;Ma licence imba {{ year }}, {{ organization }}&quot;</span> &gt; .licences/template-amoi
-<span class="gp">$</span> lice -y 2013 -o <span class="s2">&quot;Fabien Dovero&quot;</span> -t .licenses/template-amoi
+<span class="gp">$</span> lice -y <span class="m">2013</span> -o <span class="s2">&quot;Fabien Dovero&quot;</span> -t .licenses/template-amoi
 <span class="go">Ma licence imba 2013, Fabien Dovero</span>
 </pre></div>
 <p>Pour conclure, je ne saurai que trop vous encourager à utiliser des licences open source pour votre code, en particulier ma préférée : la license <a class="reference external" href="//opensource.org/licenses/MIT"><span class="caps">MIT</span></a> qui est parfaitement adaptée pour des petits&nbsp;projets.</p>

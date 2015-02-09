@@ -26,7 +26,7 @@
  
   </header>
   <footer class="post-info">
-    <abbr class="published" title="2013-01-12T00:00:00">
+    <abbr class="published" title="2013-01-12T00:00:00+01:00">
       sam. 12 janvier 2013
     </abbr>
     <address class="vcard author">
@@ -57,7 +57,7 @@ Pour l&#8217;installer&nbsp;:</p>
 <span class="gp">$</span> stylus --compress app.styl
 </pre></div>
 <p>Et comme j&#8217;aime les solutions tordues, on peut également passer un css pour le transformer en fichier stylus et compresser le css en sortie&nbsp;!</p>
-<div class="highlight"><pre><span class="gp">$</span> stylus --css app.css &amp; stylus --compress app.styl
+<div class="highlight"><pre><span class="gp">$</span> stylus --css app.css <span class="p">&amp;</span> stylus --compress app.styl
 </pre></div>
 <p>Si vous préférez les solutions simples il existe <a class="reference external" href="//github.com/css/csso">csso</a> qui rempli cette tâche à merveille&nbsp;:</p>
 <div class="highlight"><pre><span class="gp">$</span> npm install -g csso
@@ -69,7 +69,7 @@ Pour l&#8217;installer&nbsp;:</p>
 <h2>Réduire les&nbsp;images</h2>
 <p>Les images sont les ressources le plus lourdes à transférer. Pourtant il y a un moyen simple et sans perte de réduire leur taille de 50% en moyenne. En effet les images embarquent toutes sortes de tags qui prennent une place non&nbsp;négligable.</p>
 <p>Pour optimiser des <span class="caps">PNG</span> il existe <a class="reference external" href="//optipng.sourceforge.net/">optipng</a> et <a class="reference external" href="//www.kokkonen.net/tjko/projects.htm">jpegoptim</a> pour les <span class="caps">JPEG</span>&nbsp;!</p>
-<div class="highlight"><pre><span class="gp">$</span> optipng -o 7 ./images
+<div class="highlight"><pre><span class="gp">$</span> optipng -o <span class="m">7</span> ./images
 </pre></div>
 </div>
 <div class="section" id="cas-des-icon-fonts">
